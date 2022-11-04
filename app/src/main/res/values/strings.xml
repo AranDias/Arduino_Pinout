@@ -36,4 +36,6 @@
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
     <string name="title_activity_espbase">ESPBase</string>
     <string name="title_activity_esp39_pin">ESP39PIN</string>
+    <string name="title_activity_esp30">ESP30Activity</string>
+    <string name="title_activity_esp38">ESP38Activity</string>
 </resources>
