@@ -22,36 +22,33 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ArduinoPinout"
         tools:targetApi="31">
+
         <activity
             android:name=".ESP39PIN"
-            android:exported="false"
-            android:label="@string/title_activity_esp39_pin"
-            android:theme="@style/Theme.ArduinoPinout.NoActionBar" />
-        <activity
-            android:name=".ESP30PIN"
-            android:banner="@drawable/app_icon_your_company"
-            android:exported="false"
-            android:icon="@drawable/app_icon_your_company"
-            android:label="@string/title_activity_esp30_pin"
-            android:logo="@drawable/app_icon_your_company"
-            android:screenOrientation="landscape"
-            android:theme="@style/Theme.ArduinoPinout.NoActionBar">
+            android:exported="false">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
+                <action android:name="ESP39" />
+                <category android:name="android.intent.category.DEFAULT"/>
             </intent-filter>
         </activity>
+
+        <activity
+            android:name=".ESP30PIN"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="ESP30" />
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
         <activity
             android:name=".ESPBase"
-            android:exported="false"
-            android:label="@string/title_activity_espbase"
-            android:theme="@style/Theme.ArduinoPinout.NoActionBar" />
-        <activity
-            android:name=".HomePage"
-            android:exported="false"
-            android:label="@string/title_activity_home_page"
-            android:theme="@style/Theme.ArduinoPinout.NoActionBar" />
+            android:exported="false">
+            <intent-filter>
+                <action android:name="BASE" />
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
 
         <activity
             android:name=".MainActivity"
@@ -60,7 +57,6 @@
             android:theme="@style/Theme.ArduinoPinout.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
