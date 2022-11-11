@@ -4,7 +4,7 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/aranm/AndroidStudioProjects/ArduinoPinout/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1345" />
-        <entry key="..\:/Users/aranm/AndroidStudioProjects/ArduinoPinout/app/src/main/res/layout/activity_esp30.xml" value="0.10916919959473151" />
+        <entry key="..\:/Users/aranm/AndroidStudioProjects/ArduinoPinout/app/src/main/res/layout/activity_esp30.xml" value="0.1" />
         <entry key="..\:/Users/aranm/AndroidStudioProjects/ArduinoPinout/app/src/main/res/layout/activity_esp30_pin.xml" value="0.21875" />
         <entry key="..\:/Users/aranm/AndroidStudioProjects/ArduinoPinout/app/src/main/res/layout/activity_esp38.xml" value="0.21875" />
         <entry key="..\:/Users/aranm/AndroidStudioProjects/ArduinoPinout/app/src/main/res/layout/activity_esp39_pin.xml" value="0.21875" />
@@ -25,7 +25,7 @@
         <entry key="..\:/Users/aranm/AndroidStudioProjects/ArduinoPinout/app/src/main/res/layout/fragment_esp30_comment.xml1.xsd" value="0.1" />
         <entry key="..\:/Users/aranm/AndroidStudioProjects/ArduinoPinout/app/src/main/res/layout/fragment_esp30comment.xml" value="0.2" />
         <entry key="..\:/Users/aranm/AndroidStudioProjects/ArduinoPinout/app/src/main/res/layout/fragment_esp30comment.xsd" value="0.1598731884057971" />
-        <entry key="..\:/Users/aranm/AndroidStudioProjects/ArduinoPinout/app/src/main/res/layout/fragment_esp30image.xml" value="0.75" />
+        <entry key="..\:/Users/aranm/AndroidStudioProjects/ArduinoPinout/app/src/main/res/layout/fragment_esp30image.xml" value="0.2" />
         <entry key="..\:/Users/aranm/AndroidStudioProjects/ArduinoPinout/app/src/main/res/layout/fragment_espbase.xml" value="0.25" />
         <entry key="..\:/Users/aranm/AndroidStudioProjects/ArduinoPinout/app/src/main/res/layout/fragment_espbasecomment.xml" value="0.15172101449275363" />
         <entry key="..\:/Users/aranm/AndroidStudioProjects/ArduinoPinout/app/src/main/res/layout/fragment_espcomment.xml" value="0.1" />
