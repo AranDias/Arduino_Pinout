@@ -1,6 +1,7 @@
 package com.example.arduinopinout;
 
 import android.os.Bundle;
+import android.view.Menu;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -12,27 +13,34 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 import com.example.arduinopinout.databinding.ActivityEspbaseBinding;
-public class ESPBaseActivity extends AppCompatActivity implements ESPBaseFragment.FragmentBaseListener{
+public class ESPBaseActivity extends AppCompatActivity implements ESPBaseImageFragment.FragmentBaseListener{
 
-    private ESPBaseFragment         fbase;
-    private ESPBaseCommentFragment  fbasecom;
+    private ESPBaseImageFragment    fimage;
+    private ESPCommentFragment      fcom;
 
     @Override
     protected void onCreate(Bundle savedInstance){
         super.onCreate(savedInstance);
         setContentView(R.layout.activity_espbase);
 
-        fbase       = new ESPBaseFragment();
-        fbasecom    = new ESPBaseCommentFragment();
+        fimage  = new ESPBaseImageFragment();
+        fcom    = new ESPCommentFragment();
 
         getSupportFragmentManager().beginTransaction()
-                .replace(R.id.ESPBaseFrag, fbase)
-                .replace(R.id.ESPBaseCommentFrag,fbasecom)
+                .replace(R.id.ESPBaseImageLayout, fimage)
+                .replace(R.id.ESPBaseCommentLayout,fcom)
                 .commit();
     }
 
     @Override
-    public void onInputBase(CharSequence input) {
-        fbasecom.updateEditText(input);
+    public void onInputBase(String input) {
+        fcom.updateEditText(input);
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.menu_boards, menu);
+        return true;
     }
 }

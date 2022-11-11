@@ -12,25 +12,24 @@
     <LinearLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        android:orientation="vertical">
 
         <fragment
-            android:id="@+id/ESPBaseFrag"
-            android:name="com.example.arduinopinout.ESPBaseFragment"
+            android:id="@+id/ESPBaseImageLayout"
+            android:name="com.example.arduinopinout.ESPBaseImageFragment"
             android:layout_weight="1"
             android:layout_width="match_parent"
             android:layout_height="match_parent"/>
 
         <fragment
-            android:id="@+id/ESPBaseCommentFrag"
-            android:name="com.example.arduinopinout.ESPBaseCommentFragment"
-            android:layout_weight="2"
+            android:id="@+id/ESPBaseCommentLayout"
+            android:name="com.example.arduinopinout.ESPCommentFragment"
+            android:layout_weight="2.5"
             android:layout_width="match_parent"
             android:layout_height="match_parent"/>
-
     </LinearLayout>
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
