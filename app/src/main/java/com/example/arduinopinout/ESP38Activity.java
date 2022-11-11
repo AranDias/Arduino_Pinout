@@ -27,6 +27,7 @@ public class ESP38Activity extends AppCompatActivity {
         binding = ActivityEsp38Binding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
-        setSupportActionBar(binding.toolbar);
+        /*setSupportActionBar(binding.toolbar);*/
     }
+
 }

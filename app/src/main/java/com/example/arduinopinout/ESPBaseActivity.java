@@ -1,32 +1,38 @@
 package com.example.arduinopinout;
 
 import android.os.Bundle;
-
-import com.google.android.material.snackbar.Snackbar;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
-
-import android.view.View;
-
-import androidx.navigation.NavController;
-import androidx.navigation.Navigation;
-import androidx.navigation.ui.AppBarConfiguration;
-import androidx.navigation.ui.NavigationUI;
-
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 import com.example.arduinopinout.databinding.ActivityEspbaseBinding;
+public class ESPBaseActivity extends AppCompatActivity implements ESPBaseFragment.FragmentBaseListener{
 
-public class ESPBaseActivity extends AppCompatActivity {
-
-    private AppBarConfiguration appBarConfiguration;
-    private ActivityEspbaseBinding binding;
+    private ESPBaseFragment         fbase;
+    private ESPBaseCommentFragment  fbasecom;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
+    protected void onCreate(Bundle savedInstance){
+        super.onCreate(savedInstance);
+        setContentView(R.layout.activity_espbase);
 
-        binding = ActivityEspbaseBinding.inflate(getLayoutInflater());
-        setContentView(binding.getRoot());
+        fbase       = new ESPBaseFragment();
+        fbasecom    = new ESPBaseCommentFragment();
 
-        setSupportActionBar(binding.toolbar);
+        getSupportFragmentManager().beginTransaction()
+                .replace(R.id.ESPBaseFrag, fbase)
+                .replace(R.id.ESPBaseCommentFrag,fbasecom)
+                .commit();
+    }
+
+    @Override
+    public void onInputBase(CharSequence input) {
+        fbasecom.updateEditText(input);
     }
 }

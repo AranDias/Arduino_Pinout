@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/HomePage"
+    tools:context=".ESP30ImageFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="10dp"
+            android:layout_weight="2.5">
+
+            <Button
+                android:id="@+id/ESP30ButtonENT"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="@color/yellow"
+                android:textColor="@color/black"
+                android:text="EN" />
+            <Button
+                android:id="@+id/ESP30ButtonVP"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="@color/yellow"
+                android:textColor="@color/black"
+                android:text="VP" />
+            <Button
+                android:id="@+id/ESP30ButtonVN"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="@color/yellow"
+                android:textColor="@color/black"
+                android:text="VN" />
+            <Button
+                android:id="@+id/ESP30ButtonD34"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="@color/yellow"
+                android:textColor="@color/black"
+                android:text="D34" />
+            <Button
+                android:id="@+id/ESP30ButtonD35"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="@color/yellow"
+                android:textColor="@color/black"
+                android:text="D35" />
+            <Button
+                android:id="@+id/ESP30ButtonD32"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="@color/yellow"
+                android:textColor="@color/black"
+                android:text="D32" />
+            <Button
+                android:id="@+id/ESP30ButtonD33"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="@color/yellow"
+                android:textColor="@color/black"
+                android:text="D33" />
+            <Button
+                android:id="@+id/ESP30ButtonD25"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="@color/yellow"
+                android:textColor="@color/black"
+                android:text="D25" />
+            <Button
+                android:id="@+id/ESP30ButtonD26"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="@color/yellow"
+                android:textColor="@color/black"
+                android:text="D26" />
+            <Button
+                android:id="@+id/ESP30ButtonD27"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="@color/yellow"
+                android:textColor="@color/black"
+                android:text="D27" />
+            <Button
+                android:id="@+id/ESP30ButtonD14"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="@color/yellow"
+                android:textColor="@color/black"
+                android:text="D14" />
+            <Button
+                android:id="@+id/ESP30ButtonD12"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="@color/yellow"
+                android:textColor="@color/black"
+                android:text="D12" />
+            <Button
+                android:id="@+id/ESP30ButtonD13"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="@color/yellow"
+                android:textColor="@color/black"
+                android:text="D13" />
+
+            <Button
+                android:id="@+id/ESP30ButtonGNDL"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="@color/yellow"
+                android:textColor="@color/black"
+                android:text="GND" />
+            <Button
+                android:id="@+id/ESP30ButtonVin"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="@color/yellow"
+                android:textColor="@color/black"
+                android:text="Vin" />
+            <Button
+                android:id="@+id/ESP30ButtonEN"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="@color/yellow"
+                android:textColor="@color/black"
+                android:text="EN" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@color/HomePage"
+            android:src="@drawable/esp32_30pin_cut" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="10dp"
+            android:layout_weight="2.5">
+
+            <Button
+                android:id="@+id/ESP30ButtonD23"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="@color/yellow"
+                android:textColor="@color/black"
+                android:text="D23" />
+            <Button
+                android:id="@+id/ESP30ButtonD22"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="@color/yellow"
+                android:textColor="@color/black"
+                android:text="D22" />
+            <Button
+                android:id="@+id/ESP30ButtonTX0"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="@color/yellow"
+                android:textColor="@color/black"
+                android:textSize="@dimen/fab_margin"
+                android:text="TX0" />
+            <Button
+                android:id="@+id/ESP30ButtonRX0"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="@color/yellow"
+                android:textColor="@color/black"
+                android:text="RX0" />
+            <Button
+                android:id="@+id/ESP30ButtonD21"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="@color/yellow"
+                android:textColor="@color/black"
+                android:text="D21" />
+            <Button
+                android:id="@+id/ESP30ButtonD19"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="@color/yellow"
+                android:textColor="@color/black"
+                android:text="D19" />
+            <Button
+                android:id="@+id/ESP30ButtonD18"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="@color/yellow"
+                android:textColor="@color/black"
+                android:text="D18" />
+            <Button
+                android:id="@+id/ESP30ButtonD5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="@color/yellow"
+                android:textColor="@color/black"
+                android:text="D5" />
+            <Button
+                android:id="@+id/ESP30ButtonTX2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="@color/yellow"
+                android:textColor="@color/black"
+                android:text="TX2" />
+            <Button
+                android:id="@+id/ESP30ButtonRX2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="@color/yellow"
+                android:textColor="@color/black"
+                android:text="RX2" />
+            <Button
+                android:id="@+id/ESP30ButtonD4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="@color/yellow"
+                android:textColor="@color/black"
+                android:text="D4" />
+            <Button
+                android:id="@+id/ESP30ButtonD2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="@color/yellow"
+                android:textColor="@color/black"
+                android:text="D2" />
+            <Button
+                android:id="@+id/ESP30ButtonD15"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="@color/yellow"
+                android:textColor="@color/black"
+                android:text="D15" />
+
+            <Button
+                android:id="@+id/ESP30ButtonGNDR"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="@color/yellow"
+                android:textColor="@color/black"
+                android:text="GND" />
+            <Button
+                android:id="@+id/ESP30Button3V3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="@color/yellow"
+                android:textColor="@color/black"
+                android:text="3V3" />
+            <Button
+                android:id="@+id/ESP30ButtonBOOT"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="@color/yellow"
+                android:textColor="@color/black"
+                android:text="BOOT" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

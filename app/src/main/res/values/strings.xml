@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">Arduino Pinout</string>
-    <string name="action_settings">Settings</string>
+    <string name="action_settings">Configurações</string>
+    <!--<string name="action_search">Pesquisa</string>-->
     <!-- Strings used for fragments for navigation -->
 
     <string name="next">Next</string>
@@ -9,7 +10,7 @@
     <string name="title_activity_logo">LogoActivity</string>
     <string name="title_activity_home_page">HomePageActivity</string>
     <string name="title_activity_esp32_base">ESP32BaseActivity</string>
-    <string name="title_activity_esp30_pin">Leanback ESP30PIN</string>
+    <string name="title_activity_esp30_pin">ESP30PIN</string>
     <string name="browse_title">Videos by Your Company</string>
     <string name="related_movies">Related Videos</string>
     <string name="grid_view">Grid View</string>

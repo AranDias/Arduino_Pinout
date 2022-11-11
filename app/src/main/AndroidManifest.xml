@@ -26,7 +26,8 @@
 
         <activity
             android:name=".ESP38Activity"
-            android:exported="true">
+            android:exported="true"
+            android:parentActivityName=".MainActivity">
             <intent-filter>
                 <action android:name="ESP38PIN" />
                 <category android:name="android.intent.category.DEFAULT" />
@@ -35,7 +36,8 @@
 
         <activity
             android:name=".ESP30Activity"
-            android:exported="true">
+            android:exported="true"
+            android:parentActivityName=".MainActivity">
             <intent-filter>
                 <action android:name="ESP30PIN" />
                 <category android:name="android.intent.category.DEFAULT" />
@@ -44,7 +46,8 @@
 
         <activity
             android:name=".ESPBaseActivity"
-            android:exported="true">
+            android:exported="true"
+            android:parentActivityName=".MainActivity">
             <intent-filter>
                 <action android:name="ESPBASE" />
                 <category android:name="android.intent.category.DEFAULT" />
@@ -53,7 +56,8 @@
 
         <activity
             android:name=".LogoActivity"
-            android:exported="true">
+            android:exported="true"
+            android:parentActivityName=".MainActivity">
             <intent-filter>
                 <action android:name="LOGOAPP" />
                 <category android:name="android.intent.category.DEFAULT" />

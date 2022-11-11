@@ -19,6 +19,7 @@ import com.example.arduinopinout.databinding.ActivityMainBinding;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -27,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
     private Button ESP38;
     private Button ESP30;
     private Button Base;
-    private Button Logo;
+    private ImageButton Logo;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,6 +40,10 @@ public class MainActivity extends AppCompatActivity {
         /*setSupportActionBar(binding.toolbar);*/
 
         ESP38 = findViewById(R.id.ButtonESP38PIN);
+        ESP30 = findViewById(R.id.ButtonESP30PIN);
+        Base = findViewById(R.id.ButtonESPBase);
+        Logo = findViewById(R.id.ButtonLogo);
+
         ESP38.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -47,7 +52,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        ESP30 = findViewById(R.id.ButtonESP30PIN);
         ESP30.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -56,7 +60,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        Base = findViewById(R.id.ButtonESPBase);
         Base.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -65,7 +68,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        Logo = findViewById(R.id.ButtonLogo);
         Logo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

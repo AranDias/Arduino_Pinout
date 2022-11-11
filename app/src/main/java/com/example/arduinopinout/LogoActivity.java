@@ -20,6 +20,8 @@ public class LogoActivity extends AppCompatActivity {
     private AppBarConfiguration appBarConfiguration;
     private ActivityLogoBinding binding;
 
+    //private Button Main;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,6 +29,8 @@ public class LogoActivity extends AppCompatActivity {
         binding = ActivityLogoBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
-        setSupportActionBar(binding.toolbar);
+        /*setSupportActionBar(binding.toolbar);*/
+
+        //Main
     }
 }
