@@ -5,14 +5,24 @@
     tools:context="com.example.arduinopinout.MainActivity">
 
     <item
-        android:id="@+id/Swith_Abrir_Descrição"
-        android:orderInCategory="100"
+        android:id="@+id/Abrir_Descrição"
+        android:orderInCategory="1"
         android:title="Abrir Descrição"
         app:showAsAction="never" />
     <item
-        android:id="@+id/Swith_Ocultar_Descrição"
+        android:id="@+id/Ocultar_Descrição"
         android:title="Ocultar Descrição"
-        android:orderInCategory="100"
+        android:orderInCategory="2"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/Mostrar_Tudo"
+        android:title="Mostrar Tudo"
+        android:orderInCategory="3"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/Mostrar_Botoes"
+        android:title="Mostrar Botões"
+        android:orderInCategory="4"
         app:showAsAction="never" />
 
 </menu>
