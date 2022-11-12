@@ -19,18 +19,17 @@
 
         <FrameLayout
             android:id="@+id/ESPBaseImageLayout"
-            android:name="com.example.arduinopinout.ESPBaseButtonsFragment"
-            android:layout_weight="1"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:layout_weight="1">
         </FrameLayout>
 
         <FrameLayout
             android:id="@+id/ESPBaseCommentLayout"
-            android:name="com.example.arduinopinout.ESPCommentFragment"
-            android:layout_weight="2.5"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="2.5">
         </FrameLayout>
     </LinearLayout>
 

@@ -14,17 +14,17 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 import com.example.arduinopinout.databinding.ActivityEspbaseBinding;
-public class ESPBaseActivity extends AppCompatActivity implements ESPBaseButtonsFragment.FragmenBasetButtonsListener{
+public class ESPBaseActivity extends AppCompatActivity implements ESPBaseButtonsFragment.FragmentBaseButtonsListener{
 
     private ESPBaseImageFragment    fimage;
     private ESPCommentFragment      fcom;
 
-    private ActivityEspbaseBinding binding;
-    private FragmentManager fm = getSupportFragmentManager();
-    private ESPBaseImageFragment fi = new ESPBaseImageFragment();
-    private ESPBaseButtonsFragment fb = new ESPBaseButtonsFragment();
-    private ESPCommentFragment fc = new ESPCommentFragment();
-    FragmentTransaction t;
+    private ActivityEspbaseBinding  binding;
+    private FragmentManager         fm = getSupportFragmentManager();
+    private ESPBaseImageFragment    fi = new ESPBaseImageFragment();
+    private ESPBaseButtonsFragment  fb = new ESPBaseButtonsFragment();
+    private ESPCommentFragment      fc = new ESPCommentFragment();
+    FragmentTransaction             t;
 
     @Override
     protected void onCreate(Bundle savedInstance){
@@ -43,8 +43,8 @@ public class ESPBaseActivity extends AppCompatActivity implements ESPBaseButtons
         t.add(R.id.ESPBaseCommentLayout, fc);
         t.addToBackStack(null);
         t.commit();
-/*
-        getSupportFragmentManager().beginTransaction()
+
+        /*getSupportFragmentManager().beginTransaction()
                 .replace(R.id.ESPBaseImageLayout, fimage)
                 .replace(R.id.ESPBaseCommentLayout,fcom)
                 .commit();*/
@@ -52,7 +52,7 @@ public class ESPBaseActivity extends AppCompatActivity implements ESPBaseButtons
 
     @Override
     public void onInputBase(String input) {
-        fcom.updateEditText(input);
+        fc.updateEditText(input);
     }
 
     @Override
@@ -71,22 +71,18 @@ public class ESPBaseActivity extends AppCompatActivity implements ESPBaseButtons
             t.replace(R.id.ESPBaseCommentLayout, fc);
             t.addToBackStack(null);
             t.commit();
-        }
-        else if(id == R.id.Ocultar_Descrição){
             t = fm.beginTransaction();
-            t.remove(fc);
+            t.replace(R.id.ESPBaseImageLayout, fb);
             t.addToBackStack(null);
             t.commit();
         }
         else if(id == R.id.Mostrar_Tudo){
             t = fm.beginTransaction();
-            t.replace(R.id.ESPBaseImageLayout, fi);
+            t.remove(fc);
             t.addToBackStack(null);
             t.commit();
-        }
-        else if(id == R.id.Mostrar_Botoes){
             t = fm.beginTransaction();
-            t.replace(R.id.ESPBaseImageLayout, fb);
+            t.replace(R.id.ESPBaseImageLayout, fi);
             t.addToBackStack(null);
             t.commit();
         }
