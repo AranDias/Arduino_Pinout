@@ -1,5 +1,6 @@
 package com.example.arduinopinout;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -14,14 +15,11 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 import com.example.arduinopinout.databinding.ActivityEspbaseBinding;
-public class ESPBaseActivity extends AppCompatActivity implements ESPBaseButtonsFragment.FragmentBaseButtonsListener{
 
-    private ESPBaseImageFragment    fimage;
-    private ESPCommentFragment      fcom;
+public class ESPBaseActivity extends AppCompatActivity implements ESPBaseButtonsFragment.FragmentBaseButtonsListener{
 
     private ActivityEspbaseBinding  binding;
     private FragmentManager         fm = getSupportFragmentManager();
-    private ESPBaseImageFragment    fi = new ESPBaseImageFragment();
     private ESPBaseButtonsFragment  fb = new ESPBaseButtonsFragment();
     private ESPCommentFragment      fc = new ESPCommentFragment();
     FragmentTransaction             t;
@@ -43,11 +41,6 @@ public class ESPBaseActivity extends AppCompatActivity implements ESPBaseButtons
         t.add(R.id.ESPBaseCommentLayout, fc);
         t.addToBackStack(null);
         t.commit();
-
-        /*getSupportFragmentManager().beginTransaction()
-                .replace(R.id.ESPBaseImageLayout, fimage)
-                .replace(R.id.ESPBaseCommentLayout,fcom)
-                .commit();*/
     }
 
     @Override
@@ -65,26 +58,9 @@ public class ESPBaseActivity extends AppCompatActivity implements ESPBaseButtons
     @Override
     public boolean onOptionsItemSelected(MenuItem item){
         int id = item.getItemId();
-
-        if(id == R.id.Abrir_Descrição){
-            t = fm.beginTransaction();
-            t.replace(R.id.ESPBaseCommentLayout, fc);
-            t.addToBackStack(null);
-            t.commit();
-            t = fm.beginTransaction();
-            t.replace(R.id.ESPBaseImageLayout, fb);
-            t.addToBackStack(null);
-            t.commit();
-        }
-        else if(id == R.id.Mostrar_Tudo){
-            t = fm.beginTransaction();
-            t.remove(fc);
-            t.addToBackStack(null);
-            t.commit();
-            t = fm.beginTransaction();
-            t.replace(R.id.ESPBaseImageLayout, fi);
-            t.addToBackStack(null);
-            t.commit();
+        if(id == R.id.Mostrar_Tudo){
+            Intent ESPBASEIMAGE = new Intent("ESPBASEIMAGE");
+            startActivity(ESPBASEIMAGE);
         }
         return super.onOptionsItemSelected(item);
     }

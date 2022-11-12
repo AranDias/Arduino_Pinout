@@ -8,9 +8,12 @@
         <entry key="..\:/Users/aranm/AndroidStudioProjects/ArduinoPinout/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1345" />
         <entry key="..\:/Users/aranm/AndroidStudioProjects/ArduinoPinout/app/src/main/res/layout/activity_esp30.xml" value="0.1" />
         <entry key="..\:/Users/aranm/AndroidStudioProjects/ArduinoPinout/app/src/main/res/layout/activity_esp30_pin.xml" value="0.21875" />
+        <entry key="..\:/Users/aranm/AndroidStudioProjects/ArduinoPinout/app/src/main/res/layout/activity_esp30image.xml" value="0.17831813576494426" />
         <entry key="..\:/Users/aranm/AndroidStudioProjects/ArduinoPinout/app/src/main/res/layout/activity_esp38.xml" value="0.21875" />
+        <entry key="..\:/Users/aranm/AndroidStudioProjects/ArduinoPinout/app/src/main/res/layout/activity_esp38image.xml" value="0.17831813576494426" />
         <entry key="..\:/Users/aranm/AndroidStudioProjects/ArduinoPinout/app/src/main/res/layout/activity_esp39_pin.xml" value="0.21875" />
         <entry key="..\:/Users/aranm/AndroidStudioProjects/ArduinoPinout/app/src/main/res/layout/activity_espbase.xml" value="0.25" />
+        <entry key="..\:/Users/aranm/AndroidStudioProjects/ArduinoPinout/app/src/main/res/layout/activity_espbaseimage.xml" value="0.17831813576494426" />
         <entry key="..\:/Users/aranm/AndroidStudioProjects/ArduinoPinout/app/src/main/res/layout/activity_home_page.xml" value="0.21875" />
         <entry key="..\:/Users/aranm/AndroidStudioProjects/ArduinoPinout/app/src/main/res/layout/activity_logo.xml" value="0.21875" />
         <entry key="..\:/Users/aranm/AndroidStudioProjects/ArduinoPinout/app/src/main/res/layout/activity_main.xml" value="0.18" />
@@ -25,9 +28,11 @@
         <entry key="..\:/Users/aranm/AndroidStudioProjects/ArduinoPinout/app/src/main/res/layout/fragment_e_s_p_coment.xml" value="0.1" />
         <entry key="..\:/Users/aranm/AndroidStudioProjects/ArduinoPinout/app/src/main/res/layout/fragment_esp30_comment.xml" value="0.1598731884057971" />
         <entry key="..\:/Users/aranm/AndroidStudioProjects/ArduinoPinout/app/src/main/res/layout/fragment_esp30_comment.xml1.xsd" value="0.1" />
+        <entry key="..\:/Users/aranm/AndroidStudioProjects/ArduinoPinout/app/src/main/res/layout/fragment_esp30buttons.xml" value="0.36685773840541946" />
         <entry key="..\:/Users/aranm/AndroidStudioProjects/ArduinoPinout/app/src/main/res/layout/fragment_esp30comment.xml" value="0.2" />
         <entry key="..\:/Users/aranm/AndroidStudioProjects/ArduinoPinout/app/src/main/res/layout/fragment_esp30comment.xsd" value="0.1598731884057971" />
         <entry key="..\:/Users/aranm/AndroidStudioProjects/ArduinoPinout/app/src/main/res/layout/fragment_esp30image.xml" value="0.2" />
+        <entry key="..\:/Users/aranm/AndroidStudioProjects/ArduinoPinout/app/src/main/res/layout/fragment_esp38buttons.xml" value="0.36685773840541946" />
         <entry key="..\:/Users/aranm/AndroidStudioProjects/ArduinoPinout/app/src/main/res/layout/fragment_espbase.xml" value="0.25" />
         <entry key="..\:/Users/aranm/AndroidStudioProjects/ArduinoPinout/app/src/main/res/layout/fragment_espbasebuttons.xml" value="0.22447916666666667" />
         <entry key="..\:/Users/aranm/AndroidStudioProjects/ArduinoPinout/app/src/main/res/layout/fragment_espbasecomment.xml" value="0.15172101449275363" />

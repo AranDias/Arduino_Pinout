@@ -39,4 +39,7 @@
     <string name="title_activity_esp39_pin">ESP39PIN</string>
     <string name="title_activity_esp30">ESP30Activity</string>
     <string name="title_activity_esp38">ESP38Activity</string>
+    <string name="title_activity_espbase_image">ESPBaseImageActivity</string>
+    <string name="title_activity_esp30_image">ESP30ImageActivity</string>
+    <string name="title_activity_esp38_image">ESP38ImageActivity</string>
 </resources>

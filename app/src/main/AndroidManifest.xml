@@ -23,52 +23,84 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ArduinoPinout"
         tools:targetApi="31">
+        <activity
+            android:name=".ESP38ImageActivity"
+            android:exported="false"
+            android:label="@string/title_activity_esp38_image"
+            android:parentActivityName=".ESP38Activity"
+            android:theme="@style/Theme.ArduinoPinout.NoActionBar">
+            <intent-filter>
+                <action android:name="ESP38IMAGE" />
 
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".ESP38Activity"
             android:exported="true"
             android:parentActivityName=".MainActivity">
             <intent-filter>
                 <action android:name="ESP38PIN" />
+
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-
         <activity
             android:name=".ESP30Activity"
             android:exported="true"
             android:parentActivityName=".MainActivity">
             <intent-filter>
                 <action android:name="ESP30PIN" />
+
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".ESP30ImageActivity"
+            android:exported="true"
+            android:parentActivityName=".ESP30Activity">
+            <intent-filter>
+                <action android:name="ESP30IMAGE" />
 
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".ESPBaseActivity"
             android:exported="true"
             android:parentActivityName=".MainActivity">
             <intent-filter>
                 <action android:name="ESPBASE" />
+
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".ESPBaseImageActivity"
+            android:exported="true"
+            android:parentActivityName=".ESPBaseActivity">
+            <intent-filter>
+                <action android:name="ESPBASEIMAGE" />
 
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".LogoActivity"
             android:exported="true"
             android:parentActivityName=".MainActivity">
             <intent-filter>
                 <action android:name="LOGOAPP" />
+
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-
         <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
