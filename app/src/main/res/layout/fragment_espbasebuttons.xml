@@ -1,0 +1,482 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/HomePage"
+    tools:context=".ESPBaseButtonsFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_margin="10dp"
+                android:layout_weight="2"
+                android:layout_gravity="center">
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/ESPBaseButtonGNDTL"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="0dp"
+                    android:layout_margin="5dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/background_button_pin"
+                    android:textColor="@color/black"
+                    android:text="GND" />
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/ESPBaseButtonVin"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="0dp"
+                    android:layout_margin="5dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/background_button_pin"
+                    android:textColor="@color/black"
+                    android:text="Vin" />
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/ESPBaseButtonEN"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="0dp"
+                    android:layout_margin="5dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/background_button_pin"
+                    android:textColor="@color/black"
+                    android:text="EN" />
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/ESPBaseButton36"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="0dp"
+                    android:layout_margin="5dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/background_button_pin"
+                    android:textColor="@color/black"
+                    android:text="36" />
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/ESPBaseButton39"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="0dp"
+                    android:layout_margin="5dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/background_button_pin"
+                    android:textColor="@color/black"
+                    android:text="39" />
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/ESPBaseButton34"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="0dp"
+                    android:layout_margin="5dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/background_button_pin"
+                    android:textColor="@color/black"
+                    android:text="34" />
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/ESPBaseButton35"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="0dp"
+                    android:layout_margin="5dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/background_button_pin"
+                    android:textColor="@color/black"
+                    android:text="35" />
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/ESPBaseButton32"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="0dp"
+                    android:layout_margin="5dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/background_button_pin"
+                    android:textColor="@color/black"
+                    android:text="32" />
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/ESPBaseButton33"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="0dp"
+                    android:layout_margin="5dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/background_button_pin"
+                    android:textColor="@color/black"
+                    android:text="33" />
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/ESPBaseButton25"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="0dp"
+                    android:layout_margin="5dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/background_button_pin"
+                    android:textColor="@color/black"
+                    android:text="25" />
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/ESPBaseButton26"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="0dp"
+                    android:layout_margin="5dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/background_button_pin"
+                    android:textColor="@color/black"
+                    android:text="26" />
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/ESPBaseButton27"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="0dp"
+                    android:layout_margin="5dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/background_button_pin"
+                    android:textColor="@color/black"
+                    android:text="27" />
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/ESPBaseButton14"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="0dp"
+                    android:layout_margin="5dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/background_button_pin"
+                    android:textColor="@color/black"
+                    android:text="14" />
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/ESPBaseButton12"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="0dp"
+                    android:layout_margin="5dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/background_button_pin"
+                    android:textColor="@color/black"
+                    android:text="12" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imageViewBase"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@color/HomePage"
+                android:src="@drawable/esp32_base_cut" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_margin="10dp"
+                android:layout_weight="2"
+                android:layout_gravity="center">
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/ESPBaseButtonGNDTR"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="0dp"
+                    android:layout_margin="5dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/background_button_pin"
+                    android:textColor="@color/black"
+                    android:text="GND" />
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/ESPBaseButton23"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="0dp"
+                    android:layout_margin="5dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/background_button_pin"
+                    android:textColor="@color/black"
+                    android:text="23" />
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/ESPBaseButton22"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="0dp"
+                    android:layout_margin="5dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/background_button_pin"
+                    android:textColor="@color/black"
+                    android:text="22" />
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/ESPBaseButton01"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="0dp"
+                    android:layout_margin="5dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/background_button_pin"
+                    android:textColor="@color/black"
+                    android:text="01" />
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/ESPBaseButton03"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="0dp"
+                    android:layout_margin="5dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/background_button_pin"
+                    android:textColor="@color/black"
+                    android:text="03" />
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/ESPBaseButton21"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="0dp"
+                    android:layout_margin="5dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/background_button_pin"
+                    android:textColor="@color/black"
+                    android:text="21" />
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/ESPBaseButtonNC"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="0dp"
+                    android:layout_margin="5dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/background_button_pin"
+                    android:textColor="@color/black"
+                    android:text="NC" />
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/ESPBaseButton19"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="0dp"
+                    android:layout_margin="5dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/background_button_pin"
+                    android:textColor="@color/black"
+                    android:text="19" />
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/ESPBaseButton18"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="0dp"
+                    android:layout_margin="5dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/background_button_pin"
+                    android:textColor="@color/black"
+                    android:text="18" />
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/ESPBaseButton05"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="0dp"
+                    android:layout_margin="5dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/background_button_pin"
+                    android:textColor="@color/black"
+                    android:text="05" />
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/ESPBaseButton17"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="0dp"
+                    android:layout_margin="5dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/background_button_pin"
+                    android:textColor="@color/black"
+                    android:text="17" />
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/ESPBaseButton16"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="0dp"
+                    android:layout_margin="5dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/background_button_pin"
+                    android:textColor="@color/black"
+                    android:text="16" />
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/ESPBaseButton04"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="0dp"
+                    android:layout_margin="5dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/background_button_pin"
+                    android:textColor="@color/black"
+                    android:text="04" />
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/ESPBaseButton00"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="0dp"
+                    android:layout_margin="5dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/background_button_pin"
+                    android:textColor="@color/black"
+                    android:text="00" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="8"
+            android:layout_margin="5dp"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/ESPBaseButtonGNDE"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:padding="0dp"
+                android:rotation="270"
+                android:background="@drawable/background_button_pin"
+                android:textColor="@color/black"
+                android:text="GND"
+                 />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/ESPBaseButton13"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:padding="0dp"
+                android:rotation="270"
+                android:background="@drawable/background_button_pin"
+                android:textColor="@color/black"
+                android:text="13" />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/ESPBaseButton09"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:padding="0dp"
+                android:rotation="270"
+                android:background="@drawable/background_button_pin"
+                android:textColor="@color/black"
+                android:text="09" />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/ESPBaseButton10"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:padding="0dp"
+                android:rotation="270"
+                android:background="@drawable/background_button_pin"
+                android:textColor="@color/black"
+                android:text="10" />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/ESPBaseButton11"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:padding="0dp"
+                android:rotation="270"
+                android:background="@drawable/background_button_pin"
+                android:textColor="@color/black"
+                android:text="11" />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/ESPBaseButton06"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:padding="0dp"
+                android:rotation="90"
+                android:background="@drawable/background_button_pin"
+                android:textColor="@color/black"
+                android:text="06" />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/ESPBaseButton07"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:padding="0dp"
+                android:rotation="90"
+                android:background="@drawable/background_button_pin"
+                android:textColor="@color/black"
+                android:text="07" />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/ESPBaseButton08"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:padding="0dp"
+                android:rotation="90"
+                android:background="@drawable/background_button_pin"
+                android:textColor="@color/black"
+                android:text="08" />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/ESPBaseButton15"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:padding="0dp"
+                android:rotation="90"
+                android:background="@drawable/background_button_pin"
+                android:textColor="@color/black"
+                android:text="15" />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/ESPBaseButton02"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:padding="0dp"
+                android:rotation="90"
+                android:background="@drawable/background_button_pin"
+                android:textColor="@color/black"
+                android:text="02" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</FrameLayout>
