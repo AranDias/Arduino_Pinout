@@ -9,28 +9,33 @@
     android:background="@color/Menu"
     tools:context=".ESP30Activity">
 
-    <LinearLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:background="@color/gray">
 
-        <FrameLayout
-            android:id="@+id/ESP30ImageLayout"
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_weight="1">
-        </FrameLayout>
+            android:orientation="vertical">
 
-        <FrameLayout
-            android:id="@+id/ESP30CommentLayout"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_gravity="center"
-            android:layout_weight="2.5">
-        </FrameLayout>
-    </LinearLayout>
+            <FrameLayout
+                android:id="@+id/ESP30ImageLayout"
+                android:layout_width="match_parent"
+                android:layout_height="500dp"
+                android:layout_gravity="center">
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/ESP30CommentLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+            </FrameLayout>
+        </LinearLayout>
+    </ScrollView>
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

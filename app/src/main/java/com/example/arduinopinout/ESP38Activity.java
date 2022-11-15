@@ -16,7 +16,7 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 import com.example.arduinopinout.databinding.ActivityEsp38Binding;
 
-public class ESP38Activity extends AppCompatActivity implements ESP38ButtonsFragment.Fragment38ButtonsListener{
+public class ESP38Activity extends AppCompatActivity implements ESP38ButtonsFragment.Fragment38Listener{
 
     private ActivityEsp38Binding  binding;
     private FragmentManager         fm = getSupportFragmentManager();

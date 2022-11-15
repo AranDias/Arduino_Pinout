@@ -12,13 +12,13 @@ import android.widget.EditText;
 import androidx.fragment.app.Fragment;
 
 public class ESP30ButtonsFragment extends Fragment {
-    private Fragment30ButtonsListener listener;
+    private Fragment30Listener listener;
     private EditText searchText;
+    private Button   buttonOk;
 
-    private Button ENT, VP, VN, D34, D35, D32, D33, D25, D26, D27, D14, D12, D13, GNDL, Vin, EN;
-    private Button D23, D22, TX0, RX0, D21, D19, D18, D5, TX2, RX2, D4, D2, D15, GNDR, V3V3, BOOT;
+    private Button ENT;
 
-    public interface Fragment30ButtonsListener {
+    public interface Fragment30Listener {
         void onInput30(String input);
     }
 
@@ -28,6 +28,9 @@ public class ESP30ButtonsFragment extends Fragment {
         // Inflate the layout for this fragment
         View view30buttons = inflater.inflate(R.layout.fragment_esp30buttons, container, false);
 
+        searchText  = view30buttons.findViewById(R.id.ESP30EditTextSearch);
+        buttonOk    = view30buttons.findViewById(R.id.ESP30ButtonOk);
+
         ENT     = view30buttons.findViewById(R.id.ESP30ButtonENT);
 
         View.OnClickListener handler = new View.OnClickListener() {
@@ -36,21 +39,28 @@ public class ESP30ButtonsFragment extends Fragment {
                 int botao = view.getId();
 
                 switch (botao) {
-                    case R.id.ESP30ButtonENT:       listener.onInput30("EN");  break;
-
-                    default:  listener.onInput30("Tente novamente");
+                    case R.id.ESP30ButtonOk:    listener.onInput30(getSearch(searchText.getText().toString())); break;
+                    case R.id.ESP30ButtonENT:   listener.onInput30(getSearch("GND"));  break;
+                    default:                    listener.onInput30(getSearch("Falhou"));
                 }
             }
         };
+        buttonOk.setOnClickListener(handler);
         ENT.setOnClickListener(handler);
 
         return view30buttons;
     }
+    private String getSearch (String entrada){
+        if(entrada.equals("GND"))           { return "GND";         }
+        else if(entrada.equals("Teste"))    { return "Teste Ok";    }
+        else                                { return "Falhou";      }
+    }
+
     @Override
     public void onAttach(Context context){
         super.onAttach(context);
-        if(context instanceof  Fragment30ButtonsListener) {
-            listener = (Fragment30ButtonsListener) context;
+        if(context instanceof  Fragment30Listener) {
+            listener = (Fragment30Listener) context;
         } else {
             throw new RuntimeException(context.toString() + "Aguardando comando");
         }

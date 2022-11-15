@@ -16,7 +16,7 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 import com.example.arduinopinout.databinding.ActivityEsp30Binding;
 
-public class ESP30Activity extends AppCompatActivity implements ESP30ButtonsFragment.Fragment30ButtonsListener{
+public class ESP30Activity extends AppCompatActivity implements ESP30ButtonsFragment.Fragment30Listener{
 
     private ActivityEsp30Binding  binding;
     private FragmentManager         fm = getSupportFragmentManager();

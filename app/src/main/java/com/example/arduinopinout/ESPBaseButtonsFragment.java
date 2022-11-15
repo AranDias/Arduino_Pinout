@@ -12,12 +12,13 @@ import android.widget.EditText;
 import androidx.fragment.app.Fragment;
 
 public class ESPBaseButtonsFragment extends Fragment {
-    private FragmentBaseButtonsListener listener;
+    private FragmentBaseListener listener;
     private EditText searchText;
+    private Button   buttonOk;
 
     private Button GNDTL;
 
-    public interface FragmentBaseButtonsListener {
+    public interface FragmentBaseListener {
         void onInputBase(String input);
     }
 
@@ -27,7 +28,10 @@ public class ESPBaseButtonsFragment extends Fragment {
         // Inflate the layout for this fragment
         View viewbasebuttons = inflater.inflate(R.layout.fragment_espbasebuttons, container, false);
 
-        GNDTL     = viewbasebuttons.findViewById(R.id.ESPBaseButtonGNDTL);
+        searchText  = viewbasebuttons.findViewById(R.id.ESPBaseEditTextSearch);
+        buttonOk    = viewbasebuttons.findViewById(R.id.ESPBaseButtonOk);
+
+        GNDTL       = viewbasebuttons.findViewById(R.id.ESPBaseButtonGNDTL);
 
         View.OnClickListener handler = new View.OnClickListener() {
             @Override
@@ -35,26 +39,32 @@ public class ESPBaseButtonsFragment extends Fragment {
                 int botao = view.getId();
 
                 switch (botao) {
-                    case R.id.ESPBaseButtonGNDTL:       listener.onInputBase("GND");  break;
-
-                    default:  listener.onInputBase("Tente novamente");
+                    case R.id.ESPBaseButtonOk:          listener.onInputBase(getSearch(searchText.getText().toString())); break;
+                    case R.id.ESPBaseButtonGNDTL:       listener.onInputBase(getSearch("GND"));  break;
+                    default:                            listener.onInputBase(getSearch("Falhou"));
                 }
             }
         };
+        buttonOk.setOnClickListener(handler);
         GNDTL.setOnClickListener(handler);
-
         return viewbasebuttons;
     }
+
+    private String getSearch (String entrada){
+        if(entrada.equals("GND"))           { return "GND";         }
+        else if(entrada.equals("Teste"))    { return "Teste Ok\nTeste Ok\nTeste Ok\nTeste Ok\nTeste Ok";    }
+        else                                { return "Falhou";      }
+    }
+
     @Override
     public void onAttach(Context context){
         super.onAttach(context);
-        if(context instanceof  FragmentBaseButtonsListener) {
-            listener = (FragmentBaseButtonsListener) context;
+        if(context instanceof  FragmentBaseListener) {
+            listener = (FragmentBaseListener) context;
         } else {
             throw new RuntimeException(context.toString() + "Aguardando comando");
         }
     }
-
     @Override
     public void onDetach(){
         super.onDetach();

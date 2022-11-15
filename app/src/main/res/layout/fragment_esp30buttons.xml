@@ -4,62 +4,430 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="500dp"
     android:orientation="vertical"
     android:background="@color/HomePage"
+    android:windowSoftInputMode="stateHidden"
     tools:context=".ESP30ButtonsFragment">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="horizontal">
-
+        android:orientation="vertical">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:layout_margin="10dp"
-            android:layout_weight="2"
-            android:layout_gravity="center">
-
-            <Button
-                android:id="@+id/ESP30ButtonENT"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:backgroundTint="@color/yellow"
-                android:textColor="@color/black"
-                android:text="EN" />
-
-        </LinearLayout>
-
-        <ImageView
-            android:id="@+id/imageView30"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_gravity="center"
             android:layout_weight="1"
-            android:background="@color/HomePage"
-            android:src="@drawable/esp32_30pin_cut" />
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_margin="10dp"
+                android:layout_weight="2"
+                android:layout_gravity="center">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/ESP30ButtonENT"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="0dp"
+                    android:layout_margin="5dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/background_button_pin"
+                    android:textColor="@color/black"
+                    android:text="EN" />
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/ESP30ButtonVP"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="0dp"
+                    android:layout_margin="5dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/background_button_pin"
+                    android:textColor="@color/black"
+                    android:text="VP" />
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/ESP30ButtonVN"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="0dp"
+                    android:layout_margin="5dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/background_button_pin"
+                    android:textColor="@color/black"
+                    android:text="VN" />
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/ESP30Button34"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="0dp"
+                    android:layout_margin="5dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/background_button_pin"
+                    android:textColor="@color/black"
+                    android:text="34" />
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/ESP30Button35"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="0dp"
+                    android:layout_margin="5dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/background_button_pin"
+                    android:textColor="@color/black"
+                    android:text="35" />
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/ESP30Button32"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="0dp"
+                    android:layout_margin="5dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/background_button_pin"
+                    android:textColor="@color/black"
+                    android:text="32" />
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/ESP30Button33"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="0dp"
+                    android:layout_margin="5dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/background_button_pin"
+                    android:textColor="@color/black"
+                    android:text="33" />
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/ESP30Button25"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="0dp"
+                    android:layout_margin="5dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/background_button_pin"
+                    android:textColor="@color/black"
+                    android:text="25" />
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/ESP30Button26"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="0dp"
+                    android:layout_margin="5dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/background_button_pin"
+                    android:textColor="@color/black"
+                    android:text="26" />
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/ESP30Button27"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="0dp"
+                    android:layout_margin="5dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/background_button_pin"
+                    android:textColor="@color/black"
+                    android:text="27" />
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/ESP30Button14"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="0dp"
+                    android:layout_margin="5dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/background_button_pin"
+                    android:textColor="@color/black"
+                    android:text="14" />
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/ESP30Button12"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="0dp"
+                    android:layout_margin="5dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/background_button_pin"
+                    android:textColor="@color/black"
+                    android:text="12" />
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/ESP30Button13"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="0dp"
+                    android:layout_margin="5dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/background_button_pin"
+                    android:textColor="@color/black"
+                    android:text="13" />
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/ESP30ButtonGNDL"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="0dp"
+                    android:layout_margin="5dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/background_button_pin"
+                    android:textColor="@color/black"
+                    android:text="GND" />
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/ESP30ButtonVin"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="0dp"
+                    android:layout_margin="5dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/background_button_pin"
+                    android:textColor="@color/black"
+                    android:text="Vin" />
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/ESP30ButtonENE"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="0dp"
+                    android:layout_margin="5dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/background_button_pin"
+                    android:textColor="@color/black"
+                    android:text="EN" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imageView30"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@color/HomePage"
+                android:src="@drawable/esp32_30pin_cut" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_margin="10dp"
+                android:layout_weight="2"
+                android:layout_gravity="center">
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/ESP30Button23"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="0dp"
+                    android:layout_margin="5dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/background_button_pin"
+                    android:textColor="@color/black"
+                    android:text="23" />
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/ESP30Button22"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="0dp"
+                    android:layout_margin="5dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/background_button_pin"
+                    android:textColor="@color/black"
+                    android:text="22" />
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/ESP30ButtonTX0"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="0dp"
+                    android:layout_margin="5dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/background_button_pin"
+                    android:textColor="@color/black"
+                    android:text="TX0" />
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/ESP30ButtonRX0"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="0dp"
+                    android:layout_margin="5dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/background_button_pin"
+                    android:textColor="@color/black"
+                    android:text="RX0" />
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/ESP30Button21"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="0dp"
+                    android:layout_margin="5dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/background_button_pin"
+                    android:textColor="@color/black"
+                    android:text="21" />
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/ESP30Button19"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="0dp"
+                    android:layout_margin="5dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/background_button_pin"
+                    android:textColor="@color/black"
+                    android:text="19" />
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/ESP30Button18"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="0dp"
+                    android:layout_margin="5dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/background_button_pin"
+                    android:textColor="@color/black"
+                    android:text="18" />
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/ESP30Button05"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="0dp"
+                    android:layout_margin="5dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/background_button_pin"
+                    android:textColor="@color/black"
+                    android:text="05" />
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/ESP30ButtonTX2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="0dp"
+                    android:layout_margin="5dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/background_button_pin"
+                    android:textColor="@color/black"
+                    android:text="TX2" />
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/ESP30ButtonRX2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="0dp"
+                    android:layout_margin="5dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/background_button_pin"
+                    android:textColor="@color/black"
+                    android:text="RX2" />
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/ESP30Button04"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="0dp"
+                    android:layout_margin="5dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/background_button_pin"
+                    android:textColor="@color/black"
+                    android:text="04" />
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/ESP30Button02"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="0dp"
+                    android:layout_margin="5dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/background_button_pin"
+                    android:textColor="@color/black"
+                    android:text="02" />
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/ESP30Button15"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="0dp"
+                    android:layout_margin="5dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/background_button_pin"
+                    android:textColor="@color/black"
+                    android:text="15" />
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/ESP30ButtonGNDR"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="0dp"
+                    android:layout_margin="5dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/background_button_pin"
+                    android:textColor="@color/black"
+                    android:text="GND" />
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/ESP30Button3V3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="0dp"
+                    android:layout_margin="5dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/background_button_pin"
+                    android:textColor="@color/black"
+                    android:text="3V3" />
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/ESP30ButtonBOOT"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="0dp"
+                    android:layout_margin="5dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/background_button_pin"
+                    android:textColor="@color/black"
+                    android:text="BOOT" />
+            </LinearLayout>
+        </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:layout_margin="10dp"
-            android:layout_weight="2"
-            android:layout_gravity="center">
+            android:layout_height="50dp"
+            android:orientation="horizontal">
 
-            <Button
-                android:id="@+id/ESP30ButtonD23"
+            <EditText
+                android:id="@+id/ESP30EditTextSearch"
+                android:textColor="@color/white"
+                android:hint="Pesquisa"
+                android:textColorHint="@color/white"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_margin="5dp"
                 android:layout_weight="1"
-                android:backgroundTint="@color/yellow"
+                android:layout_gravity="center"/>
+            <Button
+                android:id="@+id/ESP30ButtonOk"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="3"
+                android:scaleY="0.7"
+                android:backgroundTint="@color/white"
                 android:textColor="@color/black"
-                android:text="D23" />
+                android:textSize="@dimen/fab_margin"
+                android:text="OK" />
         </LinearLayout>
-
-
     </LinearLayout>
 </FrameLayout>
