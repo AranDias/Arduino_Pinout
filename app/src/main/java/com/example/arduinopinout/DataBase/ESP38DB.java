@@ -554,7 +554,7 @@ public class ESP38DB {
     }
 
     private String getBOOT() {
-        return "Algumas placas necessitam que o botão seja pressionado ao final da compilação para que o programa seja instalado na placa";
+        return "Algumas placas necessitam que o botão BOOT seja pressionado ao final da compilação para que o programa seja instalado na placa";
     }
 }
 
