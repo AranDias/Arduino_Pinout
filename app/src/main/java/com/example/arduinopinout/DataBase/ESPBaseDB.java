@@ -65,7 +65,7 @@ public class ESPBaseDB {
         return "Pino Vin. Tensão de Alimentação: 3.3V";
     }
     private String getEN(){
-        return "Não há nehum botão de reset neste modelo de placa";
+        return "Não há nenhum botão de reset neste modelo de placa";
     }
     private String getNC(){
         return "Nenhuma função.";
