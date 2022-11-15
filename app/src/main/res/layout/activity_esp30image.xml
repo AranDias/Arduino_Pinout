@@ -6,6 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:layout_gravity="center"
     android:background="@color/HomePage"
     tools:context=".ESP30ImageActivity">
 
@@ -13,12 +14,14 @@
         app:layout_behavior="@string/appbar_scrolling_view_behavior"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_margin="5dp"
         android:orientation="vertical">
 
         <ImageView
             android:id="@+id/imageView30Full"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:adjustViewBounds="true"
             android:background="@color/HomePage"
             app:srcCompat="@drawable/esp32_30pin" />
     </HorizontalScrollView>
