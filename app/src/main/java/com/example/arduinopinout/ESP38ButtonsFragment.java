@@ -11,6 +11,8 @@ import android.widget.EditText;
 
 import androidx.fragment.app.Fragment;
 
+import com.example.arduinopinout.DataBase.ESP38DB;
+
 public class ESP38ButtonsFragment extends Fragment {
     private Fragment38Listener listener;
     private EditText ESP38EditTextSearch;
@@ -74,51 +76,53 @@ public class ESP38ButtonsFragment extends Fragment {
         ESP38Button06     = view38buttons.findViewById(R.id.ESP38Button06);
         ESP38ButtonBOOT     = view38buttons.findViewById(R.id.ESP38ButtonBOOT);
 
+        ESP38DB data = new ESP38DB();
+
         View.OnClickListener handler = new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 int botao = view.getId();
 
-                if      (botao == R.id.ESP38ButtonOk)         {listener.onInput38(getSearch(ESP38EditTextSearch.getText().toString()));}
+                if      (botao == R.id.ESP38ButtonOk)         {listener.onInput38(data.get38Search(ESP38EditTextSearch.getText().toString()));}
 
-                else if (botao == R.id.ESP38ButtonGNDL || botao == R.id.ESP38ButtonGNDR || botao == R.id.ESP38ButtonGNDT)  {listener.onInput38(getSearch("GND"));}
-                else if (botao == R.id.ESP38ButtonENT || botao == R.id.ESP38ButtonENE)         {listener.onInput38(getSearch("GND"));}
-                else if (botao == R.id.ESP38ButtonVin)        {listener.onInput38(getSearch("GND"));}
-                else if (botao == R.id.ESP38ButtonBOOT)         {listener.onInput38(getSearch("GND"));}
+                else if (botao == R.id.ESP38ButtonGNDL || botao == R.id.ESP38ButtonGNDR || botao == R.id.ESP38ButtonGNDT)  {listener.onInput38(data.get38Search("GND"));}
+                else if (botao == R.id.ESP38ButtonENT || botao == R.id.ESP38ButtonENE)         {listener.onInput38(data.get38Search("EN"));}
+                else if (botao == R.id.ESP38ButtonVin)        {listener.onInput38(data.get38Search("Vin"));}
+                else if (botao == R.id.ESP38ButtonBOOT)         {listener.onInput38(data.get38Search("BOOT"));}
 
-                else if (botao == R.id.ESP38Button36)         {listener.onInput38(getSearch("GND"));}
-                else if (botao == R.id.ESP38Button39)         {listener.onInput38(getSearch("GND"));}
-                else if (botao == R.id.ESP38Button34)         {listener.onInput38(getSearch("GND"));}
-                else if (botao == R.id.ESP38Button35)         {listener.onInput38(getSearch("GND"));}
-                else if (botao == R.id.ESP38Button32)         {listener.onInput38(getSearch("GND"));}
-                else if (botao == R.id.ESP38Button33)         {listener.onInput38(getSearch("GND"));}
-                else if (botao == R.id.ESP38Button25)         {listener.onInput38(getSearch("GND"));}
-                else if (botao == R.id.ESP38Button26)         {listener.onInput38(getSearch("GND"));}
-                else if (botao == R.id.ESP38Button27)         {listener.onInput38(getSearch("GND"));}
-                else if (botao == R.id.ESP38Button14)         {listener.onInput38(getSearch("GND"));}
-                else if (botao == R.id.ESP38Button12)         {listener.onInput38(getSearch("GND"));}
-                else if (botao == R.id.ESP38Button13)         {listener.onInput38(getSearch("GND"));}
-                else if (botao == R.id.ESP38Button09)         {listener.onInput38(getSearch("GND"));}
-                else if (botao == R.id.ESP38Button10)         {listener.onInput38(getSearch("GND"));}
-                else if (botao == R.id.ESP38Button11)         {listener.onInput38(getSearch("GND"));}
+                else if (botao == R.id.ESP38Button36)         {listener.onInput38(data.get38Search("36"));}
+                else if (botao == R.id.ESP38Button39)         {listener.onInput38(data.get38Search("39"));}
+                else if (botao == R.id.ESP38Button34)         {listener.onInput38(data.get38Search("34"));}
+                else if (botao == R.id.ESP38Button35)         {listener.onInput38(data.get38Search("35"));}
+                else if (botao == R.id.ESP38Button32)         {listener.onInput38(data.get38Search("32"));}
+                else if (botao == R.id.ESP38Button33)         {listener.onInput38(data.get38Search("33"));}
+                else if (botao == R.id.ESP38Button25)         {listener.onInput38(data.get38Search("25"));}
+                else if (botao == R.id.ESP38Button26)         {listener.onInput38(data.get38Search("26"));}
+                else if (botao == R.id.ESP38Button27)         {listener.onInput38(data.get38Search("27"));}
+                else if (botao == R.id.ESP38Button14)         {listener.onInput38(data.get38Search("14"));}
+                else if (botao == R.id.ESP38Button12)         {listener.onInput38(data.get38Search("12"));}
+                else if (botao == R.id.ESP38Button13)         {listener.onInput38(data.get38Search("13"));}
+                else if (botao == R.id.ESP38Button09)         {listener.onInput38(data.get38Search("09"));}
+                else if (botao == R.id.ESP38Button10)         {listener.onInput38(data.get38Search("10"));}
+                else if (botao == R.id.ESP38Button11)         {listener.onInput38(data.get38Search("11"));}
 
-                else if (botao == R.id.ESP38Button23)         {listener.onInput38(getSearch("GND"));}
-                else if (botao == R.id.ESP38Button22)         {listener.onInput38(getSearch("GND"));}
-                else if (botao == R.id.ESP38Button01)         {listener.onInput38(getSearch("GND"));}
-                else if (botao == R.id.ESP38Button03)         {listener.onInput38(getSearch("GND"));}
-                else if (botao == R.id.ESP38Button21)         {listener.onInput38(getSearch("GND"));}
-                else if (botao == R.id.ESP38Button19)         {listener.onInput38(getSearch("GND"));}
-                else if (botao == R.id.ESP38Button18)         {listener.onInput38(getSearch("GND"));}
-                else if (botao == R.id.ESP38Button05)         {listener.onInput38(getSearch("GND"));}
-                else if (botao == R.id.ESP38Button17)         {listener.onInput38(getSearch("GND"));}
-                else if (botao == R.id.ESP38Button16)         {listener.onInput38(getSearch("GND"));}
-                else if (botao == R.id.ESP38Button04)         {listener.onInput38(getSearch("GND"));}
-                else if (botao == R.id.ESP38Button00)         {listener.onInput38(getSearch("GND"));}
-                else if (botao == R.id.ESP38Button02)         {listener.onInput38(getSearch("GND"));}
-                else if (botao == R.id.ESP38Button15)         {listener.onInput38(getSearch("GND"));}
-                else if (botao == R.id.ESP38Button08)         {listener.onInput38(getSearch("GND"));}
-                else if (botao == R.id.ESP38Button07)         {listener.onInput38(getSearch("GND"));}
-                else if (botao == R.id.ESP38Button06)         {listener.onInput38(getSearch("GND"));}
+                else if (botao == R.id.ESP38Button23)         {listener.onInput38(data.get38Search("23"));}
+                else if (botao == R.id.ESP38Button22)         {listener.onInput38(data.get38Search("22"));}
+                else if (botao == R.id.ESP38Button01)         {listener.onInput38(data.get38Search("01"));}
+                else if (botao == R.id.ESP38Button03)         {listener.onInput38(data.get38Search("03"));}
+                else if (botao == R.id.ESP38Button21)         {listener.onInput38(data.get38Search("21"));}
+                else if (botao == R.id.ESP38Button19)         {listener.onInput38(data.get38Search("19"));}
+                else if (botao == R.id.ESP38Button18)         {listener.onInput38(data.get38Search("18"));}
+                else if (botao == R.id.ESP38Button05)         {listener.onInput38(data.get38Search("05"));}
+                else if (botao == R.id.ESP38Button17)         {listener.onInput38(data.get38Search("17"));}
+                else if (botao == R.id.ESP38Button16)         {listener.onInput38(data.get38Search("16"));}
+                else if (botao == R.id.ESP38Button04)         {listener.onInput38(data.get38Search("04"));}
+                else if (botao == R.id.ESP38Button00)         {listener.onInput38(data.get38Search("00"));}
+                else if (botao == R.id.ESP38Button02)         {listener.onInput38(data.get38Search("02"));}
+                else if (botao == R.id.ESP38Button15)         {listener.onInput38(data.get38Search("15"));}
+                else if (botao == R.id.ESP38Button08)         {listener.onInput38(data.get38Search("08"));}
+                else if (botao == R.id.ESP38Button07)         {listener.onInput38(data.get38Search("07"));}
+                else if (botao == R.id.ESP38Button06)         {listener.onInput38(data.get38Search("06"));}
             }
         };
         ESP38ButtonOk.setOnClickListener(handler);
@@ -167,12 +171,6 @@ public class ESP38ButtonsFragment extends Fragment {
 
         return view38buttons;
     }
-    private String getSearch (String entrada){
-        if(entrada.equals("GND"))           { return "GND";         }
-        else if(entrada.equals("Teste"))    { return "Teste Ok";    }
-        else                                { return "Falhou";      }
-    }
-
     @Override
     public void onAttach(Context context){
         super.onAttach(context);
