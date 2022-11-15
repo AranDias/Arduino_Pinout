@@ -46,17 +46,17 @@ public class ESPBaseDB {
 
     private String getGND() {
         return "GND -  Aterramento: \n" +
-                "Conversor Analógico - Digital: NÃO\n" +
-                "Conversor Digital - Analógico: NÃO\n" +
-                "Canal de Saída PWM: NÃO\n" +
-                "General Porpose Input/Output de detecção capacitiva: NÃO\n" +
-                "Relógio de Tempo Real: NÃO\n" +
-                "Receptor ou transmissor Universal assíncrono: NÃO\n" +
+                "Conversor Analógico - Digital:                         NÃO\n" +
+                "Conversor Digital - Analógico:                         NÃO\n" +
+                "Canal de Saída PWM:                                    NÃO\n" +
+                "General Porpose Input/Output de detecção capacitiva:   NÃO\n" +
+                "Relógio de Tempo Real:                                 NÃO\n" +
+                "Receptor ou transmissor Universal assíncrono:          NÃO\n" +
                 "Funções:\n" +
-                "Circuito inter-integrado para Dados: NÃO\n" +
-                "Serial Protocolo de Interface Periférica: NÃO\n" +
-                "Touch (Variação da tensão) NÃO\n" +
-                "Terra: SIM\n";
+                "Circuito inter-integrado para Dados:                   NÃO\n" +
+                "Serial Protocolo de Interface Periférica:              NÃO\n" +
+                "Touch (Variação da tensão)                             NÃO\n" +
+                "Terra:                                                 SIM\n";
     }
     private String getVcc(){
         return "Tensão de Alimentação: 3.3V";
@@ -72,451 +72,451 @@ public class ESPBaseDB {
     }
     private String get36(){
         return "PORTA: GPIO36 - VP - ADC1_0 - RTC GPIO0\n" +
-                "Conversor Analógico - Digital: SIM\n" +
-                "Conversor Digital - Analógico: NÃO\n" +
-                "Canal de Saída PWM: SIM\n" +
-                "General Porpose Input/Output de detecção capacitiva: SIM\n" +
-                "Relógio de Tempo Real: SIM\n" +
-                "Receptor ou transmissor Universal assíncrono: NÃOOK\n" +
+                "Conversor Analógico - Digital:.........................SIM\n" +
+                "Conversor Digital - Analógico:.........................NÃO\n" +
+                "Canal de Saída PWM:....................................SIM\n" +
+                "General Porpose Input/Output de detecção capacitiva:...SIM\n" +
+                "Relógio de Tempo Real:.................................SIM\n" +
+                "Receptor ou transmissor Universal assíncrono:..........NÃO\n" +
                 "Funções:\n" +
-                "Circuito inter-integrado para Dados: NÃO\n" +
-                "Serial Protocolo de Interface Periférica: NÃO\n" +
-                "Touch (Variação da tensão) NÃO\n" +
-                "Reinicia o ESP32: NÃO\n";
+                "Circuito inter-integrado para Dados:...................NÃO\n" +
+                "Serial Protocolo de Interface Periférica:..............NÃO\n" +
+                "Touch (Variação da tensão):............................NÃO\n" +
+                "Reinicia o ESP32:......................................NÃO\n";
     }
     private String get39(){
         return "PORTA: GPIO39 - Vn - ADC1_3 - RTC GPIO0\n" +
-                "Conversor Analógico - Digital: SIM\n" +
-                "Conversor Digital - Analógico: NÃO\n" +
-                "Canal de Saída PWM: SIM\n" +
-                "General Porpose Input/Output de detecção capacitiva: SIM\n" +
-                "Relógio de Tempo Real: SIM\n" +
-                "Receptor ou transmissor Universal assíncrono: NÃO\n" +
+                "Conversor Analógico - Digital:.........................SIM\n" +
+                "Conversor Digital - Analógico:.........................NÃO\n" +
+                "Canal de Saída PWM:....................................SIM\n" +
+                "General Porpose Input/Output de detecção capacitiva:...SIM\n" +
+                "Relógio de Tempo Real:.................................SIM\n" +
+                "Receptor ou transmissor Universal assíncrono:..........NÃO\n" +
                 "Funções:\n" +
-                "Circuito inter-integrado para Dados: NÃO\n" +
-                "Serial Protocolo de Interface Periférica: NÃO\n" +
-                "Touch (Variação da tensão) NÃO\n" +
-                "Reinicia o ESP32: NÃO";
+                "Circuito inter-integrado para Dados:...................NÃO\n" +
+                "Serial Protocolo de Interface Periférica:..............NÃO\n" +
+                "Touch (Variação da tensão):............................NÃO\n" +
+                "Reinicia o ESP32:......................................NÃO";
     }
     private String get34(){
         return "PORTA: GPIO34 - ADC1_6 - RTC GPIO4\n" +
-                "Conversor Analógico - Digital: SIM\n" +
-                "Conversor Digital - Analógico: NÃO\n" +
-                "Canal de Saída PWM: SIM\n" +
-                "General Porpose Input/Output de detecção capacitiva: SIM\n" +
-                "Relógio de Tempo Real: SIM\n" +
-                "Receptor ou transmissor Universal assíncrono: NÃO\n" +
+                "Conversor Analógico - Digital:.........................SIM\n" +
+                "Conversor Digital - Analógico:.........................NÃO\n" +
+                "Canal de Saída PWM:....................................SIM\n" +
+                "General Porpose Input/Output de detecção capacitiva:...SIM\n" +
+                "Relógio de Tempo Real:.................................SIM\n" +
+                "Receptor ou transmissor Universal assíncrono:..........NÃO\n" +
                 "Funções:\n" +
-                "Circuito inter-integrado para Dados: NÃO\n" +
-                "Serial Protocolo de Interface Periférica: NÃO\n" +
-                "Touch (Variação da tensão) NÃO\n" +
-                "Reinicia o ESP32: NÃO\n";
+                "Circuito inter-integrado para Dados:...................NÃO\n" +
+                "Serial Protocolo de Interface Periférica:..............NÃO\n" +
+                "Touch (Variação da tensão):............................NÃO\n" +
+                "Reinicia o ESP32:......................................NÃO\n";
     }
     private String get35(){
         return "PORTA: GPIO35 - ADC1_7 - RTC GPIO5\n" +
-                "Conversor Analógico - Digital: SIM\n" +
-                "Conversor Digital - Analógico: NÃO\n" +
+                "Conversor Analógico - Digital:.........................SIM\n" +
+                "Conversor Digital - Analógico:.........................NÃO\n" +
                 "Canal de Saída PWM: SIM\n" +
-                "General Porpose Input/Output de detecção capacitiva: SIM\n" +
-                "Relógio de Tempo Real: SIM\n" +
-                "Receptor ou transmissor Universal assíncrono: NÃO\n" +
+                "General Porpose Input/Output de detecção capacitiva:...SIM\n" +
+                "Relógio de Tempo Real:.................................SIM\n" +
+                "Receptor ou transmissor Universal assíncrono:..........NÃO\n" +
                 "Funções:\n" +
-                "Circuito inter-integrado para Dados: NÃO\n" +
-                "Serial Protocolo de Interface Periférica: NÃO\n" +
-                "Touch (Variação da tensão) NÃO\n" +
-                "Reinicia o ESP32: NÃO";
+                "Circuito inter-integrado para Dados:...................NÃO\n" +
+                "Serial Protocolo de Interface Periférica:..............NÃO\n" +
+                "Touch (Variação da tensão):............................NÃO\n" +
+                "Reinicia o ESP32:......................................NÃO";
     }
     private String get32(){
         return "PORTA: GPIO32 - ADC1_4 - RTC GPIO9\n" +
-                "Conversor Analógico - Digital: SIM\n" +
-                "Conversor Digital - Analógico: NÃO\n" +
-                "Canal de Saída PWM: SIM\n" +
-                "General Porpose Input/Output de detecção capacitiva: SIM\n" +
-                "Relógio de Tempo Real: SIM\n" +
-                "Receptor ou transmissor Universal assíncrono: NÃO\n" +
+                "Conversor Analógico - Digital:.........................SIM\n" +
+                "Conversor Digital - Analógico:.........................NÃO\n" +
+                "Canal de Saída PWM:....................................SIM\n" +
+                "General Porpose Input/Output de detecção capacitiva:...SIM\n" +
+                "Relógio de Tempo Real:.................................SIM\n" +
+                "Receptor ou transmissor Universal assíncrono:..........NÃO\n" +
                 "Funções:\n" +
-                "Circuito inter-integrado para Dados: NÃO\n" +
-                "Serial Protocolo de Interface Periférica: NÃO\n" +
-                "Touch (Variação da tensão) SIM\n" +
-                "Reinicia o ESP32: NÃO\n";
+                "Circuito inter-integrado para Dados:...................NÃO\n" +
+                "Serial Protocolo de Interface Periférica:..............NÃO\n" +
+                "Touch (Variação da tensão):............................SIM\n" +
+                "Reinicia o ESP32:......................................NÃO\n";
     }
     private String get33(){
         return "PORTA: GPIO33 - ADC1_5 - RTC GPIO8\n" +
-                "Conversor Analógico - Digital: SIM\n" +
-                "Conversor Digital - Analógico: NÃO\n" +
-                "Canal de Saída PWM: SIM\n" +
-                "General Porpose Input/Output de detecção capacitiva: SIM\n" +
-                "Relógio de Tempo Real: SIM\n" +
-                "Receptor ou transmissor Universal assíncrono: NÃO\n" +
+                "Conversor Analógico - Digital:.........................SIM\n" +
+                "Conversor Digital - Analógico:.........................NÃO\n" +
+                "Canal de Saída PWM:....................................SIM\n" +
+                "General Porpose Input/Output de detecção capacitiva:...SIM\n" +
+                "Relógio de Tempo Real:.................................SIM\n" +
+                "Receptor ou transmissor Universal assíncrono:..........NÃO\n" +
                 "Funções:\n" +
-                "Circuito inter-integrado para Dados: NÃO\n" +
-                "Serial Protocolo de Interface Periférica: NÃO\n" +
-                "Touch (Variação da tensão) SIM\n" +
-                "Reinicia o ESP32: NÃO";
+                "Circuito inter-integrado para Dados:...................NÃO\n" +
+                "Serial Protocolo de Interface Periférica:..............NÃO\n" +
+                "Touch (Variação da tensão):............................SIM\n" +
+                "Reinicia o ESP32:......................................NÃO";
     }
     private String get25(){
         return "PORTA: GPIO25 - ADC2_8 - RTC GPIO6\n" +
-                "Conversor Analógico - Digital: SIM\n" +
-                "Conversor Digital - Analógico: SIM\n" +
-                "Canal de Saída PWM: SIM\n" +
-                "General Porpose Input/Output de detecção capacitiva: SIM\n" +
-                "Relógio de Tempo Real: SIM\n" +
-                "Receptor ou transmissor Universal assíncrono: NÃO\n" +
+                "Conversor Analógico - Digital:.........................SIM\n" +
+                "Conversor Digital - Analógico:.........................SIM\n" +
+                "Canal de Saída PWM:....................................SIM\n" +
+                "General Porpose Input/Output de detecção capacitiva:...SIM\n" +
+                "Relógio de Tempo Real:.................................SIM\n" +
+                "Receptor ou transmissor Universal assíncrono:..........NÃO\n" +
                 "Funções:\n" +
-                "Circuito inter-integrado para Dados: NÃO\n" +
-                "Serial Protocolo de Interface Periférica: SIM\n" +
-                "Touch (Variação da tensão) NÃO\n" +
-                "Reinicia o ESP32: NÃO\n";
+                "Circuito inter-integrado para Dados:...................NÃO\n" +
+                "Serial Protocolo de Interface Periférica:..............SIM\n" +
+                "Touch (Variação da tensão):............................NÃO\n" +
+                "Reinicia o ESP32:......................................NÃO\n";
     }
     private String get26(){
         return "PORTA: GPIO26 - ADC2_9 - RTC GPIO7\n" +
-                "Conversor Analógico - Digital: SIM\n" +
-                "Conversor Digital - Analógico: SIM\n" +
-                "Canal de Saída PWM: SIM\n" +
-                "General Porpose Input/Output de detecção capacitiva: SIM\n" +
-                "Relógio de Tempo Real: SIM\n" +
-                "Receptor ou transmissor Universal assíncrono: NÃO\n" +
+                "Conversor Analógico - Digital:.........................SIM\n" +
+                "Conversor Digital - Analógico:.........................SIM\n" +
+                "Canal de Saída PWM:....................................SIM\n" +
+                "General Porpose Input/Output de detecção capacitiva:...SIM\n" +
+                "Relógio de Tempo Real:.................................SIM\n" +
+                "Receptor ou transmissor Universal assíncrono:..........NÃO\n" +
                 "Funções:\n" +
-                "Circuito inter-integrado para Dados: NÃO\n" +
-                "Serial Protocolo de Interface Periférica: SIM\n" +
-                "Touch (Variação da tensão) NÃO\n" +
+                "Circuito inter-integrado para Dados:...................NÃO\n" +
+                "Serial Protocolo de Interface Periférica:..............SIM\n" +
+                "Touch (Variação da tensão):............................NÃO\n" +
                 "Reinicia o ESP32: NÃO";
     }
     private String get27(){
         return "PORTA: GPIO27 - ADC2_7 - RTC GPIO17\n" +
-                "Conversor Analógico - Digital: SIM\n" +
-                "Conversor Digital - Analógico: NÃO\n" +
-                "Canal de Saída PWM: SIM\n" +
-                "General Porpose Input/Output de detecção capacitiva: SIM\n" +
-                "Relógio de Tempo Real: NÃO\n" +
-                "Receptor ou transmissor Universal assíncrono: NÃO\n" +
+                "Conversor Analógico - Digital:.........................SIM\n" +
+                "Conversor Digital - Analógico:.........................NÃO\n" +
+                "Canal de Saída PWM:....................................SIM\n" +
+                "General Porpose Input/Output de detecção capacitiva:...SIM\n" +
+                "Relógio de Tempo Real:.................................NÃO\n" +
+                "Receptor ou transmissor Universal assíncrono:..........NÃO\n" +
                 "Funções:\n" +
-                "Circuito inter-integrado para Dados: NÃO\n" +
-                "Serial Protocolo de Interface Periférica: NÃO\n" +
-                "Touch (Variação da tensão) SIM\n" +
-                "Reinicia o ESP32: NÃO";
+                "Circuito inter-integrado para Dados:...................NÃO\n" +
+                "Serial Protocolo de Interface Periférica:..............NÃO\n" +
+                "Touch (Variação da tensão):............................SIM\n" +
+                "Reinicia o ESP32:......................................NÃO";
     }
     private String get14(){
         return "PORTA: GPIO14 - ADC2_6 - RTC GPIO16\n" +
-                "Conversor Analógico - Digital: SIM\n" +
-                "Conversor Digital - Analógico: NÃO\n" +
-                "Canal de Saída PWM: SIM\n" +
-                "General Porpose Input/Output de detecção capacitiva: SIM\n" +
-                "Relógio de Tempo Real: SIM\n" +
-                "Receptor ou transmissor Universal assíncrono: NÃO\n" +
+                "Conversor Analógico - Digital:.........................SIM\n" +
+                "Conversor Digital - Analógico:.........................NÃO\n" +
+                "Canal de Saída PWM:....................................SIM\n" +
+                "General Porpose Input/Output de detecção capacitiva:...SIM\n" +
+                "Relógio de Tempo Real:.................................SIM\n" +
+                "Receptor ou transmissor Universal assíncrono:..........NÃO\n" +
                 "Funções:\n" +
-                "Circuito inter-integrado para Dados: NÃO\n" +
-                "Serial Protocolo de Interface Periférica: SIM\n" +
-                "Touch (Variação da tensão) SIM\n" +
-                "Reinicia o ESP32: NÃO\n";
+                "Circuito inter-integrado para Dados:...................NÃO\n" +
+                "Serial Protocolo de Interface Periférica:..............SIM\n" +
+                "Touch (Variação da tensão):............................SIM\n" +
+                "Reinicia o ESP32:......................................NÃO\n";
     }
     private String get12(){
         return "PORTA: GPIO12 - ADC2_5 - RTC GPIO15\n" +
-                "Conversor Analógico - Digital: SIM\n" +
-                "Conversor Digital - Analógico: NÃO\n" +
-                "Canal de Saída PWM: SIM\n" +
-                "General Porpose Input/Output de detecção capacitiva: SIM\n" +
-                "Relógio de Tempo Real: SIM\n" +
-                "Receptor ou transmissor Universal assíncrono: NÃO\n" +
+                "Conversor Analógico - Digital:.........................SIM\n" +
+                "Conversor Digital - Analógico:.........................NÃO\n" +
+                "Canal de Saída PWM:....................................SIM\n" +
+                "General Porpose Input/Output de detecção capacitiva:...SIM\n" +
+                "Relógio de Tempo Real:.................................SIM\n" +
+                "Receptor ou transmissor Universal assíncrono:..........NÃO\n" +
                 "Funções:\n" +
-                "Circuito inter-integrado para Dados: NÃO\n" +
-                "Serial Protocolo de Interface Periférica: SIM\n" +
-                "Touch (Variação da tensão) SIM\n" +
-                "Reinicia o ESP32: NÃO\n";
+                "Circuito inter-integrado para Dados:...................NÃO\n" +
+                "Serial Protocolo de Interface Periférica:..............SIM\n" +
+                "Touch (Variação da tensão):............................SIM\n" +
+                "Reinicia o ESP32:......................................NÃO\n";
     }
     private String get13(){
         return "PORTA: GPIO13 - ADC2_4 - RTC GPIO14\n" +
-                "Conversor Analógico - Digital: SIM\n" +
-                "Conversor Digital - Analógico: NÃO\n" +
-                "Canal de Saída PWM: SIM\n" +
-                "General Porpose Input/Output de detecção capacitiva: SIM\n" +
-                "Relógio de Tempo Real: SIM\n" +
-                "Receptor ou transmissor Universal assíncrono: NÃO\n" +
+                "Conversor Analógico - Digital:.........................SIM\n" +
+                "Conversor Digital - Analógico:.........................NÃO\n" +
+                "Canal de Saída PWM:....................................SIM\n" +
+                "General Porpose Input/Output de detecção capacitiva:...SIM\n" +
+                "Relógio de Tempo Real:.................................SIM\n" +
+                "Receptor ou transmissor Universal assíncrono:..........NÃO\n" +
                 "Funções:\n" +
-                "Circuito inter-integrado para Dados: NÃO\n" +
-                "Serial Protocolo de Interface Periférica: SIM\n" +
-                "Touch (Variação da tensão) SIM\n" +
-                "Reinicia o ESP32: NÃO\n";
+                "Circuito inter-integrado para Dados:...................NÃO\n" +
+                "Serial Protocolo de Interface Periférica:..............SIM\n" +
+                "Touch (Variação da tensão):............................SIM\n" +
+                "Reinicia o ESP32:......................................NÃO\n";
     }
     private String get09(){
         return "PORTA: GPIO09 - RXD1\n" +
-                "Conversor Analógico - Digital: NÃO\n" +
-                "Conversor Digital - Analógico: NÃO\n" +
-                "Canal de Saída PWM: SIM\n" +
-                "General Porpose Input/Output de detecção capacitiva: SIM\n" +
-                "Relógio de Tempo Real: NÃO\n" +
-                "Receptor ou transmissor Universal assíncrono: SIM\n" +
+                "Conversor Analógico - Digital:.........................NÃO\n" +
+                "Conversor Digital - Analógico:.........................NÃO\n" +
+                "Canal de Saída PWM:....................................SIM\n" +
+                "General Porpose Input/Output de detecção capacitiva:...SIM\n" +
+                "Relógio de Tempo Real:.................................NÃO\n" +
+                "Receptor ou transmissor Universal assíncrono:..........SIM\n" +
                 "Funções:\n" +
-                "Circuito inter-integrado para Dados: NÃO\n" +
-                "Serial Protocolo de Interface Periférica: NÃO\n" +
-                "Touch (Variação da tensão) NÃO\n" +
-                "Reinicia o ESP32: NÃO";
+                "Circuito inter-integrado para Dados:...................NÃO\n" +
+                "Serial Protocolo de Interface Periférica:..............NÃO\n" +
+                "Touch (Variação da tensão):............................NÃO\n" +
+                "Reinicia o ESP32:......................................NÃO";
     }
     private String get10(){
         return "PORTA: GPIO10 - TXD1\n" +
-                "Conversor Analógico - Digital: NÃO\n" +
-                "Conversor Digital - Analógico: NÃO\n" +
-                "Canal de Saída PWM: SIM\n" +
-                "General Porpose Input/Output de detecção capacitiva: SIM\n" +
-                "Relógio de Tempo Real: NÃO\n" +
-                "Receptor ou transmissor Universal assíncrono: SIM\n" +
+                "Conversor Analógico - Digital:.........................NÃO\n" +
+                "Conversor Digital - Analógico:.........................NÃO\n" +
+                "Canal de Saída PWM:....................................SIM\n" +
+                "General Porpose Input/Output de detecção capacitiva:...SIM\n" +
+                "Relógio de Tempo Real:.................................NÃO\n" +
+                "Receptor ou transmissor Universal assíncrono:..........SIM\n" +
                 "Funções:\n" +
-                "Circuito inter-integrado para Dados: NÃO\n" +
-                "Serial Protocolo de Interface Periférica: NÃO\n" +
-                "Touch (Variação da tensão) NÃO\n" +
-                "Reinicia o ESP32: NÃO";
+                "Circuito inter-integrado para Dados:...................NÃO\n" +
+                "Serial Protocolo de Interface Periférica:..............NÃO\n" +
+                "Touch (Variação da tensão):............................NÃO\n" +
+                "Reinicia o ESP32:......................................NÃO";
     }
     private String get11(){
         return "PORTA: GPIO11 - RTS1\n" +
-                "Conversor Analógico - Digital: NÃO\n" +
-                "Conversor Digital - Analógico: NÃO\n" +
-                "Canal de Saída PWM: SIM\n" +
-                "General Porpose Input/Output de detecção capacitiva: SIM\n" +
-                "Relógio de Tempo Real: NÃO\n" +
-                "Receptor ou transmissor Universal assíncrono: NÃO\n" +
+                "Conversor Analógico - Digital:.........................NÃO\n" +
+                "Conversor Digital - Analógico:.........................NÃO\n" +
+                "Canal de Saída PWM:....................................SIM\n" +
+                "General Porpose Input/Output de detecção capacitiva:...SIM\n" +
+                "Relógio de Tempo Real:.................................NÃO\n" +
+                "Receptor ou transmissor Universal assíncrono:..........NÃO\n" +
                 "Funções:\n" +
-                "Circuito inter-integrado para Dados: NÃO\n" +
-                "Serial Protocolo de Interface Periférica: NÃO\n" +
-                "Touch (Variação da tensão) NÃO\n" +
-                "Reinicia o ESP32: NÃO\n";
+                "Circuito inter-integrado para Dados:...................NÃO\n" +
+                "Serial Protocolo de Interface Periférica:..............NÃO\n" +
+                "Touch (Variação da tensão):............................NÃO\n" +
+                "Reinicia o ESP32:......................................NÃO\n";
     }
     private String get23(){
         return "PORTA: GPIO23 - MOSI\n" +
-                "Conversor Analógico - Digital: NÃO\n" +
-                "Conversor Digital - Analógico: NÃO\n" +
-                "Canal de Saída PWM: SIM\n" +
-                "General Porpose Input/Output de detecção capacitiva: SIM\n" +
-                "Relógio de Tempo Real: NÃO\n" +
-                "Receptor ou transmissor Universal assíncrono: NÃO\n" +
+                "Conversor Analógico - Digital:.........................NÃO\n" +
+                "Conversor Digital - Analógico:.........................NÃO\n" +
+                "Canal de Saída PWM:....................................SIM\n" +
+                "General Porpose Input/Output de detecção capacitiva:...SIM\n" +
+                "Relógio de Tempo Real:.................................NÃO\n" +
+                "Receptor ou transmissor Universal assíncrono:..........NÃO\n" +
                 "Funções:\n" +
-                "Circuito inter-integrado para Dados: NÃO\n" +
-                "Serial Protocolo de Interface Periférica: SIM\n" +
-                "Touch (Variação da tensão) NÃO\n" +
-                "Reinicia o ESP32: NÃO";
+                "Circuito inter-integrado para Dados:...................NÃO\n" +
+                "Serial Protocolo de Interface Periférica:..............SIM\n" +
+                "Touch (Variação da tensão):............................NÃO\n" +
+                "Reinicia o ESP32:......................................NÃO";
     }
     private String get22(){
         return "PORTA: GPIO22 - SCL - RTS 0\n" +
-                "Conversor Analógico - Digital: NÃO\n" +
-                "Conversor Digital - Analógico: NÃO\n" +
-                "Canal de Saída PWM: SIM\n" +
-                "General Porpose Input/Output de detecção capacitiva: SIM\n" +
-                "Relógio de Tempo Real: NÃO\n" +
-                "Receptor ou transmissor Universal assíncrono: SIM\n" +
+                "Conversor Analógico - Digital:.........................NÃO\n" +
+                "Conversor Digital - Analógico:.........................NÃO\n" +
+                "Canal de Saída PWM:....................................SIM\n" +
+                "General Porpose Input/Output de detecção capacitiva:...SIM\n" +
+                "Relógio de Tempo Real:.................................NÃO\n" +
+                "Receptor ou transmissor Universal assíncrono:..........SIM\n" +
                 "Funções:\n" +
-                "Circuito inter-integrado para Dados: SIM\n" +
-                "Serial Protocolo de Interface Periférica: SIM\n" +
-                "Touch (Variação da tensão) NÃO\n" +
-                "Reinicia o ESP32: NÃO\n";
+                "Circuito inter-integrado para Dados:...................SIM\n" +
+                "Serial Protocolo de Interface Periférica:..............SIM\n" +
+                "Touch (Variação da tensão):............................NÃO\n" +
+                "Reinicia o ESP32:......................................NÃO\n";
     }
     private String get01(){
         return "PORTA: GPIO01 - TX0 - CLK3\n" +
-                "Conversor Analógico - Digital: NÃO\n" +
-                "Conversor Digital - Analógico: NÃO\n" +
-                "Canal de Saída PWM: SIM\n" +
-                "General Porpose Input/Output de detecção capacitiva: SIM\n" +
-                "Relógio de Tempo Real: NÃO\n" +
-                "Receptor ou transmissor Universal assíncrono: SIM\n" +
+                "Conversor Analógico - Digital:.........................NÃO\n" +
+                "Conversor Digital - Analógico:.........................NÃO\n" +
+                "Canal de Saída PWM:....................................SIM\n" +
+                "General Porpose Input/Output de detecção capacitiva:...SIM\n" +
+                "Relógio de Tempo Real:.................................NÃO\n" +
+                "Receptor ou transmissor Universal assíncrono:..........SIM\n" +
                 "Funções:\n" +
-                "Circuito inter-integrado para Dados: NÃO\n" +
-                "Serial Protocolo de Interface Periférica: NÃO\n" +
-                "Touch (Variação da tensão) NÃO\n" +
-                "Reinicia o ESP32: NÃO";
+                "Circuito inter-integrado para Dados:...................NÃO\n" +
+                "Serial Protocolo de Interface Periférica:..............NÃO\n" +
+                "Touch (Variação da tensão).............................NÃO\n" +
+                "Reinicia o ESP32:......................................NÃO";
     }
     private String get03(){
         return "PORTA: GPIO03 - RX0 - CLK2\n" +
-                "Conversor Analógico - Digital: NÃO\n" +
-                "Conversor Digital - Analógico: NÃO\n" +
-                "Canal de Saída PWM: SIM\n" +
-                "General Porpose Input/Output de detecção capacitiva: SIM\n" +
-                "Relógio de Tempo Real: NÃO\n" +
-                "Receptor ou transmissor Universal assíncrono: SIM\n" +
+                "Conversor Analógico - Digital:.........................NÃO\n" +
+                "Conversor Digital - Analógico:.........................NÃO\n" +
+                "Canal de Saída PWM:....................................SIM\n" +
+                "General Porpose Input/Output de detecção capacitiva:...SIM\n" +
+                "Relógio de Tempo Real:.................................NÃO\n" +
+                "Receptor ou transmissor Universal assíncrono:..........SIM\n" +
                 "Funções:\n" +
-                "Circuito inter-integrado para Dados: NÃO\n" +
-                "Serial Protocolo de Interface Periférica: NÃO\n" +
-                "Touch (Variação da tensão) NÃO\n" +
-                "Reinicia o ESP32: NÃO";
+                "Circuito inter-integrado para Dados:...................NÃO\n" +
+                "Serial Protocolo de Interface Periférica:..............NÃO\n" +
+                "Touch (Variação da tensão):............................NÃO\n" +
+                "Reinicia o ESP32:......................................NÃO";
     }
     private String get21(){
         return "PORTA: GPIO21 - SDA\n" +
-                "Conversor Analógico - Digital: NÃO\n" +
-                "Conversor Digital - Analógico: NÃO\n" +
-                "Canal de Saída PWM: SIM\n" +
-                "General Porpose Input/Output de detecção capacitiva: SIM\n" +
-                "Relógio de Tempo Real: NÃO\n" +
-                "Receptor ou transmissor Universal assíncrono: NÃO\n" +
+                "Conversor Analógico - Digital:.........................NÃO\n" +
+                "Conversor Digital - Analógico:.........................NÃO\n" +
+                "Canal de Saída PWM:....................................SIM\n" +
+                "General Porpose Input/Output de detecção capacitiva:...SIM\n" +
+                "Relógio de Tempo Real:.................................NÃO\n" +
+                "Receptor ou transmissor Universal assíncrono:..........NÃO\n" +
                 "Funções:\n" +
-                "Circuito inter-integrado para Dados: SIM\n" +
-                "Serial Protocolo de Interface Periférica: SIM\n" +
-                "Touch (Variação da tensão) NÃO\n" +
-                "Reinicia o ESP32: NÃO";
+                "Circuito inter-integrado para Dados:...................SIM\n" +
+                "Serial Protocolo de Interface Periférica:..............SIM\n" +
+                "Touch (Variação da tensão):............................NÃO\n" +
+                "Reinicia o ESP32:......................................NÃO";
     }
     private String get19(){
         return "PORTA: GPIO19 - MISO - CTS 0\n" +
-                "Conversor Analógico - Digital: NÃO\n" +
-                "Conversor Digital - Analógico: NÃO\n" +
-                "Canal de Saída PWM: SIM\n" +
-                "General Porpose Input/Output de detecção capacitiva: SIM\n" +
-                "Relógio de Tempo Real: NÃO\n" +
-                "Receptor ou transmissor Universal assíncrono: SIM\n" +
+                "Conversor Analógico - Digital:.........................NÃO\n" +
+                "Conversor Digital - Analógico:.........................NÃO\n" +
+                "Canal de Saída PWM:....................................SIM\n" +
+                "General Porpose Input/Output de detecção capacitiva:...SIM\n" +
+                "Relógio de Tempo Real:.................................NÃO\n" +
+                "Receptor ou transmissor Universal assíncrono:..........SIM\n" +
                 "Funções:\n" +
-                "Circuito inter-integrado para Dados: NÃO\n" +
-                "Serial Protocolo de Interface Periférica: SIM\n" +
-                "Touch (Variação da tensão) NÃO\n" +
-                "Reinicia o ESP32: NÃO\n";
+                "Circuito inter-integrado para Dados:...................NÃO\n" +
+                "Serial Protocolo de Interface Periférica:..............SIM\n" +
+                "Touch (Variação da tensão):............................NÃO\n" +
+                "Reinicia o ESP32:......................................NÃO\n";
     }
     private String get18(){
         return "PORTA: GPIO18 - SCK\n" +
-                "Conversor Analógico - Digital: NÃO\n" +
-                "Conversor Digital - Analógico: NÃO\n" +
-                "Canal de Saída PWM: SIM\n" +
-                "General Porpose Input/Output de detecção capacitiva: SIM\n" +
-                "Relógio de Tempo Real: NÃO\n" +
-                "Receptor ou transmissor Universal assíncrono: NÃO\n" +
+                "Conversor Analógico - Digital:.........................NÃO\n" +
+                "Conversor Digital - Analógico:.........................NÃO\n" +
+                "Canal de Saída PWM:....................................SIM\n" +
+                "General Porpose Input/Output de detecção capacitiva:...SIM\n" +
+                "Relógio de Tempo Real:.................................NÃO\n" +
+                "Receptor ou transmissor Universal assíncrono:..........NÃO\n" +
                 "Funções:\n" +
-                "Circuito inter-integrado para Dados: NÃO\n" +
-                "Serial Protocolo de Interface Periférica: SIM\n" +
-                "Touch (Variação da tensão) NÃO\n" +
-                "Reinicia o ESP32: NÃO";
+                "Circuito inter-integrado para Dados:...................NÃO\n" +
+                "Serial Protocolo de Interface Periférica:..............SIM\n" +
+                "Touch (Variação da tensão).............................NÃO\n" +
+                "Reinicia o ESP32:......................................NÃO";
     }
     private String get05(){
         return "PORTA: GPIO05 - SS\n" +
-                "Conversor Analógico - Digital: NÃO\n" +
-                "Conversor Digital - Analógico: NÃO\n" +
-                "Canal de Saída PWM: SIM\n" +
-                "General Porpose Input/Output de detecção capacitiva: SIM\n" +
-                "Relógio de Tempo Real: SIM\n" +
-                "Receptor ou transmissor Universal assíncrono: NÃO\n" +
+                "Conversor Analógico - Digital:.........................NÃO\n" +
+                "Conversor Digital - Analógico:.........................NÃO\n" +
+                "Canal de Saída PWM:....................................SIM\n" +
+                "General Porpose Input/Output de detecção capacitiva:...SIM\n" +
+                "Relógio de Tempo Real:.................................SIM\n" +
+                "Receptor ou transmissor Universal assíncrono:..........NÃO\n" +
                 "Funções:\n" +
-                "Circuito inter-integrado para Dados: NÃO\n" +
-                "Serial Protocolo de Interface Periférica: SIM\n" +
-                "Touch (Variação da tensão) NÃO\n" +
-                "Reinicia o ESP32: NÃO\n";
+                "Circuito inter-integrado para Dados:...................NÃO\n" +
+                "Serial Protocolo de Interface Periférica:..............SIM\n" +
+                "Touch (Variação da tensão):............................NÃO\n" +
+                "Reinicia o ESP32:......................................NÃO\n";
     }
     private String get17(){
         return "PORTA: GPIO17 - TX2\n" +
-                "Conversor Analógico - Digital: NÃO\n" +
-                "Conversor Digital - Analógico: NÃO\n" +
-                "Canal de Saída PWM: SIM\n" +
-                "General Porpose Input/Output de detecção capacitiva: SIM\n" +
-                "Relógio de Tempo Real: NÃO\n" +
-                "Receptor ou transmissor Universal assíncrono: SIM\n" +
+                "Conversor Analógico - Digital:.........................NÃO\n" +
+                "Conversor Digital - Analógico:.........................NÃO\n" +
+                "Canal de Saída PWM:....................................SIM\n" +
+                "General Porpose Input/Output de detecção capacitiva:...SIM\n" +
+                "Relógio de Tempo Real:.................................NÃO\n" +
+                "Receptor ou transmissor Universal assíncrono:..........SIM\n" +
                 "Funções:\n" +
-                "Circuito inter-integrado para Dados: NÃO\n" +
-                "Serial Protocolo de Interface Periférica: NÃO\n" +
-                "Touch (Variação da tensão) NÃO\n" +
-                "Reinicia o ESP32: NÃO";
+                "Circuito inter-integrado para Dados:...................NÃO\n" +
+                "Serial Protocolo de Interface Periférica:..............NÃO\n" +
+                "Touch (Variação da tensão):............................NÃO\n" +
+                "Reinicia o ESP32:......................................NÃO";
     }
     private String get16(){
         return "PORTA: GPIO16 - RX2\n" +
-                "Conversor Analógico - Digital: NÃO\n" +
-                "Conversor Digital - Analógico: NÃO\n" +
-                "Canal de Saída PWM: SIM\n" +
-                "General Porpose Input/Output de detecção capacitiva: SIM\n" +
-                "Relógio de Tempo Real: NÃO\n" +
-                "Receptor ou transmissor Universal assíncrono: SIM\n" +
+                "Conversor Analógico - Digital:.........................NÃO\n" +
+                "Conversor Digital - Analógico:.........................NÃO\n" +
+                "Canal de Saída PWM:....................................SIM\n" +
+                "General Porpose Input/Output de detecção capacitiva:...SIM\n" +
+                "Relógio de Tempo Real:.................................NÃO\n" +
+                "Receptor ou transmissor Universal assíncrono:..........SIM\n" +
                 "Funções:\n" +
-                "Circuito inter-integrado para Dados: NÃO\n" +
-                "Serial Protocolo de Interface Periférica: NÃO\n" +
-                "Touch (Variação da tensão) NÃO\n" +
-                "Reinicia o ESP32: NÃO";
+                "Circuito inter-integrado para Dados:...................NÃO\n" +
+                "Serial Protocolo de Interface Periférica:..............NÃO\n" +
+                "Touch (Variação da tensão):............................NÃO\n" +
+                "Reinicia o ESP32:......................................NÃO";
     }
     private String get04(){
         return "PORTA: GPIO4 - ADC2_0 - RTC GPIO10\n" +
-                "Conversor Analógico - Digital: SIM\n" +
-                "Conversor Digital - Analógico: NÃO\n" +
-                "Canal de Saída PWM: SIM\n" +
-                "General Porpose Input/Output de detecção capacitiva: SIM\n" +
-                "Relógio de Tempo Real: SIM\n" +
-                "Receptor ou transmissor Universal assíncrono: NÃO\n" +
+                "Conversor Analógico - Digital:.........................SIM\n" +
+                "Conversor Digital - Analógico:.........................NÃO\n" +
+                "Canal de Saída PWM:....................................SIM\n" +
+                "General Porpose Input/Output de detecção capacitiva:...SIM\n" +
+                "Relógio de Tempo Real:.................................SIM\n" +
+                "Receptor ou transmissor Universal assíncrono:..........NÃO\n" +
                 "Funções:\n" +
-                "Circuito inter-integrado para Dados: NÃO\n" +
-                "Serial Protocolo de Interface Periférica: SIM\n" +
-                "Touch (Variação da tensão) SIM\n" +
-                "Reinicia o ESP32: NÃO";
+                "Circuito inter-integrado para Dados:...................NÃO\n" +
+                "Serial Protocolo de Interface Periférica:..............SIM\n" +
+                "Touch (Variação da tensão):............................SIM\n" +
+                "Reinicia o ESP32:......................................NÃO";
     }
     private String get00(){
         return "PORTA: GPIOO - ADC2_1 - RTC GPIO11\n" +
-                "Conversor Analógico - Digital: SIM\n" +
-                "Conversor Digital - Analógico: NÃO\n" +
-                "Canal de Saída PWM: SIM\n" +
-                "General Porpose Input/Output de detecção capacitiva: SIM\n" +
-                "Relógio de Tempo Real: SIM\n" +
-                "Receptor ou transmissor Universal assíncrono: NÃO\n" +
+                "Conversor Analógico - Digital:.........................SIM\n" +
+                "Conversor Digital - Analógico:.........................NÃO\n" +
+                "Canal de Saída PWM:....................................SIM\n" +
+                "General Porpose Input/Output de detecção capacitiva:...SIM\n" +
+                "Relógio de Tempo Real:.................................SIM\n" +
+                "Receptor ou transmissor Universal assíncrono:..........NÃO\n" +
                 "Funções:\n" +
-                "Circuito inter-integrado para Dados: NÃO\n" +
-                "Serial Protocolo de Interface Periférica: SIM\n" +
-                "Touch (Variação da tensão) SIM\n" +
-                "Reinicia o ESP32: NÃO";
+                "Circuito inter-integrado para Dados:...................NÃO\n" +
+                "Serial Protocolo de Interface Periférica:..............SIM\n" +
+                "Touch (Variação da tensão):............................SIM\n" +
+                "Reinicia o ESP32:......................................NÃO";
     }
     private String get02(){
         return "PORTA: GPIO2 - ADC2_2 - RTC GPIO12\n" +
-                "Conversor Analógico - Digital: SIM\n" +
-                "Conversor Digital - Analógico: NÃO\n" +
-                "Canal de Saída PWM: SIM\n" +
-                "General Porpose Input/Output de detecção capacitiva: SIM\n" +
-                "Relógio de Tempo Real: SIM\n" +
-                "Receptor ou transmissor Universal assíncrono: NÃO\n" +
+                "Conversor Analógico - Digital:.........................SIM\n" +
+                "Conversor Digital - Analógico:.........................NÃO\n" +
+                "Canal de Saída PWM:....................................SIM\n" +
+                "General Porpose Input/Output de detecção capacitiva:...SIM\n" +
+                "Relógio de Tempo Real:.................................SIM\n" +
+                "Receptor ou transmissor Universal assíncrono:..........NÃO\n" +
                 "Funções:\n" +
-                "Circuito inter-integrado para Dados: NÃO\n" +
-                "Serial Protocolo de Interface Periférica: SIM\n" +
-                "Touch (Variação da tensão) SIM\n" +
-                "Reinicia o ESP32: NÃO";
+                "Circuito inter-integrado para Dados:...................NÃO\n" +
+                "Serial Protocolo de Interface Periférica:..............SIM\n" +
+                "Touch (Variação da tensão):............................SIM\n" +
+                "Reinicia o ESP32:......................................NÃO";
     }
     private String get15(){
         return "PORTA: GPIO15 - ADC2_3 - RTC GPIO13\n" +
-                "Conversor Analógico - Digital: SIM\n" +
-                "Conversor Digital - Analógico: NÃO\n" +
-                "Canal de Saída PWM: SIM\n" +
-                "General Porpose Input/Output de detecção capacitiva: SIM\n" +
-                "Relógio de Tempo Real: SIM\n" +
-                "Receptor ou transmissor Universal assíncrono: NÃO\n" +
+                "Conversor Analógico - Digital:.........................SIM\n" +
+                "Conversor Digital - Analógico:.........................NÃO\n" +
+                "Canal de Saída PWM:....................................SIM\n" +
+                "General Porpose Input/Output de detecção capacitiva:...SIM\n" +
+                "Relógio de Tempo Real:.................................SIM\n" +
+                "Receptor ou transmissor Universal assíncrono:..........NÃO\n" +
                 "Funções:\n" +
-                "Circuito inter-integrado para Dados: NÃO\n" +
-                "Serial Protocolo de Interface Periférica: SIM\n" +
-                "Touch (Variação da tensão) SIM\n" +
-                "Reinicia o ESP32: NÃO";
+                "Circuito inter-integrado para Dados:...................NÃO\n" +
+                "Serial Protocolo de Interface Periférica:..............SIM\n" +
+                "Touch (Variação da tensão):............................SIM\n" +
+                "Reinicia o ESP32:......................................NÃO";
     }
     private String get08(){
         return "PORTA: GPIO08 - CTS2\n" +
-                "Conversor Analógico - Digital: NÃO\n" +
-                "Conversor Digital - Analógico: NÃO\n" +
-                "Canal de Saída PWM: SIM\n" +
-                "General Porpose Input/Output de detecção capacitiva: SIM\n" +
-                "Relógio de Tempo Real: NÃO\n" +
-                "Receptor ou transmissor Universal assíncrono: NÃO\n" +
+                "Conversor Analógico - Digital:.........................NÃO\n" +
+                "Conversor Digital - Analógico:.........................NÃO\n" +
+                "Canal de Saída PWM:....................................SIM\n" +
+                "General Porpose Input/Output de detecção capacitiva:...SIM\n" +
+                "Relógio de Tempo Real:.................................NÃO\n" +
+                "Receptor ou transmissor Universal assíncrono:..........NÃO\n" +
                 "Funções:\n" +
-                "Circuito inter-integrado para Dados: NÃO\n" +
-                "Serial Protocolo de Interface Periférica: NÃO\n" +
-                "Touch (Variação da tensão) NÃO\n" +
-                "Reinicia o ESP32: NÃO";
+                "Circuito inter-integrado para Dados:...................NÃO\n" +
+                "Serial Protocolo de Interface Periférica:..............NÃO\n" +
+                "Touch (Variação da tensão):............................NÃO\n" +
+                "Reinicia o ESP32:......................................NÃO";
     }
     private String get07(){
         return "PORTA: GPIO07 - RTS2\n" +
-                "Conversor Analógico - Digital: NÃO\n" +
-                "Conversor Digital - Analógico: NÃO\n" +
-                "Canal de Saída PWM: SIM\n" +
-                "General Porpose Input/Output de detecção capacitiva: SIM\n" +
-                "Relógio de Tempo Real: NÃO\n" +
-                "Receptor ou transmissor Universal assíncrono: NÃO\n" +
+                "Conversor Analógico - Digital:.........................NÃO\n" +
+                "Conversor Digital - Analógico:.........................NÃO\n" +
+                "Canal de Saída PWM:....................................SIM\n" +
+                "General Porpose Input/Output de detecção capacitiva:...SIM\n" +
+                "Relógio de Tempo Real:.................................NÃO\n" +
+                "Receptor ou transmissor Universal assíncrono:..........NÃO\n" +
                 "Funções:\n" +
-                "Circuito inter-integrado para Dados: NÃO\n" +
-                "Serial Protocolo de Interface Periférica: NÃO\n" +
-                "Touch (Variação da tensão) NÃO\n" +
-                "Reinicia o ESP32: NÃO";
+                "Circuito inter-integrado para Dados:...................NÃO\n" +
+                "Serial Protocolo de Interface Periférica:..............NÃO\n" +
+                "Touch (Variação da tensão):............................NÃO\n" +
+                "Reinicia o ESP32:......................................NÃO";
     }
     private String get06(){
         return "PORTA: GPIO06 - CTS1\n" +
-                "Conversor Analógico - Digital: NÃO\n" +
-                "Conversor Digital - Analógico: NÃO\n" +
-                "Canal de Saída PWM: SIM\n" +
-                "General Porpose Input/Output de detecção capacitiva: SIM\n" +
-                "Relógio de Tempo Real: NÃO\n" +
-                "Receptor ou transmissor Universal assíncrono: NÃO\n" +
+                "Conversor Analógico - Digital:.........................NÃO\n" +
+                "Conversor Digital - Analógico:.........................NÃO\n" +
+                "Canal de Saída PWM:....................................SIM\n" +
+                "General Porpose Input/Output de detecção capacitiva:...SIM\n" +
+                "Relógio de Tempo Real:.................................NÃO\n" +
+                "Receptor ou transmissor Universal assíncrono:..........NÃO\n" +
                 "Funções:\n" +
-                "Circuito inter-integrado para Dados: NÃO\n" +
-                "Serial Protocolo de Interface Periférica: NÃO\n" +
-                "Touch (Variação da tensão) NÃO\n" +
-                "Reinicia o ESP32: NÃO";
+                "Circuito inter-integrado para Dados:...................NÃO\n" +
+                "Serial Protocolo de Interface Periférica:..............NÃO\n" +
+                "Touch (Variação da tensão):............................NÃO\n" +
+                "Reinicia o ESP32:......................................NÃO";
     }
     private String getBOOT(){
         return "Botão de boot indisponível neste modelo de placa";
