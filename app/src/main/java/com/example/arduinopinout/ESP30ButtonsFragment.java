@@ -10,11 +10,15 @@ import android.widget.Toast;
 import android.widget.EditText;
 
 import androidx.fragment.app.Fragment;
+import com.example.arduinopinout.DataBase.ESP30DB;
+import com.example.arduinopinout.DataBase.ESP38DB;
 
 public class ESP30ButtonsFragment extends Fragment {
-    private Fragment30Listener listener;
-    private EditText ESP30EditTextSearch;
-    private Button   ESP30ButtonOk;
+    ESP30DB data = new ESP30DB();
+
+    private Fragment30Listener  listener;
+    private EditText            ESP30EditTextSearch;
+    private Button              ESP30ButtonOk;
 
     private Button      ESP30ButtonENT, ESP30ButtonVP, ESP30ButtonVN, ESP30Button34, ESP30Button35, ESP30Button32, ESP30Button33, ESP30Button25, ESP30Button26, ESP30Button27, ESP30Button14, ESP30Button12, ESP30Button13, ESP30ButtonGNDL, ESP30ButtonVin, ESP30ButtonENE;
     private Button      ESP30Button23, ESP30Button22, ESP30ButtonTX0, ESP30ButtonRX0, ESP30Button21, ESP30Button19, ESP30Button18, ESP30Button05, ESP30ButtonTX2, ESP30ButtonRX2, ESP30Button04, ESP30Button02, ESP30Button15, ESP30ButtonGNDR, ESP30Button3V3, ESP30ButtonBOOT;
@@ -71,40 +75,40 @@ public class ESP30ButtonsFragment extends Fragment {
             public void onClick(View view) {
                 int botao = view.getId();
 
-                if      (botao == R.id.ESP30ButtonOk)         {listener.onInput30(getSearch(ESP30EditTextSearch.getText().toString()));}
+                if      (botao == R.id.ESP30ButtonOk)         {listener.onInput30(data.get30Search(ESP30EditTextSearch.getText().toString()));}
 
-                else if (botao == R.id.ESP30ButtonVin)        {listener.onInput30(getSearch("GND"));}
-                else if (botao == R.id.ESP30Button3V3)        {listener.onInput30(getSearch("GND"));}
-                else if (botao == R.id.ESP30ButtonGNDL || botao == R.id.ESP30ButtonGNDR)  {listener.onInput30(getSearch("GND"));}
-                else if (botao == R.id.ESP30ButtonENT || botao == R.id.ESP30ButtonENE)         {listener.onInput30(getSearch("GND"));}
-                else if (botao == R.id.ESP30ButtonBOOT)       {listener.onInput30(getSearch("GND"));}
+                else if (botao == R.id.ESP30ButtonVin)        {listener.onInput30(data.get30Search("Vin"));}
+                else if (botao == R.id.ESP30Button3V3)        {listener.onInput30(data.get30Search("3V3"));}
+                else if (botao == R.id.ESP30ButtonGNDL || botao == R.id.ESP30ButtonGNDR)  {listener.onInput30(data.get30Search("GND"));}
+                else if (botao == R.id.ESP30ButtonENT || botao == R.id.ESP30ButtonENE)         {listener.onInput30(data.get30Search("EN"));}
+                else if (botao == R.id.ESP30ButtonBOOT)       {listener.onInput30(data.get30Search("BOOT"));}
 
-                else if (botao == R.id.ESP30ButtonVP)         {listener.onInput30(getSearch("GND"));}
-                else if (botao == R.id.ESP30ButtonVN)         {listener.onInput30(getSearch("GND"));}
-                else if (botao == R.id.ESP30Button34)         {listener.onInput30(getSearch("GND"));}
-                else if (botao == R.id.ESP30Button35)         {listener.onInput30(getSearch("GND"));}
-                else if (botao == R.id.ESP30Button32)         {listener.onInput30(getSearch("GND"));}
-                else if (botao == R.id.ESP30Button33)         {listener.onInput30(getSearch("GND"));}
-                else if (botao == R.id.ESP30Button25)         {listener.onInput30(getSearch("GND"));}
-                else if (botao == R.id.ESP30Button26)         {listener.onInput30(getSearch("GND"));}
-                else if (botao == R.id.ESP30Button27)         {listener.onInput30(getSearch("GND"));}
-                else if (botao == R.id.ESP30Button14)         {listener.onInput30(getSearch("GND"));}
-                else if (botao == R.id.ESP30Button12)         {listener.onInput30(getSearch("GND"));}
-                else if (botao == R.id.ESP30Button13)         {listener.onInput30(getSearch("GND"));}
+                else if (botao == R.id.ESP30ButtonVP)         {listener.onInput30(data.get30Search("VP"));}
+                else if (botao == R.id.ESP30ButtonVN)         {listener.onInput30(data.get30Search("VN"));}
+                else if (botao == R.id.ESP30Button34)         {listener.onInput30(data.get30Search("34"));}
+                else if (botao == R.id.ESP30Button35)         {listener.onInput30(data.get30Search("35"));}
+                else if (botao == R.id.ESP30Button32)         {listener.onInput30(data.get30Search("32"));}
+                else if (botao == R.id.ESP30Button33)         {listener.onInput30(data.get30Search("33"));}
+                else if (botao == R.id.ESP30Button25)         {listener.onInput30(data.get30Search("25"));}
+                else if (botao == R.id.ESP30Button26)         {listener.onInput30(data.get30Search("26"));}
+                else if (botao == R.id.ESP30Button27)         {listener.onInput30(data.get30Search("27"));}
+                else if (botao == R.id.ESP30Button14)         {listener.onInput30(data.get30Search("14"));}
+                else if (botao == R.id.ESP30Button12)         {listener.onInput30(data.get30Search("12"));}
+                else if (botao == R.id.ESP30Button13)         {listener.onInput30(data.get30Search("13"));}
 
-                else if (botao == R.id.ESP30Button23)         {listener.onInput30(getSearch("GND"));}
-                else if (botao == R.id.ESP30Button22)         {listener.onInput30(getSearch("GND"));}
-                else if (botao == R.id.ESP30ButtonTX0)        {listener.onInput30(getSearch("GND"));}
-                else if (botao == R.id.ESP30ButtonRX0)        {listener.onInput30(getSearch("GND"));}
-                else if (botao == R.id.ESP30Button21)         {listener.onInput30(getSearch("GND"));}
-                else if (botao == R.id.ESP30Button19)         {listener.onInput30(getSearch("GND"));}
-                else if (botao == R.id.ESP30Button18)         {listener.onInput30(getSearch("GND"));}
-                else if (botao == R.id.ESP30Button05)         {listener.onInput30(getSearch("GND"));}
-                else if (botao == R.id.ESP30ButtonTX2)        {listener.onInput30(getSearch("GND"));}
-                else if (botao == R.id.ESP30ButtonRX2)        {listener.onInput30(getSearch("GND"));}
-                else if (botao == R.id.ESP30Button04)         {listener.onInput30(getSearch("GND"));}
-                else if (botao == R.id.ESP30Button02)         {listener.onInput30(getSearch("GND"));}
-                else if (botao == R.id.ESP30Button15)         {listener.onInput30(getSearch("GND"));}
+                else if (botao == R.id.ESP30Button23)         {listener.onInput30(data.get30Search("23"));}
+                else if (botao == R.id.ESP30Button22)         {listener.onInput30(data.get30Search("22"));}
+                else if (botao == R.id.ESP30ButtonTX0)        {listener.onInput30(data.get30Search("TX0"));}
+                else if (botao == R.id.ESP30ButtonRX0)        {listener.onInput30(data.get30Search("RX0"));}
+                else if (botao == R.id.ESP30Button21)         {listener.onInput30(data.get30Search("21"));}
+                else if (botao == R.id.ESP30Button19)         {listener.onInput30(data.get30Search("19"));}
+                else if (botao == R.id.ESP30Button18)         {listener.onInput30(data.get30Search("18"));}
+                else if (botao == R.id.ESP30Button05)         {listener.onInput30(data.get30Search("05"));}
+                else if (botao == R.id.ESP30ButtonTX2)        {listener.onInput30(data.get30Search("TX2"));}
+                else if (botao == R.id.ESP30ButtonRX2)        {listener.onInput30(data.get30Search("RX2"));}
+                else if (botao == R.id.ESP30Button04)         {listener.onInput30(data.get30Search("04"));}
+                else if (botao == R.id.ESP30Button02)         {listener.onInput30(data.get30Search("02"));}
+                else if (botao == R.id.ESP30Button15)         {listener.onInput30(data.get30Search("15"));}
             }
         };
         ESP30ButtonOk.setOnClickListener(handler);
@@ -144,11 +148,6 @@ public class ESP30ButtonsFragment extends Fragment {
         ESP30ButtonBOOT .setOnClickListener(handler);
 
         return view30buttons;
-    }
-    private String getSearch (String entrada){
-        if(entrada.equals("GND"))           { return "GND";         }
-        else if(entrada.equals("Teste"))    { return "Teste Ok";    }
-        else                                { return "Falhou";      }
     }
 
     @Override

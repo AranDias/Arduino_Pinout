@@ -11,7 +11,12 @@ import android.widget.EditText;
 
 import androidx.fragment.app.Fragment;
 
+import com.example.arduinopinout.DataBase.ESP38DB;
+import com.example.arduinopinout.DataBase.ESPBaseDB;
+
 public class ESPBaseButtonsFragment extends Fragment {
+    ESPBaseDB data = new ESPBaseDB();
+
     private FragmentBaseListener listener;
 
     private EditText    ESPBaseEditTextSearch;
@@ -80,44 +85,44 @@ public class ESPBaseButtonsFragment extends Fragment {
             public void onClick(View view) {
                 int botao = view.getId();
 
-                if      (botao == R.id.ESPBaseButtonOk)         {listener.onInputBase(getSearch(ESPBaseEditTextSearch.getText().toString()));}
+                if      (botao == R.id.ESPBaseButtonOk)         {listener.onInputBase(data.getBaseSearch(ESPBaseEditTextSearch.getText().toString()));}
 
-                else if (botao == R.id.ESPBaseButtonGNDTL || botao == R.id.ESPBaseButtonGNDTR || botao == R.id.ESPBaseButtonGNDE)  {listener.onInputBase(getSearch("GND"));}
-                else if (botao == R.id.ESPBaseButtonVin)        {listener.onInputBase(getSearch("GND"));}
-                else if (botao == R.id.ESPBaseButtonEN)         {listener.onInputBase(getSearch("GND"));}
-                else if (botao == R.id.ESPBaseButton36)         {listener.onInputBase(getSearch("GND"));}
-                else if (botao == R.id.ESPBaseButton39)         {listener.onInputBase(getSearch("GND"));}
-                else if (botao == R.id.ESPBaseButton34)         {listener.onInputBase(getSearch("GND"));}
-                else if (botao == R.id.ESPBaseButton35)         {listener.onInputBase(getSearch("GND"));}
-                else if (botao == R.id.ESPBaseButton32)         {listener.onInputBase(getSearch("GND"));}
-                else if (botao == R.id.ESPBaseButton33)         {listener.onInputBase(getSearch("GND"));}
-                else if (botao == R.id.ESPBaseButton25)         {listener.onInputBase(getSearch("GND"));}
-                else if (botao == R.id.ESPBaseButton26)         {listener.onInputBase(getSearch("GND"));}
-                else if (botao == R.id.ESPBaseButton27)         {listener.onInputBase(getSearch("GND"));}
-                else if (botao == R.id.ESPBaseButton14)         {listener.onInputBase(getSearch("GND"));}
-                else if (botao == R.id.ESPBaseButton12)         {listener.onInputBase(getSearch("GND"));}
-                else if (botao == R.id.ESPBaseButton23)         {listener.onInputBase(getSearch("GND"));}
-                else if (botao == R.id.ESPBaseButton22)         {listener.onInputBase(getSearch("GND"));}
-                else if (botao == R.id.ESPBaseButton01)         {listener.onInputBase(getSearch("GND"));}
-                else if (botao == R.id.ESPBaseButton03)         {listener.onInputBase(getSearch("GND"));}
-                else if (botao == R.id.ESPBaseButton21)         {listener.onInputBase(getSearch("GND"));}
-                else if (botao == R.id.ESPBaseButtonNC)         {listener.onInputBase(getSearch("GND"));}
-                else if (botao == R.id.ESPBaseButton19)         {listener.onInputBase(getSearch("GND"));}
-                else if (botao == R.id.ESPBaseButton18)         {listener.onInputBase(getSearch("GND"));}
-                else if (botao == R.id.ESPBaseButton05)         {listener.onInputBase(getSearch("GND"));}
-                else if (botao == R.id.ESPBaseButton17)         {listener.onInputBase(getSearch("GND"));}
-                else if (botao == R.id.ESPBaseButton16)         {listener.onInputBase(getSearch("GND"));}
-                else if (botao == R.id.ESPBaseButton04)         {listener.onInputBase(getSearch("GND"));}
-                else if (botao == R.id.ESPBaseButton00)         {listener.onInputBase(getSearch("GND"));}
-                else if (botao == R.id.ESPBaseButton13)         {listener.onInputBase(getSearch("GND"));}
-                else if (botao == R.id.ESPBaseButton09)         {listener.onInputBase(getSearch("GND"));}
-                else if (botao == R.id.ESPBaseButton10)         {listener.onInputBase(getSearch("GND"));}
-                else if (botao == R.id.ESPBaseButton11)         {listener.onInputBase(getSearch("GND"));}
-                else if (botao == R.id.ESPBaseButton06)         {listener.onInputBase(getSearch("GND"));}
-                else if (botao == R.id.ESPBaseButton07)         {listener.onInputBase(getSearch("GND"));}
-                else if (botao == R.id.ESPBaseButton08)         {listener.onInputBase(getSearch("GND"));}
-                else if (botao == R.id.ESPBaseButton15)         {listener.onInputBase(getSearch("GND"));}
-                else if (botao == R.id.ESPBaseButton02)         {listener.onInputBase(getSearch("GND"));}
+                else if (botao == R.id.ESPBaseButtonGNDTL || botao == R.id.ESPBaseButtonGNDTR || botao == R.id.ESPBaseButtonGNDE)  {listener.onInputBase(data.getBaseSearch("GND"));}
+                else if (botao == R.id.ESPBaseButtonVin)        {listener.onInputBase(data.getBaseSearch("Vin"));}
+                else if (botao == R.id.ESPBaseButtonEN)         {listener.onInputBase(data.getBaseSearch("EN"));}
+                else if (botao == R.id.ESPBaseButton36)         {listener.onInputBase(data.getBaseSearch("36"));}
+                else if (botao == R.id.ESPBaseButton39)         {listener.onInputBase(data.getBaseSearch("39"));}
+                else if (botao == R.id.ESPBaseButton34)         {listener.onInputBase(data.getBaseSearch("34"));}
+                else if (botao == R.id.ESPBaseButton35)         {listener.onInputBase(data.getBaseSearch("35"));}
+                else if (botao == R.id.ESPBaseButton32)         {listener.onInputBase(data.getBaseSearch("32"));}
+                else if (botao == R.id.ESPBaseButton33)         {listener.onInputBase(data.getBaseSearch("33"));}
+                else if (botao == R.id.ESPBaseButton25)         {listener.onInputBase(data.getBaseSearch("25"));}
+                else if (botao == R.id.ESPBaseButton26)         {listener.onInputBase(data.getBaseSearch("26"));}
+                else if (botao == R.id.ESPBaseButton27)         {listener.onInputBase(data.getBaseSearch("27"));}
+                else if (botao == R.id.ESPBaseButton14)         {listener.onInputBase(data.getBaseSearch("14"));}
+                else if (botao == R.id.ESPBaseButton12)         {listener.onInputBase(data.getBaseSearch("12"));}
+                else if (botao == R.id.ESPBaseButton23)         {listener.onInputBase(data.getBaseSearch("23"));}
+                else if (botao == R.id.ESPBaseButton22)         {listener.onInputBase(data.getBaseSearch("22"));}
+                else if (botao == R.id.ESPBaseButton01)         {listener.onInputBase(data.getBaseSearch("01"));}
+                else if (botao == R.id.ESPBaseButton03)         {listener.onInputBase(data.getBaseSearch("03"));}
+                else if (botao == R.id.ESPBaseButton21)         {listener.onInputBase(data.getBaseSearch("21"));}
+                else if (botao == R.id.ESPBaseButtonNC)         {listener.onInputBase(data.getBaseSearch("NC"));}
+                else if (botao == R.id.ESPBaseButton19)         {listener.onInputBase(data.getBaseSearch("19"));}
+                else if (botao == R.id.ESPBaseButton18)         {listener.onInputBase(data.getBaseSearch("18"));}
+                else if (botao == R.id.ESPBaseButton05)         {listener.onInputBase(data.getBaseSearch("05"));}
+                else if (botao == R.id.ESPBaseButton17)         {listener.onInputBase(data.getBaseSearch("17"));}
+                else if (botao == R.id.ESPBaseButton16)         {listener.onInputBase(data.getBaseSearch("16"));}
+                else if (botao == R.id.ESPBaseButton04)         {listener.onInputBase(data.getBaseSearch("04"));}
+                else if (botao == R.id.ESPBaseButton00)         {listener.onInputBase(data.getBaseSearch("00"));}
+                else if (botao == R.id.ESPBaseButton13)         {listener.onInputBase(data.getBaseSearch("13"));}
+                else if (botao == R.id.ESPBaseButton09)         {listener.onInputBase(data.getBaseSearch("09"));}
+                else if (botao == R.id.ESPBaseButton10)         {listener.onInputBase(data.getBaseSearch("10"));}
+                else if (botao == R.id.ESPBaseButton11)         {listener.onInputBase(data.getBaseSearch("11"));}
+                else if (botao == R.id.ESPBaseButton06)         {listener.onInputBase(data.getBaseSearch("06"));}
+                else if (botao == R.id.ESPBaseButton07)         {listener.onInputBase(data.getBaseSearch("07"));}
+                else if (botao == R.id.ESPBaseButton08)         {listener.onInputBase(data.getBaseSearch("08"));}
+                else if (botao == R.id.ESPBaseButton15)         {listener.onInputBase(data.getBaseSearch("15"));}
+                else if (botao == R.id.ESPBaseButton02)         {listener.onInputBase(data.getBaseSearch("02"));}
             }
         };
         ESPBaseButtonOk     .setOnClickListener(handler);
@@ -163,12 +168,6 @@ public class ESPBaseButtonsFragment extends Fragment {
         ESPBaseButton15     .setOnClickListener(handler);
         ESPBaseButton02     .setOnClickListener(handler);
         return viewbasebuttons;
-    }
-
-    private String getSearch (String entrada){
-        if      (entrada.equals("GND"))             { return "GND";         }
-        else if (entrada.equals("Teste"))           { return "Teste Ok\nTeste Ok\nTeste Ok\nTeste Ok\nTeste Ok";    }
-        else                                        { return "Falhou";      }
     }
 
     @Override

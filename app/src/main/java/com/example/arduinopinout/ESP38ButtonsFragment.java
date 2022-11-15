@@ -14,6 +14,8 @@ import androidx.fragment.app.Fragment;
 import com.example.arduinopinout.DataBase.ESP38DB;
 
 public class ESP38ButtonsFragment extends Fragment {
+    ESP38DB data = new ESP38DB();
+
     private Fragment38Listener listener;
     private EditText ESP38EditTextSearch;
     private Button   ESP38ButtonOk;
@@ -35,48 +37,46 @@ public class ESP38ButtonsFragment extends Fragment {
         ESP38ButtonOk    = view38buttons.findViewById(R.id.ESP38ButtonOk);
 
         ESP38Button3V3  = view38buttons.findViewById(R.id.ESP38Button3V3);
-        ESP38ButtonENT    = view38buttons.findViewById(R.id.ESP38ButtonENT);
-        ESP38Button36     = view38buttons.findViewById(R.id.ESP38Button36);
-        ESP38Button39     = view38buttons.findViewById(R.id.ESP38Button39);
-        ESP38Button34     = view38buttons.findViewById(R.id.ESP38Button34);
-        ESP38Button35     = view38buttons.findViewById(R.id.ESP38Button35);
-        ESP38Button32     = view38buttons.findViewById(R.id.ESP38Button32);
-        ESP38Button33     = view38buttons.findViewById(R.id.ESP38Button33);
-        ESP38Button25     = view38buttons.findViewById(R.id.ESP38Button25);
-        ESP38Button26     = view38buttons.findViewById(R.id.ESP38Button26);
-        ESP38Button27     = view38buttons.findViewById(R.id.ESP38Button27);
-        ESP38Button14     = view38buttons.findViewById(R.id.ESP38Button14);
-        ESP38Button12     = view38buttons.findViewById(R.id.ESP38Button12);
-        ESP38ButtonGNDL     = view38buttons.findViewById(R.id.ESP38ButtonGNDL);
-        ESP38Button13  = view38buttons.findViewById(R.id.ESP38Button13);
-        ESP38Button09     = view38buttons.findViewById(R.id.ESP38Button09);
-        ESP38Button10     = view38buttons.findViewById(R.id.ESP38Button10);
-        ESP38Button11     = view38buttons.findViewById(R.id.ESP38Button11);
-        ESP38ButtonVin     = view38buttons.findViewById(R.id.ESP38ButtonVin);
-        ESP38ButtonENE     = view38buttons.findViewById(R.id.ESP38ButtonENE);
+        ESP38ButtonENT  = view38buttons.findViewById(R.id.ESP38ButtonENT);
+        ESP38Button36   = view38buttons.findViewById(R.id.ESP38Button36);
+        ESP38Button39   = view38buttons.findViewById(R.id.ESP38Button39);
+        ESP38Button34   = view38buttons.findViewById(R.id.ESP38Button34);
+        ESP38Button35   = view38buttons.findViewById(R.id.ESP38Button35);
+        ESP38Button32   = view38buttons.findViewById(R.id.ESP38Button32);
+        ESP38Button33   = view38buttons.findViewById(R.id.ESP38Button33);
+        ESP38Button25   = view38buttons.findViewById(R.id.ESP38Button25);
+        ESP38Button26   = view38buttons.findViewById(R.id.ESP38Button26);
+        ESP38Button27   = view38buttons.findViewById(R.id.ESP38Button27);
+        ESP38Button14   = view38buttons.findViewById(R.id.ESP38Button14);
+        ESP38Button12   = view38buttons.findViewById(R.id.ESP38Button12);
+        ESP38ButtonGNDL = view38buttons.findViewById(R.id.ESP38ButtonGNDL);
+        ESP38Button13   = view38buttons.findViewById(R.id.ESP38Button13);
+        ESP38Button09   = view38buttons.findViewById(R.id.ESP38Button09);
+        ESP38Button10   = view38buttons.findViewById(R.id.ESP38Button10);
+        ESP38Button11   = view38buttons.findViewById(R.id.ESP38Button11);
+        ESP38ButtonVin  = view38buttons.findViewById(R.id.ESP38ButtonVin);
+        ESP38ButtonENE  = view38buttons.findViewById(R.id.ESP38ButtonENE);
 
-        ESP38ButtonGNDT     = view38buttons.findViewById(R.id.ESP38ButtonGNDT);
-        ESP38Button23     = view38buttons.findViewById(R.id.ESP38Button23);
-        ESP38Button22     = view38buttons.findViewById(R.id.ESP38Button22);
-        ESP38Button01     = view38buttons.findViewById(R.id.ESP38Button01);
-        ESP38Button03     = view38buttons.findViewById(R.id.ESP38Button03);
-        ESP38Button21     = view38buttons.findViewById(R.id.ESP38Button21);
-        ESP38ButtonGNDR     = view38buttons.findViewById(R.id.ESP38ButtonGNDR);
-        ESP38Button19     = view38buttons.findViewById(R.id.ESP38Button19);
+        ESP38ButtonGNDT = view38buttons.findViewById(R.id.ESP38ButtonGNDT);
+        ESP38Button23   = view38buttons.findViewById(R.id.ESP38Button23);
+        ESP38Button22   = view38buttons.findViewById(R.id.ESP38Button22);
+        ESP38Button01   = view38buttons.findViewById(R.id.ESP38Button01);
+        ESP38Button03   = view38buttons.findViewById(R.id.ESP38Button03);
+        ESP38Button21   = view38buttons.findViewById(R.id.ESP38Button21);
+        ESP38ButtonGNDR = view38buttons.findViewById(R.id.ESP38ButtonGNDR);
+        ESP38Button19   = view38buttons.findViewById(R.id.ESP38Button19);
         ESP38Button18   = view38buttons.findViewById(R.id.ESP38Button18);
-        ESP38Button05     = view38buttons.findViewById(R.id.ESP38Button05);
-        ESP38Button17     = view38buttons.findViewById(R.id.ESP38Button17);
-        ESP38Button16     = view38buttons.findViewById(R.id.ESP38Button16);
-        ESP38Button04     = view38buttons.findViewById(R.id.ESP38Button04);
-        ESP38Button00     = view38buttons.findViewById(R.id.ESP38Button00);
-        ESP38Button02     = view38buttons.findViewById(R.id.ESP38Button02);
-        ESP38Button15     = view38buttons.findViewById(R.id.ESP38Button15);
-        ESP38Button08     = view38buttons.findViewById(R.id.ESP38Button08);
-        ESP38Button07     = view38buttons.findViewById(R.id.ESP38Button07);
-        ESP38Button06     = view38buttons.findViewById(R.id.ESP38Button06);
-        ESP38ButtonBOOT     = view38buttons.findViewById(R.id.ESP38ButtonBOOT);
-
-        ESP38DB data = new ESP38DB();
+        ESP38Button05   = view38buttons.findViewById(R.id.ESP38Button05);
+        ESP38Button17   = view38buttons.findViewById(R.id.ESP38Button17);
+        ESP38Button16   = view38buttons.findViewById(R.id.ESP38Button16);
+        ESP38Button04   = view38buttons.findViewById(R.id.ESP38Button04);
+        ESP38Button00   = view38buttons.findViewById(R.id.ESP38Button00);
+        ESP38Button02   = view38buttons.findViewById(R.id.ESP38Button02);
+        ESP38Button15   = view38buttons.findViewById(R.id.ESP38Button15);
+        ESP38Button08   = view38buttons.findViewById(R.id.ESP38Button08);
+        ESP38Button07   = view38buttons.findViewById(R.id.ESP38Button07);
+        ESP38Button06   = view38buttons.findViewById(R.id.ESP38Button06);
+        ESP38ButtonBOOT = view38buttons.findViewById(R.id.ESP38ButtonBOOT);
 
         View.OnClickListener handler = new View.OnClickListener() {
             @Override
@@ -88,7 +88,7 @@ public class ESP38ButtonsFragment extends Fragment {
                 else if (botao == R.id.ESP38ButtonGNDL || botao == R.id.ESP38ButtonGNDR || botao == R.id.ESP38ButtonGNDT)  {listener.onInput38(data.get38Search("GND"));}
                 else if (botao == R.id.ESP38ButtonENT || botao == R.id.ESP38ButtonENE)         {listener.onInput38(data.get38Search("EN"));}
                 else if (botao == R.id.ESP38ButtonVin)        {listener.onInput38(data.get38Search("Vin"));}
-                else if (botao == R.id.ESP38ButtonBOOT)         {listener.onInput38(data.get38Search("BOOT"));}
+                else if (botao == R.id.ESP38ButtonBOOT)       {listener.onInput38(data.get38Search("BOOT"));}
 
                 else if (botao == R.id.ESP38Button36)         {listener.onInput38(data.get38Search("36"));}
                 else if (botao == R.id.ESP38Button39)         {listener.onInput38(data.get38Search("39"));}
