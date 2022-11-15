@@ -50,7 +50,7 @@
                     android:layout_gravity="center"
                     android:background="@drawable/background_button_pin"
                     android:textColor="@color/black"
-                    android:text="ENT" />
+                    android:text="EN" />
                 <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/ESP38Button36"
                     android:layout_width="match_parent"
@@ -173,7 +173,7 @@
                     android:textColor="@color/black"
                     android:text="12" />
                 <androidx.appcompat.widget.AppCompatButton
-                    android:id="@+id/ESP38ButtonGNDML"
+                    android:id="@+id/ESP38ButtonGNDL"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
@@ -206,7 +206,7 @@
                     android:textColor="@color/black"
                     android:text="09" />
                 <androidx.appcompat.widget.AppCompatButton
-                    android:id="@+id/ESP38Butto10"
+                    android:id="@+id/ESP38Button10"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
@@ -335,7 +335,7 @@
                     android:textColor="@color/black"
                     android:text="21" />
                 <androidx.appcompat.widget.AppCompatButton
-                    android:id="@+id/ESP38ButtonGNDMR"
+                    android:id="@+id/ESP38ButtonGNDR"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
@@ -423,7 +423,7 @@
                     android:textColor="@color/black"
                     android:text="00" />
                 <androidx.appcompat.widget.AppCompatButton
-                    android:id="@+id/ESP38Button2"
+                    android:id="@+id/ESP38Button02"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"

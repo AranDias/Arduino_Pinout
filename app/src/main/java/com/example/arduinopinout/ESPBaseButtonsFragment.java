@@ -81,6 +81,7 @@ public class ESPBaseButtonsFragment extends Fragment {
                 int botao = view.getId();
 
                 if      (botao == R.id.ESPBaseButtonOk)         {listener.onInputBase(getSearch(ESPBaseEditTextSearch.getText().toString()));}
+
                 else if (botao == R.id.ESPBaseButtonGNDTL || botao == R.id.ESPBaseButtonGNDTR || botao == R.id.ESPBaseButtonGNDE)  {listener.onInputBase(getSearch("GND"));}
                 else if (botao == R.id.ESPBaseButtonVin)        {listener.onInputBase(getSearch("GND"));}
                 else if (botao == R.id.ESPBaseButtonEN)         {listener.onInputBase(getSearch("GND"));}
@@ -117,10 +118,10 @@ public class ESPBaseButtonsFragment extends Fragment {
                 else if (botao == R.id.ESPBaseButton08)         {listener.onInputBase(getSearch("GND"));}
                 else if (botao == R.id.ESPBaseButton15)         {listener.onInputBase(getSearch("GND"));}
                 else if (botao == R.id.ESPBaseButton02)         {listener.onInputBase(getSearch("GND"));}
-
             }
         };
         ESPBaseButtonOk     .setOnClickListener(handler);
+
         ESPBaseButtonGNDTL  .setOnClickListener(handler);
         ESPBaseButtonVin    .setOnClickListener(handler);
         ESPBaseButtonEN     .setOnClickListener(handler);

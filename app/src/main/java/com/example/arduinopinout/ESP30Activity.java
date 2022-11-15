@@ -30,7 +30,6 @@ public class ESP30Activity extends AppCompatActivity implements ESP30ButtonsFrag
 
         binding = ActivityEsp30Binding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
-        /*setContentView(R.layout.activity_espbase);*/
 
         t = fm.beginTransaction();
         t.add(R.id.ESP30ImageLayout, fb);
