@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Arduino Pinout</string>
+    <string name="app_name">ESP32 Pinout</string>
     <string name="action_settings">Configurações</string>
     <!--<string name="action_search">Pesquisa</string>-->
     <!-- Strings used for fragments for navigation -->

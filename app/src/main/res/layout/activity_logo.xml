@@ -39,7 +39,7 @@
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
         android:layout_marginTop="40dp"
-        android:textSize="12dp"
+        android:textSize="13dp"
         android:textColor="@color/black"
         android:justificationMode="inter_word"
         android:text="     Desenvolvido pela empresa chinesa Espressif, o ESP32 é um tipo de microcontrolador com alta capacidade de comunicação sem fio através do wifi e do próprio sistema de Bluetooth. Esse controlador embutido possui 520 KB de memória SRAM, dois núcleos de processamento que são capazes de operar com frequência de 240 Mhz, memória flash de 16MB, Bluetooth híbrido (Clássico e BLE), maior quantidade de portas programáveis (se comparado a outros microcontroladores presentes no mercado). Todos esses pontos favorecem  a aplicação dele na construção de sistemas automatizados. Tendo em vista as diversas aplicações desse aparelho nos diferentes ramos da tecnologia, esse aplicativo foi criado com o intuito de auxiliar os desenvolvedores sobre as funções e operações de cada pinagem dentro da ESP32, ou seja, ajudar na busca de informações sobre determinada pinagem." />
