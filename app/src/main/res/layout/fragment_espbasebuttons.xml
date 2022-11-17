@@ -179,7 +179,7 @@
                 <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/ESPBaseButtonGNDE"
                     style="@style/SmallButtonPin"
-                    android:text="G\nN\nD"/>
+                    android:text="GND"/>
                 <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/ESPBaseButton13"
                     style="@style/SmallButtonPin"
