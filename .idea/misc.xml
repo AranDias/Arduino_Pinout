@@ -52,13 +52,14 @@
         <entry key="..\:/Users/aranm/AndroidStudioProjects/Arduino_Pinout/app/src/main/res/drawable/background_button_boards.xml" value="0.131" />
         <entry key="..\:/Users/aranm/AndroidStudioProjects/Arduino_Pinout/app/src/main/res/drawable/background_button_pin.xml" value="0.197" />
         <entry key="..\:/Users/aranm/AndroidStudioProjects/Arduino_Pinout/app/src/main/res/drawable/background_button_pin_pushed.xml" value="0.131" />
+        <entry key="..\:/Users/aranm/AndroidStudioProjects/Arduino_Pinout/app/src/main/res/drawable/default_background.xml" value="0.134" />
         <entry key="..\:/Users/aranm/AndroidStudioProjects/Arduino_Pinout/app/src/main/res/layout/activity_esp38image.xml" value="0.22447916666666667" />
         <entry key="..\:/Users/aranm/AndroidStudioProjects/Arduino_Pinout/app/src/main/res/layout/activity_espbaseimage.xml" value="0.22447916666666667" />
         <entry key="..\:/Users/aranm/AndroidStudioProjects/Arduino_Pinout/app/src/main/res/layout/activity_logo.xml" value="0.22447916666666667" />
-        <entry key="..\:/Users/aranm/AndroidStudioProjects/Arduino_Pinout/app/src/main/res/layout/activity_main.xml" value="0.33" />
-        <entry key="..\:/Users/aranm/AndroidStudioProjects/Arduino_Pinout/app/src/main/res/layout/fragment_esp30buttons.xml" value="0.10916919959473151" />
+        <entry key="..\:/Users/aranm/AndroidStudioProjects/Arduino_Pinout/app/src/main/res/layout/activity_main.xml" value="0.21" />
+        <entry key="..\:/Users/aranm/AndroidStudioProjects/Arduino_Pinout/app/src/main/res/layout/fragment_esp30buttons.xml" value="0.25" />
         <entry key="..\:/Users/aranm/AndroidStudioProjects/Arduino_Pinout/app/src/main/res/layout/fragment_esp38buttons.xml" value="0.22447916666666667" />
-        <entry key="..\:/Users/aranm/AndroidStudioProjects/Arduino_Pinout/app/src/main/res/layout/fragment_espbasebuttons.xml" value="0.22447916666666667" />
+        <entry key="..\:/Users/aranm/AndroidStudioProjects/Arduino_Pinout/app/src/main/res/layout/fragment_espbasebuttons.xml" value="0.25" />
         <entry key="..\:/Users/aranm/AndroidStudioProjects/Arduino_Pinout/app/src/main/res/layout/fragment_espcomment.xml" value="0.22447916666666667" />
       </map>
     </option>
