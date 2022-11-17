@@ -49,6 +49,9 @@
         <entry key="..\:/Users/aranm/AndroidStudioProjects/ArduinoPinout/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1345" />
         <entry key="..\:/Users/aranm/AndroidStudioProjects/ArduinoPinout/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.1345" />
         <entry key="..\:/Users/aranm/AndroidStudioProjects/ArduinoPinout/app/src/main/res/xml/fragment_esp30comment.xml" value="0.1" />
+        <entry key="..\:/Users/aranm/AndroidStudioProjects/Arduino_Pinout/app/src/main/res/drawable/background_button_pin.xml" value="0.197" />
+        <entry key="..\:/Users/aranm/AndroidStudioProjects/Arduino_Pinout/app/src/main/res/layout/activity_logo.xml" value="0.22447916666666667" />
+        <entry key="..\:/Users/aranm/AndroidStudioProjects/Arduino_Pinout/app/src/main/res/layout/fragment_esp38buttons.xml" value="0.22447916666666667" />
       </map>
     </option>
   </component>
