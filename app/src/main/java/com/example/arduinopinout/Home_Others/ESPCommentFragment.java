@@ -1,4 +1,4 @@
-package com.example.arduinopinout;
+package com.example.arduinopinout.Home_Others;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -13,6 +13,8 @@ import android.widget.EditText;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+
+import com.example.arduinopinout.R;
 
 public class ESPCommentFragment extends Fragment {
     private TextView    commentText;

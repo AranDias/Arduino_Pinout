@@ -8,7 +8,7 @@
     android:orientation="vertical"
     android:background="@color/HomePage"
     android:windowSoftInputMode="stateHidden"
-    tools:context=".ESP38ButtonsFragment">
+    tools:context=".ESP32_DevKitC.ESP38ButtonsFragment">
 
     <LinearLayout
         android:layout_width="match_parent"

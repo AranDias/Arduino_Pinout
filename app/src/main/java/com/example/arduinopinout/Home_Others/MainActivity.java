@@ -1,8 +1,9 @@
-package com.example.arduinopinout;
+package com.example.arduinopinout.Home_Others;
 
 import android.content.Intent;
 import android.os.Bundle;
 
+import com.example.arduinopinout.R;
 import com.google.android.material.snackbar.Snackbar;
 
 import androidx.appcompat.app.AppCompatActivity;

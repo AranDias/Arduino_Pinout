@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@color/HomePage"
-    tools:context=".ESP38ImageActivity">
+    tools:context=".ESP32_DevKitC.ESP38ImageActivity">
 
     <HorizontalScrollView
         app:layout_behavior="@string/appbar_scrolling_view_behavior"

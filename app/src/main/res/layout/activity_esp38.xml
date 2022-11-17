@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@color/Menu"
-    tools:context=".ESP38Activity">
+    tools:context=".ESP32_DevKitC.ESP38Activity">
 
     <ScrollView
         android:layout_width="match_parent"

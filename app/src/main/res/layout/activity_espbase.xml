@@ -9,7 +9,7 @@
     android:orientation="vertical"
     android:background="@color/gray"
     android:windowSoftInputMode="stateHidden"
-    tools:context=".ESPBaseActivity">
+    tools:context=".ESP32_WROOM_32.ESPBaseActivity">
 
     <ScrollView
         android:layout_width="match_parent"

@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@color/Menu"
-    tools:context=".LogoActivity">
+    tools:context=".Home_Others.LogoActivity">
 
     <TextView
         android:id="@+id/textView3"

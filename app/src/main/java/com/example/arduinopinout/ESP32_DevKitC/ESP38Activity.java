@@ -1,19 +1,16 @@
-package com.example.arduinopinout;
+package com.example.arduinopinout.ESP32_DevKitC;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.Button;
-import android.widget.EditText;
-import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
+
+import com.example.arduinopinout.Home_Others.ESPCommentFragment;
+import com.example.arduinopinout.R;
 import com.example.arduinopinout.databinding.ActivityEsp38Binding;
 
 public class ESP38Activity extends AppCompatActivity implements ESP38ButtonsFragment.Fragment38Listener{
@@ -21,7 +18,7 @@ public class ESP38Activity extends AppCompatActivity implements ESP38ButtonsFrag
     private ActivityEsp38Binding  binding;
     private FragmentManager         fm = getSupportFragmentManager();
     private ESP38ButtonsFragment  fb = new ESP38ButtonsFragment();
-    private ESPCommentFragment      fc = new ESPCommentFragment();
+    private ESPCommentFragment fc = new ESPCommentFragment();
     FragmentTransaction             t;
 
     @Override

@@ -1,4 +1,4 @@
-package com.example.arduinopinout;
+package com.example.arduinopinout.ESP32_WROOM_32;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -11,8 +11,8 @@ import android.widget.EditText;
 
 import androidx.fragment.app.Fragment;
 
-import com.example.arduinopinout.DataBase.ESP38DB;
 import com.example.arduinopinout.DataBase.ESPBaseDB;
+import com.example.arduinopinout.R;
 
 public class ESPBaseButtonsFragment extends Fragment {
     ESPBaseDB data = new ESPBaseDB();

@@ -1,4 +1,4 @@
-package com.example.arduinopinout;
+package com.example.arduinopinout.ESP32_DevKitV1;
 
 import android.os.Bundle;
 
@@ -13,18 +13,18 @@ import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
-import com.example.arduinopinout.databinding.ActivityEsp38imageBinding;
+import com.example.arduinopinout.databinding.ActivityEsp30imageBinding;
 
-public class ESP38ImageActivity extends AppCompatActivity {
+public class ESP30ImageActivity extends AppCompatActivity {
 
     private AppBarConfiguration appBarConfiguration;
-    private ActivityEsp38imageBinding binding;
+    private ActivityEsp30imageBinding binding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        binding = ActivityEsp38imageBinding.inflate(getLayoutInflater());
+        binding = ActivityEsp30imageBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
     }
 }

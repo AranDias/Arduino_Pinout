@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@color/gray"
-    tools:context=".ESPCommentFragment">
+    tools:context=".Home_Others.ESPCommentFragment">
 
     <LinearLayout
         android:layout_width="match_parent"

@@ -1,50 +1,46 @@
-package com.example.arduinopinout;
+package com.example.arduinopinout.ESP32_DevKitV1;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.Button;
-import android.widget.EditText;
-import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
-import com.example.arduinopinout.databinding.ActivityEspbaseBinding;
 
-public class ESPBaseActivity extends AppCompatActivity implements ESPBaseButtonsFragment.FragmentBaseListener{
+import com.example.arduinopinout.Home_Others.ESPCommentFragment;
+import com.example.arduinopinout.R;
+import com.example.arduinopinout.databinding.ActivityEsp30Binding;
 
-    private ActivityEspbaseBinding  binding;
+public class ESP30Activity extends AppCompatActivity implements ESP30ButtonsFragment.Fragment30Listener{
+
+    private ActivityEsp30Binding binding;
     private FragmentManager         fm = getSupportFragmentManager();
-    private ESPBaseButtonsFragment  fb = new ESPBaseButtonsFragment();
-    private ESPCommentFragment      fc = new ESPCommentFragment();
+    private ESP30ButtonsFragment    fb = new ESP30ButtonsFragment();
+    private ESPCommentFragment fc = new ESPCommentFragment();
     FragmentTransaction             t;
 
     @Override
     protected void onCreate(Bundle savedInstance){
         super.onCreate(savedInstance);
 
-        binding = ActivityEspbaseBinding.inflate(getLayoutInflater());
+        binding = ActivityEsp30Binding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
-        /*setContentView(R.layout.activity_espbase);*/
 
         t = fm.beginTransaction();
-        t.add(R.id.ESPBaseImageLayout, fb);
+        t.add(R.id.ESP30ImageLayout, fb);
         t.addToBackStack(null);
         t.commit();
 
         t = fm.beginTransaction();
-        t.add(R.id.ESPBaseCommentLayout, fc);
+        t.add(R.id.ESP30CommentLayout, fc);
         t.addToBackStack(null);
         t.commit();
     }
 
     @Override
-    public void onInputBase(String input) {
+    public void onInput30(String input) {
         fc.updateEditText(input);
     }
 
@@ -59,8 +55,8 @@ public class ESPBaseActivity extends AppCompatActivity implements ESPBaseButtons
     public boolean onOptionsItemSelected(MenuItem item){
         int id = item.getItemId();
         if(id == R.id.Mostrar_Tudo){
-            Intent ESPBASEIMAGE = new Intent("ESPBASEIMAGE");
-            startActivity(ESPBASEIMAGE);
+            Intent ESP30IMAGE = new Intent("ESP30IMAGE");
+            startActivity(ESP30IMAGE);
         }
         return super.onOptionsItemSelected(item);
     }

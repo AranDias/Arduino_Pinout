@@ -24,9 +24,9 @@
         android:theme="@style/Theme.ArduinoPinout"
         tools:targetApi="31">
         <activity
-            android:name=".ESP38ImageActivity"
+            android:name=".ESP32_DevKitC.ESP38ImageActivity"
             android:exported="true"
-            android:parentActivityName=".ESP38Activity">
+            android:parentActivityName=".ESP32_DevKitC.ESP38Activity">
             <intent-filter>
                 <action android:name="ESP38IMAGE" />
 
@@ -34,9 +34,9 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ESP38Activity"
+            android:name=".ESP32_DevKitC.ESP38Activity"
             android:exported="true"
-            android:parentActivityName=".MainActivity">
+            android:parentActivityName=".Home_Others.MainActivity">
             <intent-filter>
                 <action android:name="ESP38PIN" />
 
@@ -44,9 +44,9 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ESP30Activity"
+            android:name=".ESP32_DevKitV1.ESP30Activity"
             android:exported="true"
-            android:parentActivityName=".MainActivity">
+            android:parentActivityName=".Home_Others.MainActivity">
             <intent-filter>
                 <action android:name="ESP30PIN" />
 
@@ -54,9 +54,9 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ESP30ImageActivity"
+            android:name=".ESP32_DevKitV1.ESP30ImageActivity"
             android:exported="true"
-            android:parentActivityName=".ESP30Activity">
+            android:parentActivityName=".ESP32_DevKitV1.ESP30Activity">
             <intent-filter>
                 <action android:name="ESP30IMAGE" />
 
@@ -64,9 +64,9 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ESPBaseActivity"
+            android:name=".ESP32_WROOM_32.ESPBaseActivity"
             android:exported="true"
-            android:parentActivityName=".MainActivity">
+            android:parentActivityName=".Home_Others.MainActivity">
             <intent-filter>
                 <action android:name="ESPBASE" />
 
@@ -74,9 +74,9 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ESPBaseImageActivity"
+            android:name=".ESP32_WROOM_32.ESPBaseImageActivity"
             android:exported="true"
-            android:parentActivityName=".ESPBaseActivity">
+            android:parentActivityName=".ESP32_WROOM_32.ESPBaseActivity">
             <intent-filter>
                 <action android:name="ESPBASEIMAGE" />
 
@@ -84,9 +84,9 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".LogoActivity"
+            android:name=".Home_Others.LogoActivity"
             android:exported="true"
-            android:parentActivityName=".MainActivity">
+            android:parentActivityName=".Home_Others.MainActivity">
             <intent-filter>
                 <action android:name="LOGOAPP" />
 
@@ -94,7 +94,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".MainActivity"
+            android:name=".Home_Others.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

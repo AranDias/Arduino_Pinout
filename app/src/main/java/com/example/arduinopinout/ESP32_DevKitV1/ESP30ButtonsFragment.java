@@ -1,4 +1,4 @@
-package com.example.arduinopinout;
+package com.example.arduinopinout.ESP32_DevKitV1;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -12,6 +12,7 @@ import android.widget.EditText;
 import androidx.fragment.app.Fragment;
 import com.example.arduinopinout.DataBase.ESP30DB;
 import com.example.arduinopinout.DataBase.ESP38DB;
+import com.example.arduinopinout.R;
 
 public class ESP30ButtonsFragment extends Fragment {
     ESP30DB data = new ESP30DB();
