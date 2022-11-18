@@ -9,6 +9,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
+import com.example.arduinopinout.Home_Others.MainActivity;
 import com.example.arduinopinout.databinding.ActivityEsp30Binding;
 import com.example.arduinopinout.Home_Others.ESPCommentFragment;
 import com.example.arduinopinout.R;
@@ -59,5 +60,11 @@ public class ESP30Activity extends AppCompatActivity implements ESP30ButtonsFrag
             startActivity(ESP30IMAGE);
         }
         return super.onOptionsItemSelected(item);
+    }
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
     }
 }

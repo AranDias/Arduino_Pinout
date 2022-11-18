@@ -9,6 +9,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
+import com.example.arduinopinout.Home_Others.MainActivity;
 import com.example.arduinopinout.databinding.ActivityEspbaseBinding;
 import com.example.arduinopinout.Home_Others.ESPCommentFragment;
 import com.example.arduinopinout.R;
@@ -60,4 +61,12 @@ public class ESPBaseActivity extends AppCompatActivity implements ESPBaseButtons
         }
         return super.onOptionsItemSelected(item);
     }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
+    }
 }
+

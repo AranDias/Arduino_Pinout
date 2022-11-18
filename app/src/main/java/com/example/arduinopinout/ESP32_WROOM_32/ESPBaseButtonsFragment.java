@@ -1,6 +1,7 @@
 package com.example.arduinopinout.ESP32_WROOM_32;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -11,6 +12,7 @@ import android.widget.EditText;
 import androidx.fragment.app.Fragment;
 
 import com.example.arduinopinout.DataBase.ESPBaseDB;
+import com.example.arduinopinout.Home_Others.MainActivity;
 import com.example.arduinopinout.R;
 
 public class ESPBaseButtonsFragment extends Fragment {
