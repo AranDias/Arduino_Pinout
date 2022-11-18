@@ -9,13 +9,13 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
+import com.example.arduinopinout.databinding.ActivityEsp38Binding;
 import com.example.arduinopinout.Home_Others.ESPCommentFragment;
 import com.example.arduinopinout.R;
-import com.example.arduinopinout.databinding.ActivityEsp38Binding;
 
 public class ESP38Activity extends AppCompatActivity implements ESP38ButtonsFragment.Fragment38Listener{
 
-    private ActivityEsp38Binding  binding;
+    private ActivityEsp38Binding binding;
     private FragmentManager         fm = getSupportFragmentManager();
     private ESP38ButtonsFragment  fb = new ESP38ButtonsFragment();
     private ESPCommentFragment fc = new ESPCommentFragment();
@@ -27,7 +27,6 @@ public class ESP38Activity extends AppCompatActivity implements ESP38ButtonsFrag
 
         binding = ActivityEsp38Binding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
-        /*setContentView(R.layout.activity_espbase);*/
 
         t = fm.beginTransaction();
         t.add(R.id.ESP38ImageLayout, fb);

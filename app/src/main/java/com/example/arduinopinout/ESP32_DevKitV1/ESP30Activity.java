@@ -9,9 +9,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
+import com.example.arduinopinout.databinding.ActivityEsp30Binding;
 import com.example.arduinopinout.Home_Others.ESPCommentFragment;
 import com.example.arduinopinout.R;
-import com.example.arduinopinout.databinding.ActivityEsp30Binding;
 
 public class ESP30Activity extends AppCompatActivity implements ESP30ButtonsFragment.Fragment30Listener{
 

@@ -9,9 +9,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
+import com.example.arduinopinout.databinding.ActivityEspbaseBinding;
 import com.example.arduinopinout.Home_Others.ESPCommentFragment;
 import com.example.arduinopinout.R;
-import com.example.arduinopinout.databinding.ActivityEspbaseBinding;
 
 public class ESPBaseActivity extends AppCompatActivity implements ESPBaseButtonsFragment.FragmentBaseListener{
 
@@ -27,7 +27,6 @@ public class ESPBaseActivity extends AppCompatActivity implements ESPBaseButtons
 
         binding = ActivityEspbaseBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
-        /*setContentView(R.layout.activity_espbase);*/
 
         t = fm.beginTransaction();
         t.add(R.id.ESPBaseImageLayout, fb);

@@ -6,12 +6,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.Toast;
 import android.widget.EditText;
 
 import androidx.fragment.app.Fragment;
 import com.example.arduinopinout.DataBase.ESP30DB;
-import com.example.arduinopinout.DataBase.ESP38DB;
 import com.example.arduinopinout.R;
 
 public class ESP30ButtonsFragment extends Fragment {
