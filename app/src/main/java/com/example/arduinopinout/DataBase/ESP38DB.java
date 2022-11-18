@@ -40,7 +40,7 @@ public class ESP38DB {
         else if (search.equals("D7")||search.equals("d7")||search.equals("7")||search.equals("GPIO7")||search.equals("Gpio7")||search.equals("D07")||search.equals("d07")||search.equals("07")||search.equals("GPIO07")||search.equals("Gpio07")||search.equals("SDO")||search.equals("SD0")){return get07();}
         else if (search.equals("D6")||search.equals("d6")||search.equals("6")||search.equals("GPIO6")||search.equals("Gpio6")||search.equals("D06")||search.equals("d06")||search.equals("06")||search.equals("GPIO06")||search.equals("Gpio06")||search.equals("CLK")||search.equals("SCK")){return get06();}
         else if (search.equals("BOOT")||search.equals("Boot")){return getBOOT();}
-        else    { return "Desculpe, não temos informações de sua pesquisa.\n Clique em 'Mostrar Mais' para ver o nome correto da porta ou pesquise novamente em letra MAIÚSCULA"; }
+        else    { return "Desculpe, não temos informações de sua pesquisa.\n Clique em 'Mostrar Mais' para ver o nome correto da porta \nou pesquise novamente em letra MAIÚSCULA"; }
     }
 
     private String getGND() {
@@ -522,7 +522,7 @@ public class ESP38DB {
                 "Reinicia o ESP32:......................................NÃO";
     }
     private String getBOOT() {
-        return "Algumas placas necessitam que o botão BOOT seja pressionado ao final da compilação para que o programa seja instalado na placa";
+        return "Algumas placas necessitam que o botão BOOT seja pressionado \nao final da compilação para que o programa seja instalado na placa";
     }
 }
 

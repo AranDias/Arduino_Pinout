@@ -78,7 +78,7 @@ public class ESP30DB {
         } else if (search.equals("BOOT") || search.equals("Boot")) {
             return getBOOT();
         } else {
-            return "Desculpe, não temos informações de sua pesquisa.\n Clique em 'Mostrar Mais' para ver o nome correto da porta ou pesquise novamente em letra MAIÚSCULA";
+            return "Desculpe, não temos informações de sua pesquisa.\n Clique em 'Mostrar Mais' para ver o nome correto da porta \nou pesquise novamente em letra MAIÚSCULA";
         }
     }
 
@@ -492,6 +492,6 @@ public class ESP30DB {
     }
 
     private String getBOOT() {
-        return "Algumas placas necessitam que o botão BOOT seja pressionado ao final da compilação para que o programa seja instalado na placa";
+        return "Algumas placas necessitam que o botão BOOT seja pressionado \nao final da compilação para que o programa seja instalado na placa";
     }
 }
