@@ -7,14 +7,13 @@
     android:layout_height="match_parent"
     android:layout_weight="1"
     android:orientation="vertical"
-    android:background="@color/gray"
+    android:background="@drawable/other_background"
     android:windowSoftInputMode="stateHidden"
     tools:context=".ESP32_WROOM_32.ESPBaseActivity">
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@color/gray">
+        android:layout_height="match_parent">
 
         <LinearLayout
             xmlns:android="http://schemas.android.com/apk/res/android"
