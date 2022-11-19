@@ -1,6 +1,7 @@
 package com.example.arduinopinout.Home_Others;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 
 import com.example.arduinopinout.R;
@@ -20,10 +21,11 @@ public class MainActivity extends AppCompatActivity {
 
     private AppBarConfiguration appBarConfiguration;
     private ActivityMainBinding binding;
-    private Button ESP38;
-    private Button ESP30;
-    private Button Base;
-    private ImageButton Logo;
+    private Button ButtonESP38PIN;
+    private Button ButtonESP30PIN;
+    private Button ButtonESPBase;
+    private Button ButtonInformacoes;
+    private ImageButton ButtonLogo;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,12 +36,13 @@ public class MainActivity extends AppCompatActivity {
 
         /*setSupportActionBar(binding.toolbar);*/
 
-        ESP38 = findViewById(R.id.ButtonESP38PIN);
-        ESP30 = findViewById(R.id.ButtonESP30PIN);
-        Base = findViewById(R.id.ButtonESPBase);
-        Logo = findViewById(R.id.ButtonLogo);
+        ButtonESP38PIN = findViewById(R.id.ButtonESP38PIN);
+        ButtonESP30PIN = findViewById(R.id.ButtonESP30PIN);
+        ButtonESPBase = findViewById(R.id.ButtonESPBase);
+        ButtonLogo = findViewById(R.id.ButtonLogo);
+        ButtonInformacoes = findViewById(R.id.ButtonInformacoes);
 
-        ESP38.setOnClickListener(new View.OnClickListener() {
+        ButtonESP38PIN.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent ESP38Intent = new Intent("ESP38PIN");
@@ -47,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        ESP30.setOnClickListener(new View.OnClickListener() {
+        ButtonESP30PIN.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent ESP30Intent = new Intent("ESP30PIN");
@@ -55,7 +58,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        Base.setOnClickListener(new View.OnClickListener() {
+        ButtonESPBase.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent BaseIntent = new Intent("ESPBASE");
@@ -63,11 +66,17 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        Logo.setOnClickListener(new View.OnClickListener() {
+        ButtonLogo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent BaseIntent = new Intent("LOGOAPP");
                 startActivity(BaseIntent);
+            }
+        });
+        ButtonInformacoes.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.espressif.com/en/products/socs/esp32")));
             }
         });
     }
