@@ -42,4 +42,7 @@
     <string name="title_activity_espbase_image">ESPBaseImageActivity</string>
     <string name="title_activity_esp30_image">ESP30ImageActivity</string>
     <string name="title_activity_esp38_image">ESP38ImageActivity</string>
+    <string name="title_activity_country_list">CountryListActivity</string>
+    <string name="title_activity_add_country">AddCountryActivity</string>
+    <string name="title_activity_modify_country">ModifyCountryActivity</string>
 </resources>

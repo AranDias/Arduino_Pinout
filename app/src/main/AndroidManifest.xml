@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.example.arduinopinout"
     tools:ignore="MissingLeanbackLauncher">
 
     <uses-permission android:name="android.permission.INTERNET" />
@@ -23,6 +22,40 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ArduinoPinout"
         tools:targetApi="31">
+        <activity
+            android:name="com.example.arduinopinout.Anotacoes.CountryListActivity"
+            android:exported="false"
+            android:label="@string/title_activity_country_list"
+            android:theme="@style/Theme.ArduinoPinout.NoActionBar">
+            <intent-filter>
+                <action android:name="COUNTRYLIST" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.example.arduinopinout.Anotacoes.ModifyCountryActivity"
+            android:exported="true"
+            android:parentActivityName="com.example.arduinopinout.Home_Others.MainActivity">
+            <intent-filter>
+                <action android:name="MODIFYCOUNTRY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.arduinopinout.Anotacoes.AddCountryActivity"
+            android:exported="true"
+            android:parentActivityName="com.example.arduinopinout.Home_Others.MainActivity">
+            <intent-filter>
+                <action android:name="ADDCOUNTRY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
         <activity
             android:name="com.example.arduinopinout.ESP32_DevKitC.ESP38ImageActivity"
             android:exported="true"

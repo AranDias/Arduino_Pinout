@@ -3,19 +3,15 @@ package com.example.arduinopinout.Home_Others;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
-
-import com.example.arduinopinout.R;
-
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.view.View;
-
-import androidx.navigation.ui.AppBarConfiguration;
-
-import com.example.arduinopinout.databinding.ActivityMainBinding;
-
 import android.widget.Button;
 import android.widget.ImageButton;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.navigation.ui.AppBarConfiguration;
+
+import com.example.arduinopinout.R;
+import com.example.arduinopinout.databinding.ActivityMainBinding;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -24,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
     private Button ButtonESP38PIN;
     private Button ButtonESP30PIN;
     private Button ButtonESPBase;
+    private Button ButtonAnotacoes;
     private Button ButtonInformacoes;
     private ImageButton ButtonLogo;
 
@@ -40,6 +37,7 @@ public class MainActivity extends AppCompatActivity {
         ButtonESP30PIN = findViewById(R.id.ButtonESP30PIN);
         ButtonESPBase = findViewById(R.id.ButtonESPBase);
         ButtonLogo = findViewById(R.id.ButtonLogo);
+        ButtonAnotacoes= findViewById(R.id.ButtonAnotacoes);
         ButtonInformacoes = findViewById(R.id.ButtonInformacoes);
 
         ButtonESP38PIN.setOnClickListener(new View.OnClickListener() {
@@ -69,8 +67,15 @@ public class MainActivity extends AppCompatActivity {
         ButtonLogo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent BaseIntent = new Intent("LOGOAPP");
-                startActivity(BaseIntent);
+                Intent LogoIntent = new Intent("LOGOAPP");
+                startActivity(LogoIntent);
+            }
+        });
+        ButtonAnotacoes.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent AnnotationIntent = new Intent("COUNTRYLIST");
+                startActivity(AnnotationIntent);
             }
         });
         ButtonInformacoes.setOnClickListener(new View.OnClickListener() {
