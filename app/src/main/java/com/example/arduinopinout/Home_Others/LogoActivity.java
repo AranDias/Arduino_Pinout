@@ -1,11 +1,8 @@
 package com.example.arduinopinout.Home_Others;
 
 import android.os.Bundle;
-
 import androidx.appcompat.app.AppCompatActivity;
-
 import androidx.navigation.ui.AppBarConfiguration;
-
 import com.example.arduinopinout.databinding.ActivityLogoBinding;
 
 public class LogoActivity extends AppCompatActivity {
@@ -21,9 +18,5 @@ public class LogoActivity extends AppCompatActivity {
 
         binding = ActivityLogoBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
-
-        /*setSupportActionBar(binding.toolbar);*/
-
-        //Main
     }
 }

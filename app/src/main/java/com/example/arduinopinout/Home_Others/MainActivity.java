@@ -10,6 +10,7 @@ import android.widget.ImageButton;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.navigation.ui.AppBarConfiguration;
 
+import com.example.arduinopinout.Anotacoes.CountryListActivity;
 import com.example.arduinopinout.R;
 import com.example.arduinopinout.databinding.ActivityMainBinding;
 
@@ -74,7 +75,7 @@ public class MainActivity extends AppCompatActivity {
         ButtonAnotacoes.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent AnnotationIntent = new Intent("COUNTRYLIST");
+                Intent AnnotationIntent = new Intent(MainActivity.this, CountryListActivity.class);
                 startActivity(AnnotationIntent);
             }
         });

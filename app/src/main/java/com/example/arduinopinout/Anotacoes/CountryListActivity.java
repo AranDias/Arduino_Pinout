@@ -11,7 +11,6 @@ import android.widget.ListView;
 import android.widget.SimpleCursorAdapter;
 import android.widget.TextView;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.arduinopinout.R;
@@ -41,8 +40,6 @@ public class CountryListActivity extends AppCompatActivity {
 
         listView.setAdapter(adapter);
 
-        //onclicklister for List items
-
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long viewid) {
@@ -58,8 +55,6 @@ public class CountryListActivity extends AppCompatActivity {
                 modify_intent.putExtra("desc", desc);
                 modify_intent.putExtra("id", id);
                 startActivity(modify_intent);
-
-
             }
         });
     }
@@ -70,10 +65,10 @@ public class CountryListActivity extends AppCompatActivity {
     }
 
     @Override
-    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+    public boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();
         if(id == R.id.add_record) {
-            Intent add_mem = new Intent("ADDCOUNTRY");
+            Intent add_mem = new Intent(CountryListActivity.this, AddCountryActivity.class);
             startActivity(add_mem);
         }
         return super.onOptionsItemSelected(item);
