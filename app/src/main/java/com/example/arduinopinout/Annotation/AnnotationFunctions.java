@@ -5,7 +5,7 @@ import java.io.Serializable;
 public class AnnotationFunctions implements Serializable {
 
     private Long Id;
-    private String annotationName;
+    private String name;
 
     public Long getId() {
         return Id;
@@ -16,10 +16,10 @@ public class AnnotationFunctions implements Serializable {
     }
 
     public String getAnnotationName() {
-        return annotationName;
+        return name;
     }
 
-    public void setAnnotationName(String nomeTarefa) {
-        this.annotationName = nomeTarefa;
+    public void setAnnotationName(String annotationName) {
+        this.name = annotationName;
     }
 }

@@ -45,7 +45,7 @@ public class AddAnnotationActivity extends AppCompatActivity {
 
                 AnnotationDAO annotationDAO = new AnnotationDAO(getApplicationContext());
 
-                if(thisAnnotation!=null){//edicao da tarefa
+                if(thisAnnotation!=null){
                     String nomeAnotacao = editAnnotation.getText().toString();
                     if(!nomeAnotacao.isEmpty()) {
                         AnnotationFunctions annotation = new AnnotationFunctions();
