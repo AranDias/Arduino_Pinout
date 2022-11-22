@@ -46,7 +46,7 @@ public class AnnotationAdapter extends RecyclerView.Adapter<AnnotationAdapter.My
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
 
-            tarefa = itemView.findViewById(R.id.textTarefa);
+            tarefa = itemView.findViewById(R.id.textAnotacao);
 
         }
     }

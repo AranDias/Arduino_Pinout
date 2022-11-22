@@ -20,7 +20,7 @@ public class AddAnnotationActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_addannotation);
 
-        editAnnotation = findViewById(R.id.textTarefa);
+        editAnnotation = findViewById(R.id.textAnotacao);
 
         thisannotation = (AnnotationFunctions) getIntent().getSerializableExtra("anotacaoSelecionada");
 
@@ -43,25 +43,23 @@ public class AddAnnotationActivity extends AppCompatActivity {
         switch (item.getItemId()){
             case R.id.itemSalvar:
 
-                AnnotationDAO tarefaDAO = new AnnotationDAO(getApplicationContext());
+                AnnotationDAO anotationDAO = new AnnotationDAO(getApplicationContext());
 
                 if(thisannotation!=null){//edicao da tarefa
-                    String nomeTarefa = editAnnotation.getText().toString();
-                    if(!nomeTarefa.isEmpty()) {
+                    String nomeAnotacao = editAnnotation.getText().toString();
+                    if(!nomeAnotacao.isEmpty()) {
                         AnnotationFunctions tarefa = new AnnotationFunctions();
-                        tarefa.setNomeTarefa(nomeTarefa);
+                        tarefa.setNomeTarefa(nomeAnotacao);
                         tarefa.setId(thisannotation.getId());
-                        tarefaDAO.atualizar(tarefa);
+                        anotationDAO.atualizar(tarefa);
                         finish();
                     }
                 }else{
-
-                    String nomeTarefa = editAnnotation.getText().toString();
-
-                    if(!nomeTarefa.isEmpty()){
+                    String nomeAnotacao = editAnnotation.getText().toString();
+                    if(!nomeAnotacao.isEmpty()){
                         AnnotationFunctions tarefa = new AnnotationFunctions();
-                        tarefa.setNomeTarefa(nomeTarefa);
-                        tarefaDAO.salvar(tarefa);
+                        tarefa.setNomeTarefa(nomeAnotacao);
+                        anotationDAO.salvar(tarefa);
                         finish();
                     }
                 }
