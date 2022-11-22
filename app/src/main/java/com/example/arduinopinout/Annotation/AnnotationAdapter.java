@@ -11,10 +11,10 @@ import java.util.List;
 
 public class AnnotationAdapter extends RecyclerView.Adapter<AnnotationAdapter.MyViewHolder> {
 
-    private List<AnnotationFunctions> listaTarefas;
+    private List<AnnotationFunctions> annotationList;
 
-    public AnnotationAdapter(List<AnnotationFunctions> lista) {
-        this.listaTarefas = lista;
+    public AnnotationAdapter(List<AnnotationFunctions> list) {
+        this.annotationList = list;
     }
 
     @NonNull
@@ -29,24 +29,24 @@ public class AnnotationAdapter extends RecyclerView.Adapter<AnnotationAdapter.My
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
 
-        AnnotationFunctions tarefa = listaTarefas.get(position);
-        holder.tarefa.setText(tarefa.getAnnotationName());
+        AnnotationFunctions annotation = annotationList.get(position);
+        holder.annotation.setText(annotation.getAnnotationName());
 
     }
 
     @Override
     public int getItemCount() {
-        return this.listaTarefas.size();
+        return this.annotationList.size();
     }
 
     public class MyViewHolder extends RecyclerView.ViewHolder{
 
-        TextView tarefa;
+        TextView annotation;
 
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
 
-            tarefa = itemView.findViewById(R.id.textAnotacao);
+            annotation = itemView.findViewById(R.id.textAnotacao);
 
         }
     }

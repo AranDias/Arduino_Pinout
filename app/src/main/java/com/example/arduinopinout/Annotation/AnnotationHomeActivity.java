@@ -26,10 +26,10 @@ import java.util.List;
 public class AnnotationHomeActivity extends AppCompatActivity {
     private AppBarConfiguration appBarConfiguration;
 
-    private RecyclerView    recyclerView;
-    private AnnotationAdapter tarefaAdapter;
-    private List<AnnotationFunctions>    listaTarefas = new ArrayList<>();
-    private AnnotationFunctions tarefaSelecionada;
+    private RecyclerView                recyclerView;
+    private AnnotationAdapter           annotationAdapter;
+    private List<AnnotationFunctions>   listAnnotations = new ArrayList<>();
+    private AnnotationFunctions         annotationSelected;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,28 +44,27 @@ public class AnnotationHomeActivity extends AppCompatActivity {
                         new RecyclerItemClickListener.OnItemClickListener() {
                             @Override
                             public void onItemClick(View view, int position) {
-                                AnnotationFunctions tarefaSelecionada = listaTarefas.get(position);
+                                AnnotationFunctions annotationSelected = listAnnotations.get(position);
                                 Intent intent = new Intent(AnnotationHomeActivity.this, AddAnnotationActivity.class);
-                                intent.putExtra("anotacaoSelecionada",tarefaSelecionada);
+                                intent.putExtra("anotacaoSelecionada",annotationSelected);
                                 startActivity(intent);
                             }
 
                             @Override
                             public void onLongItemClick(View view, int position) {
 
-                                tarefaSelecionada = listaTarefas.get(position);
+                                annotationSelected = listAnnotations.get(position);
 
                                 AlertDialog.Builder dialog = new AlertDialog.Builder(AnnotationHomeActivity.this);
 
                                 dialog.setTitle("Deseja Excluir a Seguinte Anotação?");
-                                dialog.setMessage(tarefaSelecionada.getAnnotationName());
+                                dialog.setMessage(annotationSelected.getAnnotationName());
 
                                 dialog.setPositiveButton("Sim", new DialogInterface.OnClickListener() {
                                     @Override
                                     public void onClick(DialogInterface dialogInterface, int i) {
-
-                                        AnnotationDAO tarefaDAO = new AnnotationDAO(getApplicationContext());
-                                        tarefaDAO.deletar(tarefaSelecionada);
+                                        AnnotationDAO annotationDAO = new AnnotationDAO(getApplicationContext());
+                                        annotationDAO.deletar(annotationSelected);
                                         LoadAnnotation();
                                     }
                                 });
@@ -93,18 +92,18 @@ public class AnnotationHomeActivity extends AppCompatActivity {
 
     public void LoadAnnotation(){
 
-        listaTarefas.clear();
+        listAnnotations.clear();
 
-        AnnotationDAO TarefaDAO = new AnnotationDAO(getApplicationContext());
-        listaTarefas = TarefaDAO.listar();
+        AnnotationDAO annotationDAO = new AnnotationDAO(getApplicationContext());
+        listAnnotations = annotationDAO.listar();
 
-        tarefaAdapter = new AnnotationAdapter(listaTarefas);
+        annotationAdapter = new AnnotationAdapter(listAnnotations);
 
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(getApplicationContext());
         recyclerView.setLayoutManager(layoutManager);
         recyclerView.setHasFixedSize(true);
         recyclerView.addItemDecoration(new DividerItemDecoration(getApplicationContext(), LinearLayout.VERTICAL));
-        recyclerView.setAdapter(tarefaAdapter);
+        recyclerView.setAdapter(annotationAdapter);
     }
 
     protected void onStart(){

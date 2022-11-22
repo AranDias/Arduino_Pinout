@@ -12,8 +12,8 @@ import com.google.android.material.textfield.TextInputEditText;
 
 public class AddAnnotationActivity extends AppCompatActivity {
 
-    private TextInputEditText editAnnotation;
-    private AnnotationFunctions thisannotation;
+    private TextInputEditText   editAnnotation;
+    private AnnotationFunctions thisAnnotation;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,10 +22,10 @@ public class AddAnnotationActivity extends AppCompatActivity {
 
         editAnnotation = findViewById(R.id.textAnotacao);
 
-        thisannotation = (AnnotationFunctions) getIntent().getSerializableExtra("anotacaoSelecionada");
+        thisAnnotation = (AnnotationFunctions) getIntent().getSerializableExtra("anotacaoSelecionada");
 
-        if(thisannotation!=null){
-            editAnnotation.setText(thisannotation.getAnnotationName());
+        if(thisAnnotation!=null){
+            editAnnotation.setText(thisAnnotation.getAnnotationName());
         }
     }
 
@@ -43,23 +43,23 @@ public class AddAnnotationActivity extends AppCompatActivity {
         switch (item.getItemId()){
             case R.id.itemSalvar:
 
-                AnnotationDAO anotationDAO = new AnnotationDAO(getApplicationContext());
+                AnnotationDAO annotationDAO = new AnnotationDAO(getApplicationContext());
 
-                if(thisannotation!=null){//edicao da tarefa
+                if(thisAnnotation!=null){//edicao da tarefa
                     String nomeAnotacao = editAnnotation.getText().toString();
                     if(!nomeAnotacao.isEmpty()) {
-                        AnnotationFunctions tarefa = new AnnotationFunctions();
-                        tarefa.setNomeTarefa(nomeAnotacao);
-                        tarefa.setId(thisannotation.getId());
-                        anotationDAO.atualizar(tarefa);
+                        AnnotationFunctions annotation = new AnnotationFunctions();
+                        annotation.setAnnotationName(nomeAnotacao);
+                        annotation.setId(thisAnnotation.getId());
+                        annotationDAO.atualizar(annotation);
                         finish();
                     }
                 }else{
                     String nomeAnotacao = editAnnotation.getText().toString();
                     if(!nomeAnotacao.isEmpty()){
-                        AnnotationFunctions tarefa = new AnnotationFunctions();
-                        tarefa.setNomeTarefa(nomeAnotacao);
-                        anotationDAO.salvar(tarefa);
+                        AnnotationFunctions annotation = new AnnotationFunctions();
+                        annotation.setAnnotationName(nomeAnotacao);
+                        annotationDAO.salvar(annotation);
                         finish();
                     }
                 }
