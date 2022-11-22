@@ -13,7 +13,7 @@ import com.google.android.material.textfield.TextInputEditText;
 public class AddAnnotationActivity extends AppCompatActivity {
 
     private TextInputEditText   editAnnotation;
-    private AnnotationFunctions thisAnnotation;
+    private AnnotationBridge    thisAnnotation;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,7 +22,7 @@ public class AddAnnotationActivity extends AppCompatActivity {
 
         editAnnotation = findViewById(R.id.textAnotacao);
 
-        thisAnnotation = (AnnotationFunctions) getIntent().getSerializableExtra("anotacaoSelecionada");
+        thisAnnotation = (AnnotationBridge) getIntent().getSerializableExtra("anotacaoSelecionada");
 
         if(thisAnnotation!=null){
             editAnnotation.setText(thisAnnotation.getAnnotationName());
@@ -46,19 +46,19 @@ public class AddAnnotationActivity extends AppCompatActivity {
                 AnnotationDAO annotationDAO = new AnnotationDAO(getApplicationContext());
 
                 if(thisAnnotation!=null){
-                    String nomeAnotacao = editAnnotation.getText().toString();
-                    if(!nomeAnotacao.isEmpty()) {
-                        AnnotationFunctions annotation = new AnnotationFunctions();
-                        annotation.setAnnotationName(nomeAnotacao);
+                    String annotationName = editAnnotation.getText().toString();
+                    if(!annotationName.isEmpty()) {
+                        AnnotationBridge annotation = new AnnotationBridge();
+                        annotation.setAnnotationName(annotationName);
                         annotation.setId(thisAnnotation.getId());
                         annotationDAO.atualizar(annotation);
                         finish();
                     }
                 }else{
-                    String nomeAnotacao = editAnnotation.getText().toString();
-                    if(!nomeAnotacao.isEmpty()){
-                        AnnotationFunctions annotation = new AnnotationFunctions();
-                        annotation.setAnnotationName(nomeAnotacao);
+                    String annotationName = editAnnotation.getText().toString();
+                    if(!annotationName.isEmpty()){
+                        AnnotationBridge annotation = new AnnotationBridge();
+                        annotation.setAnnotationName(annotationName);
                         annotationDAO.salvar(annotation);
                         finish();
                     }

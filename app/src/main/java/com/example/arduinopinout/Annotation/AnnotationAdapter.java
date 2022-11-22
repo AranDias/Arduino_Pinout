@@ -11,9 +11,9 @@ import java.util.List;
 
 public class AnnotationAdapter extends RecyclerView.Adapter<AnnotationAdapter.MyViewHolder> {
 
-    private List<AnnotationFunctions> annotationList;
+    private List<AnnotationBridge> annotationList;
 
-    public AnnotationAdapter(List<AnnotationFunctions> list) {
+    public AnnotationAdapter(List<AnnotationBridge> list) {
         this.annotationList = list;
     }
 
@@ -29,7 +29,7 @@ public class AnnotationAdapter extends RecyclerView.Adapter<AnnotationAdapter.My
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
 
-        AnnotationFunctions annotation = annotationList.get(position);
+        AnnotationBridge annotation = annotationList.get(position);
         holder.annotation.setText(annotation.getAnnotationName());
 
     }

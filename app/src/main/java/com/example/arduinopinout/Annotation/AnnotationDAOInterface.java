@@ -4,9 +4,9 @@ import java.util.List;
 
 public interface AnnotationDAOInterface {
 
-    public boolean salvar(AnnotationFunctions annotation);
-    public boolean atualizar(AnnotationFunctions annotation);
-    public boolean deletar(AnnotationFunctions annotation);
-    public List<AnnotationFunctions> listar();
+    public boolean salvar(AnnotationBridge annotation);
+    public boolean atualizar(AnnotationBridge annotation);
+    public boolean deletar(AnnotationBridge annotation);
+    public List<AnnotationBridge> listar();
 
 }

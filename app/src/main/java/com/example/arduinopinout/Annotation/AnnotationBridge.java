@@ -2,7 +2,7 @@ package com.example.arduinopinout.Annotation;
 
 import java.io.Serializable;
 
-public class AnnotationFunctions implements Serializable {
+public class AnnotationBridge implements Serializable {
 
     private Long Id;
     private String name;

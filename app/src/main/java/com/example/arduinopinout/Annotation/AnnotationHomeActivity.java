@@ -3,12 +3,10 @@ package com.example.arduinopinout.Annotation;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.LinearLayout;
-import android.widget.Toast;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
@@ -28,8 +26,8 @@ public class AnnotationHomeActivity extends AppCompatActivity {
 
     private RecyclerView                recyclerView;
     private AnnotationAdapter           annotationAdapter;
-    private List<AnnotationFunctions>   listAnnotations = new ArrayList<>();
-    private AnnotationFunctions         annotationSelected;
+    private List<AnnotationBridge>   listAnnotations = new ArrayList<>();
+    private AnnotationBridge annotationSelected;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,7 +42,7 @@ public class AnnotationHomeActivity extends AppCompatActivity {
                         new RecyclerItemClickListener.OnItemClickListener() {
                             @Override
                             public void onItemClick(View view, int position) {
-                                AnnotationFunctions annotationSelected = listAnnotations.get(position);
+                                AnnotationBridge annotationSelected = listAnnotations.get(position);
                                 Intent intent = new Intent(AnnotationHomeActivity.this, AddAnnotationActivity.class);
                                 intent.putExtra("anotacaoSelecionada",annotationSelected);
                                 startActivity(intent);

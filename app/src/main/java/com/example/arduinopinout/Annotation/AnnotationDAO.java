@@ -1,11 +1,9 @@
 package com.example.arduinopinout.Annotation;
 
-import android.annotation.SuppressLint;
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
-import android.util.Log;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -22,7 +20,7 @@ public class AnnotationDAO implements AnnotationDAOInterface {
     }
 
     @Override
-    public boolean salvar(AnnotationFunctions annotation) {
+    public boolean salvar(AnnotationBridge annotation) {
 
         ContentValues cv = new ContentValues();
         cv.put("nome",annotation.getAnnotationName());
@@ -31,7 +29,7 @@ public class AnnotationDAO implements AnnotationDAOInterface {
     }
 
     @Override
-    public boolean atualizar(AnnotationFunctions annotation) {
+    public boolean atualizar(AnnotationBridge annotation) {
 
         ContentValues cv = new ContentValues();
         cv.put("nome",annotation.getAnnotationName());
@@ -41,23 +39,23 @@ public class AnnotationDAO implements AnnotationDAOInterface {
     }
 
     @Override
-    public boolean deletar(AnnotationFunctions annotation) {
+    public boolean deletar(AnnotationBridge annotation) {
         String[] args = {annotation.getId().toString()};
         write_annotation.delete(DataBaseHelper.TABELA_ANOTACOES,"id=?",args);
         return true;
     }
 
     @Override
-    public List<AnnotationFunctions> listar() {
+    public List<AnnotationBridge> listar() {
 
-        List<AnnotationFunctions> annotation_list = new ArrayList<>();
+        List<AnnotationBridge> annotation_list = new ArrayList<>();
 
         String sql = "SELECT * FROM " + DataBaseHelper.TABELA_ANOTACOES + " ;";
         Cursor c = read_annotation.rawQuery(sql,null);
 
         while (c.moveToNext()){
 
-            AnnotationFunctions annotation = new AnnotationFunctions();
+            AnnotationBridge annotation = new AnnotationBridge();
 
             Long id = c.getLong(c.getColumnIndex("id"));
             String annotationName = c.getString(c.getColumnIndex("nome"));
