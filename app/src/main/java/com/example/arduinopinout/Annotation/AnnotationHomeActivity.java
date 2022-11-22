@@ -46,7 +46,7 @@ public class AnnotationHomeActivity extends AppCompatActivity {
                             public void onItemClick(View view, int position) {
                                 AnnotationFunctions tarefaSelecionada = listaTarefas.get(position);
                                 Intent intent = new Intent(AnnotationHomeActivity.this, AddAnnotationActivity.class);
-                                intent.putExtra("tarefaSelecionada",tarefaSelecionada);
+                                intent.putExtra("anotacaoSelecionada",tarefaSelecionada);
                                 startActivity(intent);
                             }
 
@@ -57,24 +57,16 @@ public class AnnotationHomeActivity extends AppCompatActivity {
 
                                 AlertDialog.Builder dialog = new AlertDialog.Builder(AnnotationHomeActivity.this);
 
-                                dialog.setTitle("CONFIRMAR EXCLUSÃO");
-                                dialog.setMessage("Deseja excluir a tarefa: " + tarefaSelecionada.getAnnotationName() + " ?");
+                                dialog.setTitle("Deseja Excluir a Seguinte Anotação?");
+                                dialog.setMessage(tarefaSelecionada.getAnnotationName());
 
                                 dialog.setPositiveButton("Sim", new DialogInterface.OnClickListener() {
                                     @Override
                                     public void onClick(DialogInterface dialogInterface, int i) {
 
                                         AnnotationDAO tarefaDAO = new AnnotationDAO(getApplicationContext());
-                                        if(tarefaDAO.deletar(tarefaSelecionada)){
-                                            LoadAnnotation();
-                                            Toast.makeText(getApplicationContext(),
-                                                    "Sucesso ao excluir a tarefa",
-                                                    Toast.LENGTH_SHORT).show();
-                                        }else{
-                                            Toast.makeText(getApplicationContext(),
-                                                    "Erro ao excluir a tarefa",
-                                                    Toast.LENGTH_SHORT).show();
-                                        }
+                                        tarefaDAO.deletar(tarefaSelecionada);
+                                        LoadAnnotation();
                                     }
                                 });
 

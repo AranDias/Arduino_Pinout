@@ -22,7 +22,7 @@ public class AddAnnotationActivity extends AppCompatActivity {
 
         editAnnotation = findViewById(R.id.textTarefa);
 
-        thisannotation = (AnnotationFunctions) getIntent().getSerializableExtra("tarefaSelecionada");
+        thisannotation = (AnnotationFunctions) getIntent().getSerializableExtra("anotacaoSelecionada");
 
         if(thisannotation!=null){
             editAnnotation.setText(thisannotation.getAnnotationName());

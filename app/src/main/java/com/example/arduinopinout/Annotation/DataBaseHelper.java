@@ -23,29 +23,13 @@ public class DataBaseHelper extends SQLiteOpenHelper {
         String sql = "CREATE TABLE IF NOT EXISTS " + TABELA_ANOTACOES
                 + " (id INTEGER PRIMARY KEY AUTOINCREMENT, " +
         " nome TEXT NOT NULL ); ";
-
-        try{
-            db.execSQL(sql);
-            Log.i("INFO DB","sucesso ao criar a tabela");
-        }catch (Exception e){
-        Log.i("INFO DB","Erro ao criar a tabela" + e.getMessage());
-        }
-
-
+        db.execSQL(sql);
     }
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int i, int i1) {
-
         String sql = "DROP TABLE IF EXISTS " + TABELA_ANOTACOES + ";";
-
-        try{
-            db.execSQL(sql);
-            onCreate(db);
-            Log.i("INFO DB","sucesso ao criar a tabela");
-        }catch (Exception e){
-            Log.i("INFO DB","Erro ao criar a tabela" + e.getMessage());
-        }
-
+        db.execSQL(sql);
+        onCreate(db);
     }
 }
