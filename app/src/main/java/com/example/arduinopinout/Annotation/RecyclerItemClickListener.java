@@ -8,11 +8,6 @@ import android.widget.AdapterView;
 
 import androidx.recyclerview.widget.RecyclerView;
 
-/**
- * RecyclerView não possui o método OnItemClickListener para identificar o clique do item.
- * Você precisa escrever sua própria classe que se estende RecyclerView.OnItemTouchListener .
- */
-
 public class RecyclerItemClickListener implements RecyclerView.OnItemTouchListener {
 
     private OnItemClickListener mListener;
@@ -30,17 +25,14 @@ public class RecyclerItemClickListener implements RecyclerView.OnItemTouchListen
 
     @Override
     public void onTouchEvent(RecyclerView rv, MotionEvent e) {
-
     }
 
     @Override
     public void onRequestDisallowInterceptTouchEvent(boolean disallowIntercept) {
-
     }
 
     public interface OnItemClickListener extends AdapterView.OnItemClickListener {
         public void onItemClick(View view, int position);
-
         public void onLongItemClick(View view, int position);
     }
 
@@ -60,6 +52,5 @@ public class RecyclerItemClickListener implements RecyclerView.OnItemTouchListen
                 }
             }
         });
-
     }
 }

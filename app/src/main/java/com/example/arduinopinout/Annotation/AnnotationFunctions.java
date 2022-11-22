@@ -2,7 +2,7 @@ package com.example.arduinopinout.Annotation;
 
 import java.io.Serializable;
 
-public class Tarefa implements Serializable {
+public class AnnotationFunctions implements Serializable {
 
     private Long Id;
     private String nomeTarefa;
@@ -15,7 +15,7 @@ public class Tarefa implements Serializable {
         Id = id;
     }
 
-    public String getNomeTarefa() {
+    public String getAnnotationName() {
         return nomeTarefa;
     }
 

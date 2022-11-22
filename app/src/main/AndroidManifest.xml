@@ -24,13 +24,15 @@
         android:theme="@style/Theme.ArduinoPinout"
         tools:targetApi="31">
 
-        <activity android:name="com.example.arduinopinout.Annotation.AdicionarTarefas">
+        <activity android:name="com.example.arduinopinout.Annotation.AddAnnotationActivity"
+            android:exported="true"
+            android:parentActivityName="com.example.arduinopinout.Annotation.AnnotationHomeActivity">
 
         </activity>
         <activity
             android:name="com.example.arduinopinout.Annotation.AnnotationHomeActivity"
-            android:exported="false"
-            android:theme="@style/Theme.ControleDeTarefas.NoActionBar">
+            android:exported="true"
+            android:parentActivityName="com.example.arduinopinout.Home_Others.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.ANNOTATION" />
 
@@ -38,15 +40,6 @@
             </intent-filter>
         </activity>
 
-        <activity
-            android:name="com.example.arduinopinout.Anotacoes.CountryListActivity"
-            android:exported="true"></activity>
-        <activity
-            android:name="com.example.arduinopinout.Anotacoes.ModifyCountryActivity"
-            android:exported="true"></activity>
-        <activity
-            android:name="com.example.arduinopinout.Anotacoes.AddCountryActivity"
-            android:exported="true"></activity>
         <activity
             android:name="com.example.arduinopinout.ESP32_DevKitC.ESP38ImageActivity"
             android:exported="true"

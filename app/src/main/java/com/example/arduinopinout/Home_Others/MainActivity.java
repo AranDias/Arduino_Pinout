@@ -11,7 +11,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.navigation.ui.AppBarConfiguration;
 
 import com.example.arduinopinout.Annotation.AnnotationHomeActivity;
-import com.example.arduinopinout.Anotacoes.CountryListActivity;
 import com.example.arduinopinout.R;
 import com.example.arduinopinout.databinding.ActivityMainBinding;
 

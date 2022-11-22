@@ -9,25 +9,25 @@ import android.util.Log;
 import java.util.ArrayList;
 import java.util.List;
 
-public class TarefaDAO implements iTarefaDAO {
+public class AnnotationDAO implements AnnotationDAOInterface {
 
     private SQLiteDatabase escreve;
     private SQLiteDatabase le;
 
-    public TarefaDAO(Context context) {
-        DbHelper db = new DbHelper(context);
+    public AnnotationDAO(Context context) {
+        DataBaseHelper db = new DataBaseHelper(context);
         escreve = db.getWritableDatabase();
         le = db.getReadableDatabase();
     }
 
     @Override
-    public boolean salvar(Tarefa tarefa) {
+    public boolean salvar(AnnotationFunctions tarefa) {
 
         ContentValues cv = new ContentValues();
-        cv.put("nome",tarefa.getNomeTarefa());
+        cv.put("nome",tarefa.getAnnotationName());
 
         try{
-            escreve.insert(DbHelper.TABELA_TAREFAS,null,cv);
+            escreve.insert(DataBaseHelper.TABELA_TAREFAS,null,cv);
             Log.e("INFO","tarefa salva com sucesso");
         }catch(Exception e){
             Log.e("INFO","Erro ao salvar tarefa" + e.getMessage());
@@ -38,14 +38,14 @@ public class TarefaDAO implements iTarefaDAO {
     }
 
     @Override
-    public boolean atualizar(Tarefa tarefa) {
+    public boolean atualizar(AnnotationFunctions tarefa) {
 
         ContentValues cv = new ContentValues();
-        cv.put("nome",tarefa.getNomeTarefa());
+        cv.put("nome",tarefa.getAnnotationName());
 
         try{
             String[] args = {tarefa.getId().toString()};
-            escreve.update(DbHelper.TABELA_TAREFAS,cv,"id=?",args);
+            escreve.update(DataBaseHelper.TABELA_TAREFAS,cv,"id=?",args);
             Log.e("INFO","tarefa salva com sucesso");
         }catch(Exception e){
             Log.e("INFO","Erro ao salvar tarefa" + e.getMessage());
@@ -56,12 +56,10 @@ public class TarefaDAO implements iTarefaDAO {
     }
 
     @Override
-    public boolean deletar(Tarefa tarefa) {
-
-
+    public boolean deletar(AnnotationFunctions tarefa) {
         try{
             String[] args = {tarefa.getId().toString()};
-            escreve.delete(DbHelper.TABELA_TAREFAS,"id=?",args);
+            escreve.delete(DataBaseHelper.TABELA_TAREFAS,"id=?",args);
             Log.e("INFO","tarefa removida com sucesso");
         }catch(Exception e){
             Log.e("INFO","Erro ao remover tarefa" + e.getMessage());
@@ -73,16 +71,16 @@ public class TarefaDAO implements iTarefaDAO {
     }
 
     @Override
-    public List<Tarefa> listar() {
+    public List<AnnotationFunctions> listar() {
 
-        List<Tarefa> tarefas = new ArrayList<>();
+        List<AnnotationFunctions> tarefas = new ArrayList<>();
 
-        String sql = "SELECT * FROM " + DbHelper.TABELA_TAREFAS + " ;";
+        String sql = "SELECT * FROM " + DataBaseHelper.TABELA_TAREFAS + " ;";
         Cursor c = le.rawQuery(sql,null);
 
         while (c.moveToNext()){
 
-            Tarefa tarefa = new Tarefa();
+            AnnotationFunctions tarefa = new AnnotationFunctions();
 
             Long id = c.getLong(c.getColumnIndex("id"));
             String nomeTarefa = c.getString(c.getColumnIndex("nome"));
@@ -91,8 +89,6 @@ public class TarefaDAO implements iTarefaDAO {
             tarefa.setNomeTarefa(nomeTarefa);
 
             tarefas.add(tarefa);
-
-
         }
         return tarefas;
     }

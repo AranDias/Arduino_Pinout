@@ -8,32 +8,28 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.arduinopinout.Annotation.TarefaDAO;
-import com.example.arduinopinout.Annotation.Tarefa;
 import com.example.arduinopinout.R;
 import com.google.android.material.textfield.TextInputEditText;
 
-public class AdicionarTarefas extends AppCompatActivity {
+public class AddAnnotationActivity extends AppCompatActivity {
 
     private TextInputEditText editTarefa;
-    private Tarefa tarefaAtual;
+    private AnnotationFunctions tarefaAtual;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_adicionar_tarefas);
+        setContentView(R.layout.activity_addannotation);
 
         editTarefa = findViewById(R.id.textTarefa);
 
         //recuperar a tarefa, caso seja edição
-        tarefaAtual = (Tarefa) getIntent().getSerializableExtra("tarefaSelecionada");
+        tarefaAtual = (AnnotationFunctions) getIntent().getSerializableExtra("tarefaSelecionada");
 
         //configurar a tarefa clicada pra ser exibida na caixa de texto
         if(tarefaAtual!=null){
-            editTarefa.setText(tarefaAtual.getNomeTarefa());
+            editTarefa.setText(tarefaAtual.getAnnotationName());
         }
-
-
     }
 
     @Override
@@ -50,12 +46,12 @@ public class AdicionarTarefas extends AppCompatActivity {
         switch (item.getItemId()){
             case R.id.itemSalvar:
                 //executar a ação salvar
-                TarefaDAO tarefaDAO = new TarefaDAO(getApplicationContext());
+                AnnotationDAO tarefaDAO = new AnnotationDAO(getApplicationContext());
 
                 if(tarefaAtual!=null){//edicao da tarefa
                     String nomeTarefa = editTarefa.getText().toString();
                     if(!nomeTarefa.isEmpty()) {
-                        Tarefa tarefa = new Tarefa();
+                        AnnotationFunctions tarefa = new AnnotationFunctions();
                         tarefa.setNomeTarefa(nomeTarefa);
                         tarefa.setId(tarefaAtual.getId());
 
@@ -77,7 +73,7 @@ public class AdicionarTarefas extends AppCompatActivity {
                     String nomeTarefa = editTarefa.getText().toString();
 
                     if(!nomeTarefa.isEmpty()){
-                        Tarefa tarefa = new Tarefa();
+                        AnnotationFunctions tarefa = new AnnotationFunctions();
                         tarefa.setNomeTarefa(nomeTarefa);
 
                         if(tarefaDAO.salvar(tarefa)){
@@ -90,12 +86,8 @@ public class AdicionarTarefas extends AppCompatActivity {
                                     "Erro ao salvar a tarefa",
                                     Toast.LENGTH_SHORT).show();
                         }
-
                     }
                 }
-
-
-
                 break;
         }
 

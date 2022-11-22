@@ -7,13 +7,13 @@ import android.util.Log;
 
 import androidx.annotation.Nullable;
 
-public class DbHelper extends SQLiteOpenHelper {
+public class DataBaseHelper extends SQLiteOpenHelper {
 
     public static int VERSION =1;
     public static String NOME_DB = "DB_TAREFAS";
     public static String TABELA_TAREFAS = "tarefas";
 
-    public DbHelper(@Nullable Context context) {
+    public DataBaseHelper(@Nullable Context context) {
         super(context, NOME_DB, null, VERSION);
     }
 
