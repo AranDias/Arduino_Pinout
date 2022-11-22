@@ -3,7 +3,6 @@ package com.example.arduinopinout.Annotation;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -13,29 +12,27 @@ import com.google.android.material.textfield.TextInputEditText;
 
 public class AddAnnotationActivity extends AppCompatActivity {
 
-    private TextInputEditText editTarefa;
-    private AnnotationFunctions tarefaAtual;
+    private TextInputEditText editAnnotation;
+    private AnnotationFunctions thisannotation;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_addannotation);
 
-        editTarefa = findViewById(R.id.textTarefa);
+        editAnnotation = findViewById(R.id.textTarefa);
 
-        //recuperar a tarefa, caso seja edição
-        tarefaAtual = (AnnotationFunctions) getIntent().getSerializableExtra("tarefaSelecionada");
+        thisannotation = (AnnotationFunctions) getIntent().getSerializableExtra("tarefaSelecionada");
 
-        //configurar a tarefa clicada pra ser exibida na caixa de texto
-        if(tarefaAtual!=null){
-            editTarefa.setText(tarefaAtual.getAnnotationName());
+        if(thisannotation!=null){
+            editAnnotation.setText(thisannotation.getAnnotationName());
         }
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
 
-        getMenuInflater().inflate(R.menu.menu_adicionar_tarefa,menu);
+        getMenuInflater().inflate(R.menu.menu_add_annotation,menu);
 
         return super.onCreateOptionsMenu(menu);
     }
@@ -45,52 +42,31 @@ public class AddAnnotationActivity extends AppCompatActivity {
 
         switch (item.getItemId()){
             case R.id.itemSalvar:
-                //executar a ação salvar
+
                 AnnotationDAO tarefaDAO = new AnnotationDAO(getApplicationContext());
 
-                if(tarefaAtual!=null){//edicao da tarefa
-                    String nomeTarefa = editTarefa.getText().toString();
+                if(thisannotation!=null){//edicao da tarefa
+                    String nomeTarefa = editAnnotation.getText().toString();
                     if(!nomeTarefa.isEmpty()) {
                         AnnotationFunctions tarefa = new AnnotationFunctions();
                         tarefa.setNomeTarefa(nomeTarefa);
-                        tarefa.setId(tarefaAtual.getId());
-
-                        //atualizar o banco de dados
-                        if(tarefaDAO.atualizar(tarefa)){
-                            finish();
-                            Toast.makeText(getApplicationContext(),
-                                    "Sucesso ao atualizar a tarefa",
-                                    Toast.LENGTH_SHORT).show();
-                        }else{
-                            Toast.makeText(getApplicationContext(),
-                                    "Erro ao atualizar a tarefa",
-                                    Toast.LENGTH_SHORT).show();
-                        }
-
+                        tarefa.setId(thisannotation.getId());
+                        tarefaDAO.atualizar(tarefa);
+                        finish();
                     }
-                }else{//salvar
+                }else{
 
-                    String nomeTarefa = editTarefa.getText().toString();
+                    String nomeTarefa = editAnnotation.getText().toString();
 
                     if(!nomeTarefa.isEmpty()){
                         AnnotationFunctions tarefa = new AnnotationFunctions();
                         tarefa.setNomeTarefa(nomeTarefa);
-
-                        if(tarefaDAO.salvar(tarefa)){
-                            finish();
-                            Toast.makeText(getApplicationContext(),
-                                    "Sucesso ao salvar a tarefa",
-                                    Toast.LENGTH_SHORT).show();
-                        }else{
-                            Toast.makeText(getApplicationContext(),
-                                    "Erro ao salvar a tarefa",
-                                    Toast.LENGTH_SHORT).show();
-                        }
+                        tarefaDAO.salvar(tarefa);
+                        finish();
                     }
                 }
                 break;
         }
-
         return super.onOptionsItemSelected(item);
     }
 }

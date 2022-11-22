@@ -32,6 +32,6 @@
         android:layout_gravity="bottom|end"
         android:layout_margin="@dimen/fab_margin"
         app:fabSize="normal"
-        app:srcCompat="@drawable/ic_confirmar" />
+        app:srcCompat="@drawable/button_add_annotation" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

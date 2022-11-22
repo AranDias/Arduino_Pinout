@@ -27,7 +27,7 @@ public class AnnotationDAO implements AnnotationDAOInterface {
         cv.put("nome",tarefa.getAnnotationName());
 
         try{
-            escreve.insert(DataBaseHelper.TABELA_TAREFAS,null,cv);
+            escreve.insert(DataBaseHelper.TABELA_ANOTACOES,null,cv);
             Log.e("INFO","tarefa salva com sucesso");
         }catch(Exception e){
             Log.e("INFO","Erro ao salvar tarefa" + e.getMessage());
@@ -45,7 +45,7 @@ public class AnnotationDAO implements AnnotationDAOInterface {
 
         try{
             String[] args = {tarefa.getId().toString()};
-            escreve.update(DataBaseHelper.TABELA_TAREFAS,cv,"id=?",args);
+            escreve.update(DataBaseHelper.TABELA_ANOTACOES,cv,"id=?",args);
             Log.e("INFO","tarefa salva com sucesso");
         }catch(Exception e){
             Log.e("INFO","Erro ao salvar tarefa" + e.getMessage());
@@ -59,7 +59,7 @@ public class AnnotationDAO implements AnnotationDAOInterface {
     public boolean deletar(AnnotationFunctions tarefa) {
         try{
             String[] args = {tarefa.getId().toString()};
-            escreve.delete(DataBaseHelper.TABELA_TAREFAS,"id=?",args);
+            escreve.delete(DataBaseHelper.TABELA_ANOTACOES,"id=?",args);
             Log.e("INFO","tarefa removida com sucesso");
         }catch(Exception e){
             Log.e("INFO","Erro ao remover tarefa" + e.getMessage());
@@ -75,7 +75,7 @@ public class AnnotationDAO implements AnnotationDAOInterface {
 
         List<AnnotationFunctions> tarefas = new ArrayList<>();
 
-        String sql = "SELECT * FROM " + DataBaseHelper.TABELA_TAREFAS + " ;";
+        String sql = "SELECT * FROM " + DataBaseHelper.TABELA_ANOTACOES + " ;";
         Cursor c = le.rawQuery(sql,null);
 
         while (c.moveToNext()){
