@@ -1,11 +1,11 @@
 package com.example.arduinopinout.Annotation;
-
+//aula 1 (lista de tarefas)
 import java.io.Serializable;
 
-public class Annotation implements Serializable {
+public class Annotation implements Serializable {//serializable para informações de uma activity para outra
 
     private Long Id;
-    private String name;
+    private String name; //
 
     public Long getId() {
         return Id;
@@ -23,3 +23,4 @@ public class Annotation implements Serializable {
         this.name = nameAnnotation;
     }
 }
+

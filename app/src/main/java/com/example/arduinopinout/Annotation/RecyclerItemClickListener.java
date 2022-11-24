@@ -7,7 +7,7 @@ import android.view.View;
 import android.widget.AdapterView;
 
 import androidx.recyclerview.widget.RecyclerView;
-
+//ela só pegou e fds
 public class RecyclerItemClickListener implements RecyclerView.OnItemTouchListener {
 
     private OnItemClickListener mListener;

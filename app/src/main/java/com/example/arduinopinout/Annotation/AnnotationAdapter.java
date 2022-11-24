@@ -8,22 +8,22 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 import com.example.arduinopinout.R;
 import java.util.List;
+//aula 1 = tarefa adapter que vai receber uma lista de tarefas para serem exibidas
+public class AnnotationAdapter extends RecyclerView.Adapter<AnnotationAdapter.MyViewHolder> { //recycle view depende do adapter
 
-public class AnnotationAdapter extends RecyclerView.Adapter<AnnotationAdapter.MyViewHolder> {
+    private List<AnnotationBridge> annotationList; //criar um atributo aula 01
 
-    private List<AnnotationBridge> annotationList;
-
-    public AnnotationAdapter(List<AnnotationBridge> list) {
-        this.annotationList = list;
-    }
+    public AnnotationAdapter(List<AnnotationBridge> list) {//vai passar a lista de tarefas
+        this.annotationList = list; //conseguimos passar no adapter a lista de tarefas
+    }//construtor
 
     @NonNull
     @Override
-    public MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+    public MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) { //vai retornar o layout
 
         View itemLista = LayoutInflater.from(parent.getContext()).inflate(R.layout.fragment_annotationlist, parent, false);
 
-        return new MyViewHolder(itemLista);
+        return new MyViewHolder(itemLista); //vai retornar a lista
     }
 
     @Override
@@ -37,7 +37,7 @@ public class AnnotationAdapter extends RecyclerView.Adapter<AnnotationAdapter.My
     @Override
     public int getItemCount() {
         return this.annotationList.size();
-    }
+    } //numero de tarefas que temos (aula1)
 
     public class MyViewHolder extends RecyclerView.ViewHolder{
 
@@ -46,7 +46,7 @@ public class AnnotationAdapter extends RecyclerView.Adapter<AnnotationAdapter.My
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
 
-            annotation = itemView.findViewById(R.id.textAnotacao);
+            annotation = itemView.findViewById(R.id.textAnotacao); //
 
         }
     }
