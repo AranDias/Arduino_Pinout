@@ -6,7 +6,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 import android.util.Log;
 
 import androidx.annotation.Nullable;
-//classe responsavel por abrigar nosso bnco de dados (aula 3-isso inteiro)
+//classe responsavel por abrigar nosso banco de dados (aula 3-isso inteiro)
 public class DataBaseHelper extends SQLiteOpenHelper {
 
     public static int       VERSION =1; //versão do app(oncreate)
@@ -22,7 +22,7 @@ public class DataBaseHelper extends SQLiteOpenHelper {
 
         String sql = "CREATE TABLE IF NOT EXISTS " + TABELA_ANOTACOES //creação de tabela caso ela não exista
                 + " (id INTEGER PRIMARY KEY AUTOINCREMENT, " + //campo vai ser incremebtado automaticamente
-                " nome TEXT NOT NULL ); "; // nome da terefa que não pode ser nulo (text muito caracteres)
+                " nome TEXT NOT NULL ); "; // nome da anotação que não pode ser nulo (text muito caracteres)
         db.execSQL(sql);
     }
 

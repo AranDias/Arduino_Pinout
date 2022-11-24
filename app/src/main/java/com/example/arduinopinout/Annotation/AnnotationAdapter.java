@@ -8,13 +8,13 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 import com.example.arduinopinout.R;
 import java.util.List;
-//aula 1 = tarefa adapter que vai receber uma lista de tarefas para serem exibidas
+//aula 1 = annotation adapter que vai receber uma lista de anotações para serem exibidas
 public class AnnotationAdapter extends RecyclerView.Adapter<AnnotationAdapter.MyViewHolder> { //recycle view depende do adapter
 
     private List<AnnotationBridge> annotationList; //criar um atributo aula 01
 
-    public AnnotationAdapter(List<AnnotationBridge> list) {//vai passar a lista de tarefas
-        this.annotationList = list; //conseguimos passar no adapter a lista de tarefas
+    public AnnotationAdapter(List<AnnotationBridge> list) {//vai passar a lista de anotações
+        this.annotationList = list; //conseguimos passar no adapter a lista de anotações
     }//construtor
 
     @NonNull
@@ -37,7 +37,7 @@ public class AnnotationAdapter extends RecyclerView.Adapter<AnnotationAdapter.My
     @Override
     public int getItemCount() {
         return this.annotationList.size();
-    } //numero de tarefas que temos (aula1)
+    } //numero de anotações que temos (aula1)
 
     public class MyViewHolder extends RecyclerView.ViewHolder{
 

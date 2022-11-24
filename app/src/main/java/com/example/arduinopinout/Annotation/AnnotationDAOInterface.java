@@ -1,7 +1,7 @@
 package com.example.arduinopinout.Annotation;
 
 import java.util.List;
-//metodos para salvar, atualizar, deletar as tarefas (vai ser puxado pelo annotationDAO = )
+//metodos para salvar, atualizar, deletar as anotações (vai ser puxado pelo annotationDAO = )
 public interface AnnotationDAOInterface {
 
     public boolean salvar(AnnotationBridge annotation);

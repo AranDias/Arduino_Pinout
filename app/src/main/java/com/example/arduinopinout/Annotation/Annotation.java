@@ -1,5 +1,5 @@
 package com.example.arduinopinout.Annotation;
-//aula 1 (lista de tarefas)
+//aula 1 (lista de anotações)
 import java.io.Serializable;
 
 public class Annotation implements Serializable {//serializable para informações de uma activity para outra

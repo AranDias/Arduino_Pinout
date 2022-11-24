@@ -25,8 +25,8 @@ public class AnnotationHomeActivity extends AppCompatActivity {
     private AppBarConfiguration appBarConfiguration;
 
     private RecyclerView                recyclerView; //configuração do recycle view (aula 1)
-    private AnnotationAdapter           annotationAdapter; //atributo do tarefa adapter
-    private List<AnnotationBridge>   listAnnotations = new ArrayList<>(); //lista de tarefas
+    private AnnotationAdapter           annotationAdapter; //atributo do annotation adapter
+    private List<AnnotationBridge>   listAnnotations = new ArrayList<>(); //lista de anotações
     private AnnotationBridge annotationSelected; //usado para excluir
 
     @Override
@@ -41,34 +41,34 @@ public class AnnotationHomeActivity extends AppCompatActivity {
                         recyclerView,
                         new RecyclerItemClickListener.OnItemClickListener() {
                             @Override
-                            public void onItemClick(View view, int position) { //adicionar eventos (aula 2). atualiza tarefa que já foi adicionada (aula 5)
-                                AnnotationBridge annotationSelected = listAnnotations.get(position); //posição da tarefa que vai ser alterada
-                                //enviar tarefa para a tela adicionar tarefa
-                                Intent intent = new Intent(AnnotationHomeActivity.this, AddAnnotationActivity.class); //enviar a tarefa de uma tela para outra (tela de adiconar tarefas)
-                                intent.putExtra("anotacaoSelecionada",annotationSelected);//e por onde vamos recuperar a tarefa que vai ser alterada em outra tela
+                            public void onItemClick(View view, int position) { //adicionar eventos (aula 2). atualiza anotação que já foi adicionada (aula 5)
+                                AnnotationBridge annotationSelected = listAnnotations.get(position); //posição da anotação que vai ser alterada
+                                //enviar anotações para a tela adicionar anotações
+                                Intent intent = new Intent(AnnotationHomeActivity.this, AddAnnotationActivity.class); //enviar a anotação de uma tela para outra (tela de adiconar anotações)
+                                intent.putExtra("anotacaoSelecionada",annotationSelected);//e por onde vamos recuperar a anotação que vai ser alterada em outra tela
                                 startActivity(intent);
                             }
 
                             @Override
-                            public void onLongItemClick(View view, int position) { //remover itens das tarefas (aula 2). remover tarefas
+                            public void onLongItemClick(View view, int position) { //remover itens das tarefas (aula 2). remover anotações
 
-                                annotationSelected = listAnnotations.get(position);//recuperar tarefa que o usuario selecionou para deletar
+                                annotationSelected = listAnnotations.get(position);//recuperar anotações que o usuario selecionou para deletar
 
                                 AlertDialog.Builder dialog = new AlertDialog.Builder(AnnotationHomeActivity.this);//alerta o usuario para ele não remover po engano
 
                                 dialog.setTitle("Deseja Excluir a Seguinte Anotação?");//texto alertando
                                 dialog.setMessage(annotationSelected.getAnnotationName());
 
-                                dialog.setPositiveButton("Sim", new DialogInterface.OnClickListener() { //sim para excluir tarefa
+                                dialog.setPositiveButton("Sim", new DialogInterface.OnClickListener() { //sim para excluir anotação
                                     @Override
                                     public void onClick(DialogInterface dialogInterface, int i) {
                                         AnnotationDAO annotationDAO = new AnnotationDAO(getApplicationContext());
                                         annotationDAO.deletar(annotationSelected);
-                                        LoadAnnotation();//vai carregar a lista de tarefas para não aparecer o valor que foi excluido (texto que foi excluido)
+                                        LoadAnnotation();//vai carregar a lista de anotações para não aparecer o valor que foi excluido (texto que foi excluido)
                                     }
                                 });
 
-                                dialog.setNegativeButton("Não", null); //não excluir tarefa
+                                dialog.setNegativeButton("Não", null); //não excluir anotaçõão
                                 dialog.create();//exibir a dialog de aviso
                                 dialog.show();//exibir a dialog de aviso
                             }

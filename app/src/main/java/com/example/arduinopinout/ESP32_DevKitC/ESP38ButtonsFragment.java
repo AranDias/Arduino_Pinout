@@ -89,6 +89,7 @@ public class ESP38ButtonsFragment extends Fragment {
                 else if (botao == R.id.ESP38ButtonENT || botao == R.id.ESP38ButtonENE)         {listener.onInput38(data.get38Search("EN"));}
                 else if (botao == R.id.ESP38ButtonVin)        {listener.onInput38(data.get38Search("Vin"));}
                 else if (botao == R.id.ESP38ButtonBOOT)       {listener.onInput38(data.get38Search("BOOT"));}
+                else if (botao == R.id.ESP38Button3V3)       {listener.onInput38(data.get38Search("3V3"));}
 
                 else if (botao == R.id.ESP38Button36)         {listener.onInput38(data.get38Search("36"));}
                 else if (botao == R.id.ESP38Button39)         {listener.onInput38(data.get38Search("39"));}

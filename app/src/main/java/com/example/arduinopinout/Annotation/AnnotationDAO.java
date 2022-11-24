@@ -7,7 +7,7 @@ import android.database.sqlite.SQLiteDatabase;
 
 import java.util.ArrayList;
 import java.util.List;
-//metodos para salvar, listar ou deletar nossas tarefas
+//metodos para salvar, listar ou deletar nossas anotações
 public class AnnotationDAO implements AnnotationDAOInterface { //implementamos aqueles metodos
 
     private SQLiteDatabase write_annotation; //atributo para escrever dados na tabela de dados (aula 4)
@@ -29,7 +29,7 @@ public class AnnotationDAO implements AnnotationDAOInterface { //implementamos a
     }
 
     @Override
-    public boolean atualizar(AnnotationBridge annotation) { //metodo que vai atualizar as tarefas
+    public boolean atualizar(AnnotationBridge annotation) { //metodo que vai atualizar as anotações
 
         ContentValues cv = new ContentValues();
         cv.put("nome",annotation.getAnnotationName());
@@ -46,7 +46,7 @@ public class AnnotationDAO implements AnnotationDAOInterface { //implementamos a
     }
 
     @Override
-    public List<AnnotationBridge> listar() { //EXIBIR A LISTA DE TAREFAS QUE ESCREVI (AULA 4)
+    public List<AnnotationBridge> listar() { //EXIBIR A LISTA DE ANOTAÇÕES QUE ESCREVI (AULA 4)
 
         List<AnnotationBridge> annotation_list = new ArrayList<>(); //LISTA DE TAREFAS
 
@@ -63,7 +63,7 @@ public class AnnotationDAO implements AnnotationDAOInterface { //implementamos a
             annotation.setId(id); //passar o parametro id
             annotation.setAnnotationName(annotationName); //passar o parametro name
 
-            annotation_list.add(annotation);//adicionamento de tarefas
+            annotation_list.add(annotation);//adicionamento de anotações
         }
         return annotation_list;
     }
